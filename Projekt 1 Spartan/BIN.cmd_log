@@ -1,0 +1,62 @@
+xst -intstyle ise -ifn "E:/235816/Lab8/Spartan/BIN.xst" -ofn "E:/235816/Lab8/Spartan/BIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xa6slx16-csg324-3 BIN.ngc BIN.ngd  
+map -intstyle ise -p xa6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BIN_map.ncd BIN.ngd BIN.pcf 
+par -w -intstyle ise -ol high -mt off BIN_map.ncd BIN.ncd BIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BIN.twx BIN.ncd -o BIN.twr BIN.pcf -ucf Nexys3_master.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xa6slx16-csg324-3 BIN.ngc BIN.ngd  
+map -intstyle ise -p xa6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BIN_map.ncd BIN.ngd BIN.pcf 
+par -w -intstyle ise -ol high -mt off BIN_map.ncd BIN.ncd BIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BIN.twx BIN.ncd -o BIN.twr BIN.pcf -ucf Nexys3_master.ucf 
+xst -intstyle ise -ifn "E:/235816/Lab8/Spartan/BIN.xst" -ofn "E:/235816/Lab8/Spartan/BIN.syr" 
+xst -intstyle ise -ifn "E:/235816/Lab8/Spartan/BIN.xst" -ofn "E:/235816/Lab8/Spartan/BIN.syr" 
+xst -intstyle ise -ifn "E:/235816/Lab8/Spartan/BIN.xst" -ofn "E:/235816/Lab8/Spartan/BIN.syr" 
+xst -intstyle ise -ifn "E:/235816/Lab8/Spartan/BIN.xst" -ofn "E:/235816/Lab8/Spartan/BIN.syr" 
+xst -intstyle ise -ifn "E:/235816/Lab8/Spartan/BIN.xst" -ofn "E:/235816/Lab8/Spartan/BIN.syr" 
+xst -intstyle ise -ifn "E:/235816/Lab8/Spartan/BIN.xst" -ofn "E:/235816/Lab8/Spartan/BIN.syr" 
+xst -intstyle ise -ifn "E:/235816/Lab8/Spartan/BIN.xst" -ofn "E:/235816/Lab8/Spartan/BIN.syr" 
+xst -intstyle ise -ifn "E:/235816/Lab8/Spartan/BIN.xst" -ofn "E:/235816/Lab8/Spartan/BIN.syr" 
+xst -intstyle ise -ifn "E:/235816/Lab8/Spartan/BIN.xst" -ofn "E:/235816/Lab8/Spartan/BIN.syr" 
+xst -intstyle ise -ifn "E:/235816/Lab8/Spartan/BIN.xst" -ofn "E:/235816/Lab8/Spartan/BIN.syr" 
+xst -intstyle ise -ifn "E:/235816/Lab8/Spartan/BIN.xst" -ofn "E:/235816/Lab8/Spartan/BIN.syr" 
+xst -intstyle ise -ifn "E:/235816/Lab8/Spartan/BIN.xst" -ofn "E:/235816/Lab8/Spartan/BIN.syr" 
+xst -intstyle ise -ifn "E:/235816/Lab8/Spartan/BIN.xst" -ofn "E:/235816/Lab8/Spartan/BIN.syr" 
+xst -intstyle ise -ifn "E:/235816/Lab8/Spartan/BIN.xst" -ofn "E:/235816/Lab8/Spartan/BIN.syr" 
+xst -intstyle ise -ifn "E:/235816/Lab8/Spartan/BIN.xst" -ofn "E:/235816/Lab8/Spartan/BIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xa6slx16-csg324-3 BIN.ngc BIN.ngd  
+map -intstyle ise -p xa6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BIN_map.ncd BIN.ngd BIN.pcf 
+par -w -intstyle ise -ol high -mt off BIN_map.ncd BIN.ncd BIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BIN.twx BIN.ncd -o BIN.twr BIN.pcf -ucf Nexys3_master.ucf 
+xst -intstyle ise -ifn "E:/235816/Lab8/Spartan/BIN.xst" -ofn "E:/235816/Lab8/Spartan/BIN.syr" 
+xst -intstyle ise -ifn "E:/235816/Lab8/Spartan/BIN.xst" -ofn "E:/235816/Lab8/Spartan/BIN.syr" 
+xst -intstyle ise -ifn "E:/235816/Lab8/Spartan/BIN.xst" -ofn "E:/235816/Lab8/Spartan/BIN.syr" 
+xst -intstyle ise -ifn "E:/235816/Lab8/Spartan/BIN.xst" -ofn "E:/235816/Lab8/Spartan/BIN.syr" 
+xst -intstyle ise -ifn "E:/235816/Lab8/Spartan/BIN.xst" -ofn "E:/235816/Lab8/Spartan/BIN.syr" 
+xst -intstyle ise -ifn "E:/235816/Lab8/Spartan/BIN.xst" -ofn "E:/235816/Lab8/Spartan/BIN.syr" 
+xst -intstyle ise -ifn "E:/235816/Lab8/Spartan/BIN.xst" -ofn "E:/235816/Lab8/Spartan/BIN.syr" 
+xst -intstyle ise -ifn "E:/235816/Lab8/Spartan/BIN.xst" -ofn "E:/235816/Lab8/Spartan/BIN.syr" 
+xst -intstyle ise -ifn "E:/235816/Lab8/Spartan/BIN.xst" -ofn "E:/235816/Lab8/Spartan/BIN.syr" 
+xst -intstyle ise -ifn "E:/235816/Lab8/Spartan/BIN.xst" -ofn "E:/235816/Lab8/Spartan/BIN.syr" 
+xst -intstyle ise -ifn "E:/235816/Lab8/Spartan/BIN.xst" -ofn "E:/235816/Lab8/Spartan/BIN.syr" 
+xst -intstyle ise -ifn "E:/235816/Lab8/Spartan/BIN.xst" -ofn "E:/235816/Lab8/Spartan/BIN.syr" 
+xst -intstyle ise -ifn "E:/235816/Lab8/Spartan/BIN.xst" -ofn "E:/235816/Lab8/Spartan/BIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xa6slx16-csg324-3 BIN.ngc BIN.ngd  
+map -intstyle ise -p xa6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BIN_map.ncd BIN.ngd BIN.pcf 
+par -w -intstyle ise -ol high -mt off BIN_map.ncd BIN.ncd BIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BIN.twx BIN.ncd -o BIN.twr BIN.pcf -ucf Nexys3_master.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xa6slx16-csg324-3 BIN.ngc BIN.ngd  
+map -intstyle ise -p xa6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BIN_map.ncd BIN.ngd BIN.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xa6slx16-csg324-3 BIN.ngc BIN.ngd  
+map -intstyle ise -p xa6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BIN_map.ncd BIN.ngd BIN.pcf 
+par -w -intstyle ise -ol high -mt off BIN_map.ncd BIN.ncd BIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BIN.twx BIN.ncd -o BIN.twr BIN.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f BIN.ut BIN.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xa6slx16-csg324-3 BIN.ngc BIN.ngd  
+map -intstyle ise -p xa6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BIN_map.ncd BIN.ngd BIN.pcf 
+par -w -intstyle ise -ol high -mt off BIN_map.ncd BIN.ncd BIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BIN.twx BIN.ncd -o BIN.twr BIN.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f BIN.ut BIN.ncd 
+xst -intstyle ise -ifn "D:/235816/UP2/UPPP/Spartan/BIN.xst" -ofn "D:/235816/UP2/UPPP/Spartan/BIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xa6slx16-csg324-3 BIN.ngc BIN.ngd  
+map -intstyle ise -p xa6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BIN_map.ncd BIN.ngd BIN.pcf 
+par -w -intstyle ise -ol high -mt off BIN_map.ncd BIN.ncd BIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BIN.twx BIN.ncd -o BIN.twr BIN.pcf -ucf Nexys3_master.ucf 

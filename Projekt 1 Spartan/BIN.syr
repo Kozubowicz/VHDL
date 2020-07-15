@@ -1,0 +1,886 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: BIN.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "BIN.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "BIN"
+Output Format                      : NGC
+Target Device                      : xa6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : BIN
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:\235816\UP2\UPPP\Spartan\Lab.vhd" into library work
+Parsing entity <CLOC>.
+Parsing architecture <Behavioral> of entity <cloc>.
+Parsing VHDL file "D:\235816\UP2\UPPP\Spartan\BINTO7SEG.vhd" into library work
+Parsing entity <BINTO7SEG>.
+Parsing architecture <Behavioral> of entity <binto7seg>.
+Parsing VHDL file "D:\235816\UP2\UPPP\Spartan\ANN.vhd" into library work
+Parsing entity <ANN>.
+Parsing architecture <Behavioral> of entity <ann>.
+Parsing VHDL file "D:\235816\UP2\UPPP\Spartan\Licz.vhd" into library work
+Parsing entity <Licz>.
+Parsing architecture <Behavioral> of entity <licz>.
+Parsing VHDL file "D:\235816\UP2\UPPP\Spartan\Lab8_1.vhd" into library work
+Parsing entity <Lab8_1>.
+Parsing architecture <Behavioral> of entity <lab8_1>.
+Parsing VHDL file "D:\235816\UP2\UPPP\Spartan\Kwarc.vhd" into library work
+Parsing entity <Kwarc>.
+Parsing architecture <Behavioral> of entity <kwarc>.
+Parsing VHDL file "D:\235816\UP2\UPPP\Spartan\BIN.vhd" into library work
+Parsing entity <BIN>.
+Parsing architecture <Behavioral> of entity <bin>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <BIN> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Lab8_1> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <ANN> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <BINTO7SEG> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <CLOC> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Licz> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Kwarc> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <BIN>.
+    Related source file is "D:\235816\UP2\UPPP\Spartan\BIN.vhd".
+INFO:Xst:3210 - "D:\235816\UP2\UPPP\Spartan\BIN.vhd" line 99: Output port <C> of the instance <B3> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <BIN> synthesized.
+
+Synthesizing Unit <Lab8_1>.
+    Related source file is "D:\235816\UP2\UPPP\Spartan\Lab8_1.vhd".
+    Found 4-bit 4-to-1 multiplexer for signal <x> created at line 48.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Lab8_1> synthesized.
+
+Synthesizing Unit <ANN>.
+    Related source file is "D:\235816\UP2\UPPP\Spartan\ANN.vhd".
+    Found 4x4-bit Read Only RAM for signal <AN>
+    Summary:
+	inferred   1 RAM(s).
+Unit <ANN> synthesized.
+
+Synthesizing Unit <BINTO7SEG>.
+    Related source file is "D:\235816\UP2\UPPP\Spartan\BINTO7SEG.vhd".
+    Found 16x7-bit Read Only RAM for signal <SEG<6:0>>
+    Summary:
+	inferred   1 RAM(s).
+Unit <BINTO7SEG> synthesized.
+
+Synthesizing Unit <CLOC>.
+    Related source file is "D:\235816\UP2\UPPP\Spartan\Lab.vhd".
+    Found 2-bit register for signal <CL>.
+    Found finite state machine <FSM_0> for signal <CL>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 4                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 2                                              |
+    | Clock              | CLK2 (rising_edge)                             |
+    | Reset              | RESET (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <CLOC> synthesized.
+
+Synthesizing Unit <Licz>.
+    Related source file is "D:\235816\UP2\UPPP\Spartan\Licz.vhd".
+    Found 1-bit register for signal <C>.
+    Found 4-bit register for signal <CC>.
+    Found 4-bit adder for signal <CC[3]_GND_10_o_add_1_OUT> created at line 33.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   5 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <Licz> synthesized.
+
+Synthesizing Unit <Kwarc>.
+    Related source file is "D:\235816\UP2\UPPP\Spartan\Kwarc.vhd".
+    Found 1-bit register for signal <CL1>.
+    Found 1-bit register for signal <CL2>.
+    Found 11-bit register for signal <CNT2>.
+    Found 27-bit register for signal <CNT1>.
+    Found 27-bit adder for signal <CNT1[26]_GND_11_o_add_1_OUT> created at line 46.
+    Found 11-bit adder for signal <CNT2[10]_GND_11_o_add_5_OUT> created at line 71.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  40 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <Kwarc> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x7-bit single-port Read Only RAM                    : 1
+ 4x4-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 6
+ 11-bit adder                                          : 1
+ 27-bit adder                                          : 1
+ 4-bit adder                                           : 4
+# Registers                                            : 12
+ 1-bit register                                        : 6
+ 11-bit register                                       : 1
+ 27-bit register                                       : 1
+ 4-bit register                                        : 4
+# Multiplexers                                         : 7
+ 11-bit 2-to-1 multiplexer                             : 1
+ 27-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 4
+ 4-bit 4-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <ANN>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_AN> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <C>             |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <AN>            |          |
+    -----------------------------------------------------------------------
+Unit <ANN> synthesized (advanced).
+
+Synthesizing (advanced) Unit <BINTO7SEG>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_SEG<6:0>> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <BIN>           |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <SEG>           |          |
+    -----------------------------------------------------------------------
+Unit <BINTO7SEG> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Kwarc>.
+The following registers are absorbed into counter <CNT2>: 1 register on signal <CNT2>.
+The following registers are absorbed into counter <CNT1>: 1 register on signal <CNT1>.
+Unit <Kwarc> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Licz>.
+The following registers are absorbed into counter <CC>: 1 register on signal <CC>.
+Unit <Licz> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x7-bit single-port distributed Read Only RAM        : 1
+ 4x4-bit single-port distributed Read Only RAM         : 1
+# Counters                                             : 6
+ 11-bit up counter                                     : 1
+ 27-bit up counter                                     : 1
+ 4-bit up counter                                      : 4
+# Registers                                            : 6
+ Flip-Flops                                            : 6
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <B3/C> of sequential type is unconnected in block <BIN>.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <CL[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+ 11    | 11
+-------------------
+
+Optimizing unit <BIN> ...
+
+Optimizing unit <Kwarc> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block BIN, actual ratio is 1.
+FlipFlop Kwa/CNT1_25 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 62
+ Flip-Flops                                            : 62
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : BIN.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 189
+#      GND                         : 1
+#      INV                         : 6
+#      LUT1                        : 27
+#      LUT2                        : 7
+#      LUT3                        : 4
+#      LUT4                        : 19
+#      LUT5                        : 28
+#      LUT6                        : 22
+#      MUXCY                       : 36
+#      VCC                         : 1
+#      XORCY                       : 38
+# FlipFlops/Latches                : 62
+#      FDC                         : 62
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 13
+#      IBUF                        : 1
+#      OBUF                        : 12
+
+Device utilization summary:
+---------------------------
+
+Selected Device : xa6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              62  out of  18224     0%  
+ Number of Slice LUTs:                  113  out of   9112     1%  
+    Number used as Logic:               113  out of   9112     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    114
+   Number with an unused Flip Flop:      52  out of    114    45%  
+   Number with an unused LUT:             1  out of    114     0%  
+   Number of fully used LUT-FF pairs:    61  out of    114    53%  
+   Number of unique control sets:         6
+
+IO Utilization: 
+ Number of IOs:                          14
+ Number of bonded IOBs:                  14  out of    232     6%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+B1/C                               | NONE(B2/C)             | 5     |
+B0/C                               | NONE(B1/C)             | 5     |
+Kwa/CL1                            | NONE(B0/C)             | 5     |
+B2/C                               | NONE(B3/CC_0)          | 4     |
+Kwa/CL2                            | NONE(BN/CL/CL_FSM_FFd2)| 2     |
+CLK                                | BUFGP                  | 41    |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.544ns (Maximum Frequency: 282.135MHz)
+   Minimum input arrival time before clock: 3.278ns
+   Maximum output required time after clock: 6.244ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'B1/C'
+  Clock period: 2.078ns (frequency: 481.325MHz)
+  Total number of paths / destination ports: 16 / 5
+-------------------------------------------------------------------------
+Delay:               2.078ns (Levels of Logic = 1)
+  Source:            B2/CC_0 (FF)
+  Destination:       B2/CC_0 (FF)
+  Source Clock:      B1/C rising
+  Destination Clock: B1/C rising
+
+  Data Path: B2/CC_0 to B2/CC_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              6   0.447   0.744  B2/CC_0 (B2/CC_0)
+     INV:I->O              1   0.206   0.579  B2/Mcount_CC_xor<0>11_INV_0 (B2/Mcount_CC)
+     FDC:D                     0.102          B2/CC_0
+    ----------------------------------------
+    Total                      2.078ns (0.755ns logic, 1.323ns route)
+                                       (36.3% logic, 63.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'B0/C'
+  Clock period: 2.078ns (frequency: 481.325MHz)
+  Total number of paths / destination ports: 16 / 5
+-------------------------------------------------------------------------
+Delay:               2.078ns (Levels of Logic = 1)
+  Source:            B1/CC_0 (FF)
+  Destination:       B1/CC_0 (FF)
+  Source Clock:      B0/C rising
+  Destination Clock: B0/C rising
+
+  Data Path: B1/CC_0 to B1/CC_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              6   0.447   0.744  B1/CC_0 (B1/CC_0)
+     INV:I->O              1   0.206   0.579  B1/Mcount_CC_xor<0>11_INV_0 (B1/Mcount_CC)
+     FDC:D                     0.102          B1/CC_0
+    ----------------------------------------
+    Total                      2.078ns (0.755ns logic, 1.323ns route)
+                                       (36.3% logic, 63.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Kwa/CL1'
+  Clock period: 2.078ns (frequency: 481.325MHz)
+  Total number of paths / destination ports: 16 / 5
+-------------------------------------------------------------------------
+Delay:               2.078ns (Levels of Logic = 1)
+  Source:            B0/CC_0 (FF)
+  Destination:       B0/CC_0 (FF)
+  Source Clock:      Kwa/CL1 rising
+  Destination Clock: Kwa/CL1 rising
+
+  Data Path: B0/CC_0 to B0/CC_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              6   0.447   0.744  B0/CC_0 (B0/CC_0)
+     INV:I->O              1   0.206   0.579  B0/Mcount_CC_xor<0>11_INV_0 (B0/Mcount_CC)
+     FDC:D                     0.102          B0/CC_0
+    ----------------------------------------
+    Total                      2.078ns (0.755ns logic, 1.323ns route)
+                                       (36.3% logic, 63.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'B2/C'
+  Clock period: 2.048ns (frequency: 488.317MHz)
+  Total number of paths / destination ports: 12 / 4
+-------------------------------------------------------------------------
+Delay:               2.048ns (Levels of Logic = 1)
+  Source:            B3/CC_0 (FF)
+  Destination:       B3/CC_0 (FF)
+  Source Clock:      B2/C rising
+  Destination Clock: B2/C rising
+
+  Data Path: B3/CC_0 to B3/CC_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              5   0.447   0.714  B3/CC_0 (B3/CC_0)
+     INV:I->O              1   0.206   0.579  B3/Mcount_CC_xor<0>11_INV_0 (B3/Mcount_CC)
+     FDC:D                     0.102          B3/CC_0
+    ----------------------------------------
+    Total                      2.048ns (0.755ns logic, 1.293ns route)
+                                       (36.9% logic, 63.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Kwa/CL2'
+  Clock period: 2.190ns (frequency: 456.663MHz)
+  Total number of paths / destination ports: 3 / 2
+-------------------------------------------------------------------------
+Delay:               2.190ns (Levels of Logic = 1)
+  Source:            BN/CL/CL_FSM_FFd2 (FF)
+  Destination:       BN/CL/CL_FSM_FFd2 (FF)
+  Source Clock:      Kwa/CL2 rising
+  Destination Clock: Kwa/CL2 rising
+
+  Data Path: BN/CL/CL_FSM_FFd2 to BN/CL/CL_FSM_FFd2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             10   0.447   0.856  BN/CL/CL_FSM_FFd2 (BN/CL/CL_FSM_FFd2)
+     INV:I->O              1   0.206   0.579  BN/CL/CL_FSM_FFd2-In1_INV_0 (BN/CL/CL_FSM_FFd2-In)
+     FDC:D                     0.102          BN/CL/CL_FSM_FFd2
+    ----------------------------------------
+    Total                      2.190ns (0.755ns logic, 1.435ns route)
+                                       (34.5% logic, 65.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 3.544ns (frequency: 282.135MHz)
+  Total number of paths / destination ports: 1513 / 41
+-------------------------------------------------------------------------
+Delay:               3.544ns (Levels of Logic = 13)
+  Source:            Kwa/CNT2_4 (FF)
+  Destination:       Kwa/CNT2_10 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: Kwa/CNT2_4 to Kwa/CNT2_10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.447   0.755  Kwa/CNT2_4 (Kwa/CNT2_4)
+     LUT2:I0->O           11   0.203   0.883  Kwa/CNT2[10]_PWR_11_o_equal_5_o<10>_SW0 (N0)
+     LUT6:I5->O            1   0.205   0.579  Kwa/CNT2[10]_PWR_11_o_equal_5_o_inv1 (Kwa/CNT2[10]_PWR_11_o_equal_5_o_inv)
+     MUXCY:CI->O           1   0.019   0.000  Kwa/Mcount_CNT2_cy<0> (Kwa/Mcount_CNT2_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Kwa/Mcount_CNT2_cy<1> (Kwa/Mcount_CNT2_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Kwa/Mcount_CNT2_cy<2> (Kwa/Mcount_CNT2_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Kwa/Mcount_CNT2_cy<3> (Kwa/Mcount_CNT2_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Kwa/Mcount_CNT2_cy<4> (Kwa/Mcount_CNT2_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Kwa/Mcount_CNT2_cy<5> (Kwa/Mcount_CNT2_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  Kwa/Mcount_CNT2_cy<6> (Kwa/Mcount_CNT2_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  Kwa/Mcount_CNT2_cy<7> (Kwa/Mcount_CNT2_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  Kwa/Mcount_CNT2_cy<8> (Kwa/Mcount_CNT2_cy<8>)
+     MUXCY:CI->O           0   0.019   0.000  Kwa/Mcount_CNT2_cy<9> (Kwa/Mcount_CNT2_cy<9>)
+     XORCY:CI->O           1   0.180   0.000  Kwa/Mcount_CNT2_xor<10> (Kwa/Mcount_CNT210)
+     FDC:D                     0.102          Kwa/CNT2_10
+    ----------------------------------------
+    Total                      3.544ns (1.327ns logic, 2.217ns route)
+                                       (37.4% logic, 62.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'B1/C'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              3.278ns (Levels of Logic = 1)
+  Source:            BTN0 (PAD)
+  Destination:       B2/C (FF)
+  Destination Clock: B1/C rising
+
+  Data Path: BTN0 to B2/C
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            62   1.222   1.626  BTN0_IBUF (BTN0_IBUF)
+     FDC:CLR                   0.430          B2/C
+    ----------------------------------------
+    Total                      3.278ns (1.652ns logic, 1.626ns route)
+                                       (50.4% logic, 49.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'B0/C'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              3.278ns (Levels of Logic = 1)
+  Source:            BTN0 (PAD)
+  Destination:       B1/C (FF)
+  Destination Clock: B0/C rising
+
+  Data Path: BTN0 to B1/C
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            62   1.222   1.626  BTN0_IBUF (BTN0_IBUF)
+     FDC:CLR                   0.430          B1/C
+    ----------------------------------------
+    Total                      3.278ns (1.652ns logic, 1.626ns route)
+                                       (50.4% logic, 49.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Kwa/CL1'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              3.278ns (Levels of Logic = 1)
+  Source:            BTN0 (PAD)
+  Destination:       B0/C (FF)
+  Destination Clock: Kwa/CL1 rising
+
+  Data Path: BTN0 to B0/C
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            62   1.222   1.626  BTN0_IBUF (BTN0_IBUF)
+     FDC:CLR                   0.430          B0/C
+    ----------------------------------------
+    Total                      3.278ns (1.652ns logic, 1.626ns route)
+                                       (50.4% logic, 49.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'B2/C'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.278ns (Levels of Logic = 1)
+  Source:            BTN0 (PAD)
+  Destination:       B3/CC_0 (FF)
+  Destination Clock: B2/C rising
+
+  Data Path: BTN0 to B3/CC_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            62   1.222   1.626  BTN0_IBUF (BTN0_IBUF)
+     FDC:CLR                   0.430          B3/CC_0
+    ----------------------------------------
+    Total                      3.278ns (1.652ns logic, 1.626ns route)
+                                       (50.4% logic, 49.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Kwa/CL2'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              3.278ns (Levels of Logic = 1)
+  Source:            BTN0 (PAD)
+  Destination:       BN/CL/CL_FSM_FFd2 (FF)
+  Destination Clock: Kwa/CL2 rising
+
+  Data Path: BTN0 to BN/CL/CL_FSM_FFd2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            62   1.222   1.626  BTN0_IBUF (BTN0_IBUF)
+     FDC:CLR                   0.430          BN/CL/CL_FSM_FFd2
+    ----------------------------------------
+    Total                      3.278ns (1.652ns logic, 1.626ns route)
+                                       (50.4% logic, 49.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 41 / 41
+-------------------------------------------------------------------------
+Offset:              3.278ns (Levels of Logic = 1)
+  Source:            BTN0 (PAD)
+  Destination:       Kwa/CNT2_10 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: BTN0 to Kwa/CNT2_10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            62   1.222   1.626  BTN0_IBUF (BTN0_IBUF)
+     FDC:CLR                   0.430          Kwa/CNT1_0
+    ----------------------------------------
+    Total                      3.278ns (1.652ns logic, 1.626ns route)
+                                       (50.4% logic, 49.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Kwa/CL2'
+  Total number of paths / destination ports: 64 / 11
+-------------------------------------------------------------------------
+Offset:              6.244ns (Levels of Logic = 3)
+  Source:            BN/CL/CL_FSM_FFd2 (FF)
+  Destination:       SEG<6> (PAD)
+  Source Clock:      Kwa/CL2 rising
+
+  Data Path: BN/CL/CL_FSM_FFd2 to SEG<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             10   0.447   1.221  BN/CL/CL_FSM_FFd2 (BN/CL/CL_FSM_FFd2)
+     LUT6:I0->O            7   0.203   1.021  BN/Mmux_x11 (BN/x<0>)
+     LUT4:I0->O            1   0.203   0.579  BN/B/Mram_SEG<6:0>41 (SEG_4_OBUF)
+     OBUF:I->O                 2.571          SEG_4_OBUF (SEG<4>)
+    ----------------------------------------
+    Total                      6.244ns (3.424ns logic, 2.820ns route)
+                                       (54.8% logic, 45.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'B0/C'
+  Total number of paths / destination ports: 28 / 7
+-------------------------------------------------------------------------
+Offset:              6.015ns (Levels of Logic = 3)
+  Source:            B1/CC_0 (FF)
+  Destination:       SEG<4> (PAD)
+  Source Clock:      B0/C rising
+
+  Data Path: B1/CC_0 to SEG<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              6   0.447   0.992  B1/CC_0 (B1/CC_0)
+     LUT6:I2->O            7   0.203   1.021  BN/Mmux_x11 (BN/x<0>)
+     LUT4:I0->O            1   0.203   0.579  BN/B/Mram_SEG<6:0>41 (SEG_4_OBUF)
+     OBUF:I->O                 2.571          SEG_4_OBUF (SEG<4>)
+    ----------------------------------------
+    Total                      6.015ns (3.424ns logic, 2.591ns route)
+                                       (56.9% logic, 43.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'B2/C'
+  Total number of paths / destination ports: 28 / 7
+-------------------------------------------------------------------------
+Offset:              5.969ns (Levels of Logic = 3)
+  Source:            B3/CC_0 (FF)
+  Destination:       SEG<4> (PAD)
+  Source Clock:      B2/C rising
+
+  Data Path: B3/CC_0 to SEG<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              5   0.447   0.943  B3/CC_0 (B3/CC_0)
+     LUT6:I3->O            7   0.205   1.021  BN/Mmux_x11 (BN/x<0>)
+     LUT4:I0->O            1   0.203   0.579  BN/B/Mram_SEG<6:0>41 (SEG_4_OBUF)
+     OBUF:I->O                 2.571          SEG_4_OBUF (SEG<4>)
+    ----------------------------------------
+    Total                      5.969ns (3.426ns logic, 2.543ns route)
+                                       (57.4% logic, 42.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'B1/C'
+  Total number of paths / destination ports: 28 / 7
+-------------------------------------------------------------------------
+Offset:              5.872ns (Levels of Logic = 3)
+  Source:            B2/CC_0 (FF)
+  Destination:       SEG<4> (PAD)
+  Source Clock:      B1/C rising
+
+  Data Path: B2/CC_0 to SEG<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              6   0.447   0.849  B2/CC_0 (B2/CC_0)
+     LUT6:I4->O            7   0.203   1.021  BN/Mmux_x11 (BN/x<0>)
+     LUT4:I0->O            1   0.203   0.579  BN/B/Mram_SEG<6:0>41 (SEG_4_OBUF)
+     OBUF:I->O                 2.571          SEG_4_OBUF (SEG<4>)
+    ----------------------------------------
+    Total                      5.872ns (3.424ns logic, 2.448ns route)
+                                       (58.3% logic, 41.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Kwa/CL1'
+  Total number of paths / destination ports: 28 / 7
+-------------------------------------------------------------------------
+Offset:              5.770ns (Levels of Logic = 3)
+  Source:            B0/CC_0 (FF)
+  Destination:       SEG<4> (PAD)
+  Source Clock:      Kwa/CL1 rising
+
+  Data Path: B0/CC_0 to SEG<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              6   0.447   0.745  B0/CC_0 (B0/CC_0)
+     LUT6:I5->O            7   0.205   1.021  BN/Mmux_x11 (BN/x<0>)
+     LUT4:I0->O            1   0.203   0.579  BN/B/Mram_SEG<6:0>41 (SEG_4_OBUF)
+     OBUF:I->O                 2.571          SEG_4_OBUF (SEG<4>)
+    ----------------------------------------
+    Total                      5.770ns (3.426ns logic, 2.344ns route)
+                                       (59.4% logic, 40.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock B0/C
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+B0/C           |    2.078|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock B1/C
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+B1/C           |    2.078|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock B2/C
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+B2/C           |    2.048|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    3.544|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Kwa/CL1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Kwa/CL1        |    2.078|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Kwa/CL2
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Kwa/CL2        |    2.190|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.46 secs
+ 
+--> 
+
+Total memory usage is 4509420 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

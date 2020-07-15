@@ -1,0 +1,17 @@
+V3 12
+FL E:/235816/Lab8/autom/au.vhd 2019/05/20.23:35:50 P.20131013
+EN work/au 1558388162 FL E:/235816/Lab8/autom/au.vhd PB ieee/std_logic_1164 1381692176
+AR work/au/Behavioral 1558388163 \
+      FL E:/235816/Lab8/autom/au.vhd EN work/au 1558388162
+FL E:/235816/Lab8/autom/au2.vhd 2019/05/20.23:46:33 P.20131013
+EN work/au2 1558388804 FL E:/235816/Lab8/autom/au2.vhd PB ieee/std_logic_1164 1381692176
+AR work/au2/Behavioral 1558388805 \
+      FL E:/235816/Lab8/autom/au2.vhd EN work/au2 1558388804
+FL E:/235816/Lab8/autom/au3.vhd 2019/05/21.00:05:46 P.20131013
+EN work/au3 1558390033 FL E:/235816/Lab8/autom/au3.vhd PB ieee/std_logic_1164 1381692176
+AR work/au3/Behavioral 1558390034 \
+      FL E:/235816/Lab8/autom/au3.vhd EN work/au3 1558390033
+FL E:/235816/Lab8/autom/au4.vhd 2019/05/21.09:53:49 P.20131013
+EN work/au4 1558425242 FL E:/235816/Lab8/autom/au4.vhd PB ieee/std_logic_1164 1381692176
+AR work/au4/Behavioral 1558425243 \
+      FL E:/235816/Lab8/autom/au4.vhd EN work/au4 1558425242

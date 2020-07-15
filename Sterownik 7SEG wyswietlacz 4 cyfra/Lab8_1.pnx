@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE ibis [
+<!ELEMENT ibis (part, pin+)>
+<!ELEMENT part EMPTY>
+<!ELEMENT pin EMPTY>
+<!ATTLIST part
+  arch   CDATA #REQUIRED
+  device CDATA #REQUIRED
+  spg    CDATA #REQUIRED
+  pkg    CDATA #REQUIRED>
+<!ATTLIST pin
+  nm     CDATA #REQUIRED
+  no     CDATA #REQUIRED
+  iostd  (TTL|LVTTL|LVCMOS2|NA) "NA"
+  sr     (SLOW|FAST|slow|fast) "SLOW"
+  dir    (BIDIR|bidir|INPUT|input|OUTPUT|output) "BIDIR">
+]>
+<ibis><part arch="xc9500" device="XC95288" pkg="HQ208" spg="-10"/><pin dir="input" nm="CLK" no="44"/><pin dir="input" nm="RESET" no="206"/><pin dir="input" nm="EN" no="88"/><pin dir="input" nm="x3&lt;0&gt;" no="139"/><pin dir="input" nm="x3&lt;1&gt;" no="30"/><pin dir="input" nm="x3&lt;2&gt;" no="185"/><pin dir="input" nm="x3&lt;3&gt;" no="110"/><pin dir="input" nm="x1&lt;0&gt;" no="202"/><pin dir="input" nm="x1&lt;1&gt;" no="72"/><pin dir="input" nm="x1&lt;2&gt;" no="22"/><pin dir="input" nm="x1&lt;3&gt;" no="198"/><pin dir="input" nm="x2&lt;0&gt;" no="152"/><pin dir="input" nm="x2&lt;1&gt;" no="25"/><pin dir="input" nm="x2&lt;2&gt;" no="182"/><pin dir="input" nm="x2&lt;3&gt;" no="34"/><pin dir="input" nm="x0&lt;0&gt;" no="122"/><pin dir="input" nm="x0&lt;1&gt;" no="137"/><pin dir="input" nm="x0&lt;2&gt;" no="162"/><pin dir="input" nm="x0&lt;3&gt;" no="60"/><pin dir="input" nm="DP&lt;3&gt;" no="57"/><pin dir="input" nm="DP&lt;2&gt;" no="125"/><pin dir="input" nm="DP&lt;1&gt;" no="23"/><pin dir="input" nm="DP&lt;0&gt;" no="200"/><pin dir="output" nm="AN&lt;1&gt;" no="28" sr="fast"/><pin dir="output" nm="AN&lt;2&gt;" no="15" sr="fast"/><pin dir="output" nm="AN&lt;3&gt;" no="4" sr="fast"/><pin dir="output" nm="SEG&lt;0&gt;" no="160" sr="fast"/><pin dir="output" nm="SEG&lt;1&gt;" no="107" sr="fast"/><pin dir="output" nm="SEG&lt;2&gt;" no="119" sr="fast"/><pin dir="output" nm="SEG&lt;3&gt;" no="146" sr="fast"/><pin dir="output" nm="SEG&lt;4&gt;" no="76" sr="fast"/><pin dir="output" nm="SEG&lt;5&gt;" no="173" sr="fast"/><pin dir="output" nm="SEG&lt;6&gt;" no="89" sr="fast"/><pin dir="output" nm="AN&lt;0&gt;" no="62" sr="fast"/><pin dir="output" nm="SEG&lt;7&gt;" no="133" sr="fast"/></ibis>

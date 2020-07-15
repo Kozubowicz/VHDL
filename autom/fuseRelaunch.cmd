@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "E:/235816/Lab8/autom/h4_isim_beh.exe" -prj "E:/235816/Lab8/autom/h4_beh.prj" "work.h4" 

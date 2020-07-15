@@ -1,0 +1,314 @@
+<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>
+<h3 align='center'>Equations</h3>
+<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>
+<tr><td>
+</td></tr><tr><td>
+********** Mapped Logic **********
+</td></tr><tr><td>
+</td></tr><tr><td>
+AN(0) <= NOT ((NOT CL/CL_FSM_FFd1 AND NOT CL/CL_FSM_FFd2 AND NOT CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	EN));
+</td></tr><tr><td>
+</td></tr><tr><td>
+AN(1) <= NOT ((NOT CL/CL_FSM_FFd1 AND NOT CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	EN));
+</td></tr><tr><td>
+</td></tr><tr><td>
+AN(2) <= NOT ((NOT CL/CL_FSM_FFd1 AND CL/CL_FSM_FFd2 AND NOT CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	EN));
+</td></tr><tr><td>
+</td></tr><tr><td>
+AN(3) <= NOT (((CL/CL_FSM_FFd1 AND EN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND EN)));
+</td></tr><tr><td>
+FDCPE_CL/CL_FSM_FFd1: FDCPE port map (CL/CL_FSM_FFd1,CL/CL_FSM_FFd1_D,CLK,RESET,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CL/CL_FSM_FFd1_D <= ((EN AND CL/CL_FSM_FFd2.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT EN AND CL/CL_FSM_FFd1.LFBK));
+</td></tr><tr><td>
+FDCPE_CL/CL_FSM_FFd2: FDCPE port map (CL/CL_FSM_FFd2,CL/CL_FSM_FFd2_D,CLK,RESET,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CL/CL_FSM_FFd2_D <= ((EN AND CL/CL_FSM_FFd3.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT EN AND CL/CL_FSM_FFd2.LFBK));
+</td></tr><tr><td>
+FDCPE_CL/CL_FSM_FFd3: FDCPE port map (CL/CL_FSM_FFd3,CL/CL_FSM_FFd3_D,CLK,RESET,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CL/CL_FSM_FFd3_D <= ((EN AND CL/CL_FSM_FFd4.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT EN AND CL/CL_FSM_FFd3.LFBK));
+</td></tr><tr><td>
+FDCPE_CL/CL_FSM_FFd4: FDCPE port map (CL/CL_FSM_FFd4,CL/CL_FSM_FFd4_D,CLK,'0',RESET);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CL/CL_FSM_FFd4_D <= ((EN AND CL/CL_FSM_FFd1.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT EN AND CL/CL_FSM_FFd4.LFBK));
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+SEG(0) <= ((NOT EN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (EXP10_.EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND x3(0) AND x3(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT x3(2) AND x3(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND x3(0) AND NOT x3(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	x3(2) AND x3(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND x3(0) AND NOT x3(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT x3(2) AND NOT x3(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND NOT x3(0) AND NOT x3(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	x3(2) AND NOT x3(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CL/CL_FSM_FFd1 AND NOT CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	x1(0) AND NOT x1(1) AND x1(2) AND x1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (EXP13_.EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CL/CL_FSM_FFd1 AND CL/CL_FSM_FFd2 AND NOT CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	x2(0) AND NOT x2(1) AND x2(2) AND x2(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CL/CL_FSM_FFd1 AND CL/CL_FSM_FFd2 AND NOT CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT x2(0) AND NOT x2(1) AND x2(2) AND NOT x2(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CL/CL_FSM_FFd1 AND NOT CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	x1(0) AND x1(1) AND NOT x1(2) AND x1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CL/CL_FSM_FFd1 AND NOT CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	x1(0) AND NOT x1(1) AND NOT x1(2) AND NOT x1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CL/CL_FSM_FFd1 AND NOT CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT x1(0) AND NOT x1(1) AND x1(2) AND NOT x1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd1 AND x3(0) AND x3(1) AND NOT x3(2) AND x3(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd1 AND x3(0) AND NOT x3(1) AND x3(2) AND x3(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd1 AND x3(0) AND NOT x3(1) AND NOT x3(2) AND NOT x3(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd1 AND NOT x3(0) AND NOT x3(1) AND x3(2) AND NOT x3(3)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+SEG(1) <= ((NOT EN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (EXP14_.EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd1 AND x3(0) AND NOT x3(1) AND x3(2) AND NOT x3(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND NOT x3(0) AND x3(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	x3(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND NOT x3(0) AND x3(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	x3(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CL/CL_FSM_FFd1 AND CL/CL_FSM_FFd2 AND NOT CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	x2(0) AND x2(1) AND x2(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CL/CL_FSM_FFd1 AND NOT CL/CL_FSM_FFd2 AND NOT CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	x0(0) AND x0(1) AND x0(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (EXP17_.EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CL/CL_FSM_FFd1 AND CL/CL_FSM_FFd2 AND NOT CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT x2(0) AND x2(2) AND x2(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CL/CL_FSM_FFd1 AND NOT CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	x1(0) AND x1(1) AND x1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CL/CL_FSM_FFd1 AND NOT CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT x1(0) AND x1(1) AND x1(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CL/CL_FSM_FFd1 AND NOT CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT x1(0) AND x1(2) AND x1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND x3(0) AND NOT x3(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	x3(2) AND NOT x3(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd1 AND x3(0) AND x3(1) AND x3(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd1 AND NOT x3(0) AND x3(1) AND x3(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd1 AND NOT x3(0) AND x3(2) AND x3(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND x3(0) AND x3(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	x3(3)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+SEG(2) <= ((NOT EN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (EXP22_.EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd1 AND NOT x3(0) AND x3(1) AND NOT x3(2) AND NOT x3(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CL/CL_FSM_FFd1 AND CL/CL_FSM_FFd2 AND NOT CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT x2(0) AND x2(2) AND x2(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CL/CL_FSM_FFd1 AND NOT CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT x1(0) AND x1(2) AND x1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CL/CL_FSM_FFd1 AND NOT CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	x1(1) AND x1(2) AND x1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND NOT x3(0) AND x3(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT x3(2) AND NOT x3(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CL/CL_FSM_FFd1 AND CL/CL_FSM_FFd2 AND NOT CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	x2(1) AND x2(2) AND x2(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CL/CL_FSM_FFd1 AND NOT CL/CL_FSM_FFd2 AND NOT CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT x0(0) AND x0(2) AND x0(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CL/CL_FSM_FFd1 AND NOT CL/CL_FSM_FFd2 AND NOT CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	x0(1) AND x0(2) AND x0(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CL/CL_FSM_FFd1 AND CL/CL_FSM_FFd2 AND NOT CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT x2(0) AND x2(1) AND NOT x2(2) AND NOT x2(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CL/CL_FSM_FFd1 AND NOT CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT x1(0) AND x1(1) AND NOT x1(2) AND NOT x1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd1 AND NOT x3(0) AND x3(2) AND x3(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd1 AND x3(1) AND x3(2) AND x3(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND NOT x3(0) AND x3(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	x3(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND x3(1) AND x3(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	x3(3)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+SEG(3) <= ((NOT EN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (EXP18_.EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd1 AND x3(0) AND NOT x3(1) AND NOT x3(2) AND NOT x3(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CL/CL_FSM_FFd1 AND NOT CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	x1(0) AND x1(1) AND x1(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND x3(0) AND NOT x3(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT x3(2) AND NOT x3(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND NOT x3(0) AND x3(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT x3(2) AND x3(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND NOT x3(0) AND NOT x3(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	x3(2) AND NOT x3(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (EXP21_.EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CL/CL_FSM_FFd1 AND CL/CL_FSM_FFd2 AND NOT CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	x2(0) AND x2(1) AND x2(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CL/CL_FSM_FFd1 AND NOT CL/CL_FSM_FFd2 AND NOT CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	x0(0) AND x0(1) AND x0(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CL/CL_FSM_FFd1 AND NOT CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	x1(0) AND NOT x1(1) AND NOT x1(2) AND NOT x1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CL/CL_FSM_FFd1 AND NOT CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT x1(0) AND x1(1) AND NOT x1(2) AND x1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CL/CL_FSM_FFd1 AND NOT CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT x1(0) AND NOT x1(1) AND x1(2) AND NOT x1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd1 AND x3(0) AND x3(1) AND x3(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd1 AND NOT x3(0) AND x3(1) AND NOT x3(2) AND x3(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd1 AND NOT x3(0) AND NOT x3(1) AND x3(2) AND NOT x3(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND x3(0) AND x3(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	x3(2)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+SEG(4) <= ((NOT EN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (EXP0_.EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x3(0) AND NOT x3(1) AND NOT x3(2) AND CL/CL_FSM_FFd2.LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	CL/CL_FSM_FFd3.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x2(0) AND NOT x2(3) AND NOT CL/CL_FSM_FFd1.LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	CL/CL_FSM_FFd2.LFBK AND NOT CL/CL_FSM_FFd3.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x1(0) AND NOT x1(3) AND NOT CL/CL_FSM_FFd1.LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT CL/CL_FSM_FFd2.LFBK AND CL/CL_FSM_FFd3.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x0(0) AND NOT x0(3) AND NOT CL/CL_FSM_FFd1.LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT CL/CL_FSM_FFd2.LFBK AND NOT CL/CL_FSM_FFd3.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT x3(1) AND x3(2) AND NOT x3(3) AND CL/CL_FSM_FFd2.LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	CL/CL_FSM_FFd3.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x2(0) AND NOT x2(1) AND NOT x2(2) AND NOT CL/CL_FSM_FFd1.LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	CL/CL_FSM_FFd2.LFBK AND NOT CL/CL_FSM_FFd3.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x0(0) AND NOT x0(1) AND NOT x0(2) AND NOT CL/CL_FSM_FFd1.LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT CL/CL_FSM_FFd2.LFBK AND NOT CL/CL_FSM_FFd3.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT x2(1) AND x2(2) AND NOT x2(3) AND NOT CL/CL_FSM_FFd1.LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	CL/CL_FSM_FFd2.LFBK AND NOT CL/CL_FSM_FFd3.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT x1(1) AND x1(2) AND NOT x1(3) AND NOT CL/CL_FSM_FFd1.LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT CL/CL_FSM_FFd2.LFBK AND CL/CL_FSM_FFd3.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT x0(1) AND x0(2) AND NOT x0(3) AND NOT CL/CL_FSM_FFd1.LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT CL/CL_FSM_FFd2.LFBK AND NOT CL/CL_FSM_FFd3.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x3(0) AND NOT x3(3) AND CL/CL_FSM_FFd1.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x3(0) AND NOT x3(1) AND NOT x3(2) AND CL/CL_FSM_FFd1.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x3(0) AND NOT x3(3) AND CL/CL_FSM_FFd2.LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	CL/CL_FSM_FFd3.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT x3(1) AND x3(2) AND NOT x3(3) AND CL/CL_FSM_FFd1.LFBK));
+</td></tr><tr><td>
+</td></tr><tr><td>
+SEG(5) <= ((NOT EN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (EXP3_.EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd1 AND x3(0) AND NOT x3(1) AND x3(2) AND x3(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND x3(0) AND NOT x3(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT x3(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND x3(1) AND NOT x3(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT x3(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CL/CL_FSM_FFd1 AND CL/CL_FSM_FFd2 AND NOT CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	x2(0) AND x2(1) AND NOT x2(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CL/CL_FSM_FFd1 AND NOT CL/CL_FSM_FFd2 AND NOT CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	x0(0) AND x0(1) AND NOT x0(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (EXP6_.EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CL/CL_FSM_FFd1 AND CL/CL_FSM_FFd2 AND NOT CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	x2(0) AND NOT x2(2) AND NOT x2(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CL/CL_FSM_FFd1 AND NOT CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	x1(0) AND x1(1) AND NOT x1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CL/CL_FSM_FFd1 AND NOT CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	x1(0) AND NOT x1(2) AND NOT x1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CL/CL_FSM_FFd1 AND NOT CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	x1(1) AND NOT x1(2) AND NOT x1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND x3(0) AND NOT x3(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	x3(2) AND x3(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd1 AND x3(0) AND x3(1) AND NOT x3(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd1 AND x3(0) AND NOT x3(2) AND NOT x3(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd1 AND x3(1) AND NOT x3(2) AND NOT x3(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND x3(0) AND x3(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT x3(3)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+SEG(6) <= ((NOT EN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (EXP7_.EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CL/CL_FSM_FFd1 AND CL/CL_FSM_FFd2 AND NOT CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT x2(1) AND NOT x2(2) AND NOT x2(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CL/CL_FSM_FFd1 AND NOT CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT x1(1) AND NOT x1(2) AND NOT x1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CL/CL_FSM_FFd1 AND NOT CL/CL_FSM_FFd2 AND NOT CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT x0(1) AND NOT x0(2) AND NOT x0(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND x3(0) AND x3(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	x3(2) AND NOT x3(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND NOT x3(0) AND NOT x3(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	x3(2) AND x3(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CL/CL_FSM_FFd1 AND CL/CL_FSM_FFd2 AND NOT CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	x2(0) AND x2(1) AND x2(2) AND NOT x2(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CL/CL_FSM_FFd1 AND CL/CL_FSM_FFd2 AND NOT CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT x2(0) AND NOT x2(1) AND x2(2) AND x2(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CL/CL_FSM_FFd1 AND NOT CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	x1(0) AND x1(1) AND x1(2) AND NOT x1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CL/CL_FSM_FFd1 AND NOT CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT x1(0) AND NOT x1(1) AND x1(2) AND x1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CL/CL_FSM_FFd1 AND NOT CL/CL_FSM_FFd2 AND NOT CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	x0(0) AND x0(1) AND x0(2) AND NOT x0(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd1 AND NOT x3(1) AND NOT x3(2) AND NOT x3(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd1 AND x3(0) AND x3(1) AND x3(2) AND NOT x3(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd1 AND NOT x3(0) AND NOT x3(1) AND x3(2) AND x3(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND NOT x3(1) AND NOT x3(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT x3(3)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+SEG(7) <= NOT (((CL/CL_FSM_FFd1 AND EN AND DP(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND EN AND DP(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CL/CL_FSM_FFd1 AND CL/CL_FSM_FFd2 AND NOT CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	EN AND DP(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CL/CL_FSM_FFd1 AND NOT CL/CL_FSM_FFd2 AND CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	EN AND DP(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CL/CL_FSM_FFd1 AND NOT CL/CL_FSM_FFd2 AND NOT CL/CL_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	EN AND DP(0))));
+</td></tr><tr><td>
+Register Legend:
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDCPE (Q,D,C,CLR,PRE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTCPE (Q,D,C,CLR,PRE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LDCP  (Q,D,G,CLR,PRE); 
+</td></tr><tr><td>
+</td></tr>
+</table>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

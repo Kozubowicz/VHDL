@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "E:/235816/Lab8/Kwarc/T1_isim_beh.exe" -prj "E:/235816/Lab8/Kwarc/T1_beh.prj" "work.T1" 

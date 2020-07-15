@@ -1,0 +1,54 @@
+Pin Freeze File:  version P.20131013
+
+95288208 XC95288-10-HQ208
+x0<0> S:PIN34
+x0<1> S:PIN72
+x0<2> S:PIN133
+x0<3> S:PIN198
+x1<0> S:PIN202
+x1<1> S:PIN122
+x1<2> S:PIN22
+x1<3> S:PIN152
+Y<0> S:PIN131
+Y<1> S:PIN144
+Y<2> S:PIN159
+Y<3> S:PIN76
+Y<4> S:PIN117
+Y<5> S:PIN106
+Y<6> S:PIN173
+Y<7> S:PIN88
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+
+
+
+
+
+
+
+
+PARTITION FB9_1 EXP0_ EXP1_ EXP2_ EXP3_
+		 Y_3_OBUF EXP4_ EXP5_
+PARTITION FB9_9 EXP6_ Y2<5>/Y2<5>_D CO1<4>/CO1<4>_D2 EXP7_
+		 S24/Mxor_Y__xor0000/S24/Mxor_Y__xor0000_D EXP8_ CO3<2>/CO3<2>_D2 S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D
+		 Y2<3>/Y2<3>_D CO3<3>/CO3<3>_D2
+PARTITION FB10_3 EXP9_ EXP10_ Y_6_OBUF EXP11_
+		 EXP12_
+PARTITION FB10_12 CO1<1>/CO1<1>_D2 C2<4>/C2<4>_D2 C2<3>/C2<3>_D2 C2<2>/C2<2>_D2
+		 C1<3>/C1<3>_D2 C1<2>/C1<2>_D2 Y2<4>/Y2<4>_D
+PARTITION FB11_2 EXP13_ Y_7_OBUF EXP14_
+
+PARTITION FB12_2 EXP15_ Y_2_OBUF
+
+PARTITION FB13_3 Y_5_OBUF
+
+PARTITION FB14_2 Y1<1>
+
+PARTITION FB15_2 Y_4_OBUF
+
+PARTITION FB16_2 C1<0>
+
+

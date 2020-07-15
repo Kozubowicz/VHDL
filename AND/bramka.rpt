@@ -1,0 +1,634 @@
+ 
+cpldfit:  version P.20131013                        Xilinx Inc.
+                                  Fitter Report
+Design Name: bramka                              Date:  3- 5-2019, 10:53AM
+Device Used: XC95288-10-HQ208
+Fitting Status: Successful
+
+*************************  Mapped Resource Summary  **************************
+
+Macrocells     Product Terms    Function Block   Registers      Pins           
+Used/Tot       Used/Tot         Inps Used/Tot    Used/Tot       Used/Tot       
+1  /288 (  1%) 1   /1440 (  1%) 2  /576 (  1%)   0  /288 (  0%) 3  /168 (  2%)
+
+** Function Block Resources **
+
+Function    Mcells      FB Inps     Signals     Pterms      IO          
+Block       Used/Tot    Used/Tot    Used        Used/Tot    Used/Tot    
+FB1           0/18        0/36        0           0/90       0/10
+FB2           0/18        0/36        0           0/90       0/10
+FB3           0/18        0/36        0           0/90       0/10
+FB4           0/18        0/36        0           0/90       0/10
+FB5           0/18        0/36        0           0/90       0/10
+FB6           0/18        0/36        0           0/90       0/10
+FB7           0/18        0/36        0           0/90       0/10
+FB8           0/18        0/36        0           0/90       0/10
+FB9           1/18        2/36        2           1/90       1/11
+FB10          0/18        0/36        0           0/90       0/11
+FB11          0/18        0/36        0           0/90       0/11
+FB12          0/18        0/36        0           0/90       0/11
+FB13          0/18        0/36        0           0/90       0/11
+FB14          0/18        0/36        0           0/90       0/11
+FB15          0/18        0/36        0           0/90       0/11
+FB16          0/18        0/36        0           0/90       0/11
+             -----       -----                   -----       -----     
+              1/288       2/576                   1/1440     1/168
+
+* - Resource is exhausted
+
+** Global Control Resources **
+
+Global clock net(s) unused.
+Global output enable net(s) unused.
+Global set/reset net(s) unused.
+
+** Pin Resources **
+
+Signal Type    Required     Mapped  |  Pin Type            Used    Total 
+------------------------------------|------------------------------------
+Input         :    2           2    |  I/O              :     3     160
+Output        :    1           1    |  GCK/IO           :     0       3
+Bidirectional :    0           0    |  GTS/IO           :     0       4
+GCK           :    0           0    |  GSR/IO           :     0       1
+GTS           :    0           0    |
+GSR           :    0           0    |
+                 ----        ----
+        Total      3           3
+
+** Power Data **
+
+There are 1 macrocells in high performance mode (MCHP).
+There are 0 macrocells in low power mode (MCLP).
+End of Mapped Resource Summary
+**************************  Errors and Warnings  ***************************
+
+WARNING:Cpld - Unable to retrieve the path to the iSE Project Repository. Will
+   use the default filename of 'bramka.ise'.
+*************************  Summary of Mapped Logic  ************************
+
+** 1 Outputs **
+
+Signal              Total Total Loc     Pin  Pin     Pin     Pwr  Slew Reg Init
+Name                Pts   Inps          No.  Type    Use     Mode Rate State
+c                   1     2     FB9_2   74   I/O     O       STD  FAST 
+
+** 2 Inputs **
+
+Signal              Loc     Pin  Pin     Pin     
+Name                        No.  Type    Use     
+b                   FB6_10  202  I/O     I
+a                   FB16_3  133  I/O     I
+
+Legend:
+Pin No. - ~ - User Assigned
+**************************  Function Block Details  ************************
+Legend:
+Total Pt     - Total product terms used by the macrocell signal
+Imp Pt       - Product terms imported from other macrocells
+Exp Pt       - Product terms exported to other macrocells
+               in direction shown
+Unused Pt    - Unused local product terms remaining in macrocell
+Loc          - Location where logic was mapped in device
+Pin Type/Use - I  - Input             GCK - Global Clock
+               O  - Output            GTS - Global Output Enable
+              (b) - Buried macrocell  GSR - Global Set/Reset
+X(@)         - Signal used as input (wire-AND input) to the macrocell logic.
+               The number of Signals Used may exceed the number of FB Inputs
+               Used due to wire-ANDing in the switch matrix.
+Pin No.      - ~  - User Assigned
+*********************************** FB1  ***********************************
+Number of function block inputs used/remaining:               0/36
+Number of signals used by logic mapping into function block:  0
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB1_1         (b)     
+(unused)              0       0     0   5     FB1_2   28    I/O     
+(unused)              0       0     0   5     FB1_3   29    I/O     
+(unused)              0       0     0   5     FB1_4         (b)     
+(unused)              0       0     0   5     FB1_5   30    I/O     
+(unused)              0       0     0   5     FB1_6   31    I/O     
+(unused)              0       0     0   5     FB1_7         (b)     
+(unused)              0       0     0   5     FB1_8   32    I/O     
+(unused)              0       0     0   5     FB1_9         (b)     
+(unused)              0       0     0   5     FB1_10  33    I/O     
+(unused)              0       0     0   5     FB1_11        (b)     
+(unused)              0       0     0   5     FB1_12  34    I/O     
+(unused)              0       0     0   5     FB1_13        (b)     
+(unused)              0       0     0   5     FB1_14  35    I/O     
+(unused)              0       0     0   5     FB1_15  36    I/O     
+(unused)              0       0     0   5     FB1_16        (b)     
+(unused)              0       0     0   5     FB1_17  37    I/O     
+(unused)              0       0     0   5     FB1_18        (b)     
+*********************************** FB2  ***********************************
+Number of function block inputs used/remaining:               0/36
+Number of signals used by logic mapping into function block:  0
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB2_1         (b)     
+(unused)              0       0     0   5     FB2_2   15    I/O     
+(unused)              0       0     0   5     FB2_3   16    I/O     
+(unused)              0       0     0   5     FB2_4         (b)     
+(unused)              0       0     0   5     FB2_5   17    I/O     
+(unused)              0       0     0   5     FB2_6   18    I/O     
+(unused)              0       0     0   5     FB2_7         (b)     
+(unused)              0       0     0   5     FB2_8   19    I/O     
+(unused)              0       0     0   5     FB2_9         (b)     
+(unused)              0       0     0   5     FB2_10  20    I/O     
+(unused)              0       0     0   5     FB2_11        (b)     
+(unused)              0       0     0   5     FB2_12  21    I/O     
+(unused)              0       0     0   5     FB2_13        (b)     
+(unused)              0       0     0   5     FB2_14  22    I/O     
+(unused)              0       0     0   5     FB2_15  23    I/O     
+(unused)              0       0     0   5     FB2_16        (b)     
+(unused)              0       0     0   5     FB2_17  25    I/O     
+(unused)              0       0     0   5     FB2_18        (b)     
+*********************************** FB3  ***********************************
+Number of function block inputs used/remaining:               0/36
+Number of signals used by logic mapping into function block:  0
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB3_1         (b)     
+(unused)              0       0     0   5     FB3_2   38    I/O     
+(unused)              0       0     0   5     FB3_3   39    I/O     
+(unused)              0       0     0   5     FB3_4         (b)     
+(unused)              0       0     0   5     FB3_5   40    I/O     
+(unused)              0       0     0   5     FB3_6   41    I/O     
+(unused)              0       0     0   5     FB3_7         (b)     
+(unused)              0       0     0   5     FB3_8   43    I/O     
+(unused)              0       0     0   5     FB3_9         (b)     
+(unused)              0       0     0   5     FB3_10  44    GCK/I/O 
+(unused)              0       0     0   5     FB3_11        (b)     
+(unused)              0       0     0   5     FB3_12  45    I/O     
+(unused)              0       0     0   5     FB3_13        (b)     
+(unused)              0       0     0   5     FB3_14  46    GCK/I/O 
+(unused)              0       0     0   5     FB3_15  47    I/O     
+(unused)              0       0     0   5     FB3_16        (b)     
+(unused)              0       0     0   5     FB3_17  48    I/O     
+(unused)              0       0     0   5     FB3_18        (b)     
+*********************************** FB4  ***********************************
+Number of function block inputs used/remaining:               0/36
+Number of signals used by logic mapping into function block:  0
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB4_1         (b)     
+(unused)              0       0     0   5     FB4_2   3     GTS/I/O 
+(unused)              0       0     0   5     FB4_3   4     I/O     
+(unused)              0       0     0   5     FB4_4         (b)     
+(unused)              0       0     0   5     FB4_5   5     GTS/I/O 
+(unused)              0       0     0   5     FB4_6   6     I/O     
+(unused)              0       0     0   5     FB4_7         (b)     
+(unused)              0       0     0   5     FB4_8   7     GTS/I/O 
+(unused)              0       0     0   5     FB4_9         (b)     
+(unused)              0       0     0   5     FB4_10  8     I/O     
+(unused)              0       0     0   5     FB4_11        (b)     
+(unused)              0       0     0   5     FB4_12  9     GTS/I/O 
+(unused)              0       0     0   5     FB4_13        (b)     
+(unused)              0       0     0   5     FB4_14  10    I/O     
+(unused)              0       0     0   5     FB4_15  12    I/O     
+(unused)              0       0     0   5     FB4_16        (b)     
+(unused)              0       0     0   5     FB4_17  14    I/O     
+(unused)              0       0     0   5     FB4_18        (b)     
+*********************************** FB5  ***********************************
+Number of function block inputs used/remaining:               0/36
+Number of signals used by logic mapping into function block:  0
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB5_1         (b)     
+(unused)              0       0     0   5     FB5_2   49    I/O     
+(unused)              0       0     0   5     FB5_3   50    I/O     
+(unused)              0       0     0   5     FB5_4         (b)     
+(unused)              0       0     0   5     FB5_5   51    I/O     
+(unused)              0       0     0   5     FB5_6   54    I/O     
+(unused)              0       0     0   5     FB5_7         (b)     
+(unused)              0       0     0   5     FB5_8   55    GCK/I/O 
+(unused)              0       0     0   5     FB5_9         (b)     
+(unused)              0       0     0   5     FB5_10  56    I/O     
+(unused)              0       0     0   5     FB5_11        (b)     
+(unused)              0       0     0   5     FB5_12  57    I/O     
+(unused)              0       0     0   5     FB5_13        (b)     
+(unused)              0       0     0   5     FB5_14  58    I/O     
+(unused)              0       0     0   5     FB5_15  60    I/O     
+(unused)              0       0     0   5     FB5_16        (b)     
+(unused)              0       0     0   5     FB5_17  61    I/O     
+(unused)              0       0     0   5     FB5_18        (b)     
+*********************************** FB6  ***********************************
+Number of function block inputs used/remaining:               0/36
+Number of signals used by logic mapping into function block:  0
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB6_1         (b)     
+(unused)              0       0     0   5     FB6_2   197   I/O     
+(unused)              0       0     0   5     FB6_3   198   I/O     
+(unused)              0       0     0   5     FB6_4         (b)     
+(unused)              0       0     0   5     FB6_5   199   I/O     
+(unused)              0       0     0   5     FB6_6   200   I/O     
+(unused)              0       0     0   5     FB6_7         (b)     
+(unused)              0       0     0   5     FB6_8   201   I/O     
+(unused)              0       0     0   5     FB6_9         (b)     
+(unused)              0       0     0   5     FB6_10  202   I/O     I
+(unused)              0       0     0   5     FB6_11        (b)     
+(unused)              0       0     0   5     FB6_12  203   I/O     
+(unused)              0       0     0   5     FB6_13        (b)     
+(unused)              0       0     0   5     FB6_14  205   I/O     
+(unused)              0       0     0   5     FB6_15  206   GSR/I/O 
+(unused)              0       0     0   5     FB6_16        (b)     
+(unused)              0       0     0   5     FB6_17  208   I/O     
+(unused)              0       0     0   5     FB6_18        (b)     
+*********************************** FB7  ***********************************
+Number of function block inputs used/remaining:               0/36
+Number of signals used by logic mapping into function block:  0
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB7_1         (b)     
+(unused)              0       0     0   5     FB7_2   62    I/O     
+(unused)              0       0     0   5     FB7_3   63    I/O     
+(unused)              0       0     0   5     FB7_4         (b)     
+(unused)              0       0     0   5     FB7_5   64    I/O     
+(unused)              0       0     0   5     FB7_6   66    I/O     
+(unused)              0       0     0   5     FB7_7         (b)     
+(unused)              0       0     0   5     FB7_8   67    I/O     
+(unused)              0       0     0   5     FB7_9         (b)     
+(unused)              0       0     0   5     FB7_10  69    I/O     
+(unused)              0       0     0   5     FB7_11        (b)     
+(unused)              0       0     0   5     FB7_12  70    I/O     
+(unused)              0       0     0   5     FB7_13        (b)     
+(unused)              0       0     0   5     FB7_14  71    I/O     
+(unused)              0       0     0   5     FB7_15  72    I/O     
+(unused)              0       0     0   5     FB7_16        (b)     
+(unused)              0       0     0   5     FB7_17  73    I/O     
+(unused)              0       0     0   5     FB7_18        (b)     
+*********************************** FB8  ***********************************
+Number of function block inputs used/remaining:               0/36
+Number of signals used by logic mapping into function block:  0
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB8_1         (b)     
+(unused)              0       0     0   5     FB8_2   186   I/O     
+(unused)              0       0     0   5     FB8_3   187   I/O     
+(unused)              0       0     0   5     FB8_4         (b)     
+(unused)              0       0     0   5     FB8_5   188   I/O     
+(unused)              0       0     0   5     FB8_6   189   I/O     
+(unused)              0       0     0   5     FB8_7         (b)     
+(unused)              0       0     0   5     FB8_8   191   I/O     
+(unused)              0       0     0   5     FB8_9         (b)     
+(unused)              0       0     0   5     FB8_10  192   I/O     
+(unused)              0       0     0   5     FB8_11        (b)     
+(unused)              0       0     0   5     FB8_12  193   I/O     
+(unused)              0       0     0   5     FB8_13        (b)     
+(unused)              0       0     0   5     FB8_14  194   I/O     
+(unused)              0       0     0   5     FB8_15  195   I/O     
+(unused)              0       0     0   5     FB8_16        (b)     
+(unused)              0       0     0   5     FB8_17  196   I/O     
+(unused)              0       0     0   5     FB8_18        (b)     
+*********************************** FB9  ***********************************
+Number of function block inputs used/remaining:               2/34
+Number of signals used by logic mapping into function block:  2
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB9_1         (b)     
+c                     1       0     0   4     FB9_2   74    I/O     O
+(unused)              0       0     0   5     FB9_3   75    I/O     
+(unused)              0       0     0   5     FB9_4         (b)     
+(unused)              0       0     0   5     FB9_5   76    I/O     
+(unused)              0       0     0   5     FB9_6   77    I/O     
+(unused)              0       0     0   5     FB9_7         (b)     
+(unused)              0       0     0   5     FB9_8   78    I/O     
+(unused)              0       0     0   5     FB9_9         (b)     
+(unused)              0       0     0   5     FB9_10  80    I/O     
+(unused)              0       0     0   5     FB9_11  82    I/O     
+(unused)              0       0     0   5     FB9_12  83    I/O     
+(unused)              0       0     0   5     FB9_13        (b)     
+(unused)              0       0     0   5     FB9_14  84    I/O     
+(unused)              0       0     0   5     FB9_15  85    I/O     
+(unused)              0       0     0   5     FB9_16        (b)     
+(unused)              0       0     0   5     FB9_17  86    I/O     
+(unused)              0       0     0   5     FB9_18        (b)     
+
+Signals Used by Logic in Function Block
+  1: a                  2: b                
+
+Signal                        1         2         3         4 Signals FB
+Name                0----+----0----+----0----+----0----+----0 Used    Inputs
+c                    XX...................................... 2       2
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB10 ***********************************
+Number of function block inputs used/remaining:               0/36
+Number of signals used by logic mapping into function block:  0
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB10_1        (b)     
+(unused)              0       0     0   5     FB10_2  170   I/O     
+(unused)              0       0     0   5     FB10_3  171   I/O     
+(unused)              0       0     0   5     FB10_4        (b)     
+(unused)              0       0     0   5     FB10_5  173   I/O     
+(unused)              0       0     0   5     FB10_6  174   I/O     
+(unused)              0       0     0   5     FB10_7        (b)     
+(unused)              0       0     0   5     FB10_8  175   I/O     
+(unused)              0       0     0   5     FB10_9        (b)     
+(unused)              0       0     0   5     FB10_10 178   I/O     
+(unused)              0       0     0   5     FB10_11 179   I/O     
+(unused)              0       0     0   5     FB10_12 180   I/O     
+(unused)              0       0     0   5     FB10_13       (b)     
+(unused)              0       0     0   5     FB10_14 182   I/O     
+(unused)              0       0     0   5     FB10_15 183   I/O     
+(unused)              0       0     0   5     FB10_16       (b)     
+(unused)              0       0     0   5     FB10_17 185   I/O     
+(unused)              0       0     0   5     FB10_18       (b)     
+*********************************** FB11 ***********************************
+Number of function block inputs used/remaining:               0/36
+Number of signals used by logic mapping into function block:  0
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB11_1        (b)     
+(unused)              0       0     0   5     FB11_2  87    I/O     
+(unused)              0       0     0   5     FB11_3  88    I/O     
+(unused)              0       0     0   5     FB11_4        (b)     
+(unused)              0       0     0   5     FB11_5  89    I/O     
+(unused)              0       0     0   5     FB11_6  90    I/O     
+(unused)              0       0     0   5     FB11_7        (b)     
+(unused)              0       0     0   5     FB11_8  91    I/O     
+(unused)              0       0     0   5     FB11_9        (b)     
+(unused)              0       0     0   5     FB11_10 95    I/O     
+(unused)              0       0     0   5     FB11_11 97    I/O     
+(unused)              0       0     0   5     FB11_12 99    I/O     
+(unused)              0       0     0   5     FB11_13       (b)     
+(unused)              0       0     0   5     FB11_14 100   I/O     
+(unused)              0       0     0   5     FB11_15 101   I/O     
+(unused)              0       0     0   5     FB11_16       (b)     
+(unused)              0       0     0   5     FB11_17 102   I/O     
+(unused)              0       0     0   5     FB11_18       (b)     
+*********************************** FB12 ***********************************
+Number of function block inputs used/remaining:               0/36
+Number of signals used by logic mapping into function block:  0
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB12_1        (b)     
+(unused)              0       0     0   5     FB12_2  158   I/O     
+(unused)              0       0     0   5     FB12_3  159   I/O     
+(unused)              0       0     0   5     FB12_4        (b)     
+(unused)              0       0     0   5     FB12_5  160   I/O     
+(unused)              0       0     0   5     FB12_6  161   I/O     
+(unused)              0       0     0   5     FB12_7        (b)     
+(unused)              0       0     0   5     FB12_8  162   I/O     
+(unused)              0       0     0   5     FB12_9        (b)     
+(unused)              0       0     0   5     FB12_10 164   I/O     
+(unused)              0       0     0   5     FB12_11 165   I/O     
+(unused)              0       0     0   5     FB12_12 166   I/O     
+(unused)              0       0     0   5     FB12_13       (b)     
+(unused)              0       0     0   5     FB12_14 167   I/O     
+(unused)              0       0     0   5     FB12_15 168   I/O     
+(unused)              0       0     0   5     FB12_16       (b)     
+(unused)              0       0     0   5     FB12_17 169   I/O     
+(unused)              0       0     0   5     FB12_18       (b)     
+*********************************** FB13 ***********************************
+Number of function block inputs used/remaining:               0/36
+Number of signals used by logic mapping into function block:  0
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB13_1        (b)     
+(unused)              0       0     0   5     FB13_2  103   I/O     
+(unused)              0       0     0   5     FB13_3  106   I/O     
+(unused)              0       0     0   5     FB13_4        (b)     
+(unused)              0       0     0   5     FB13_5  107   I/O     
+(unused)              0       0     0   5     FB13_6  109   I/O     
+(unused)              0       0     0   5     FB13_7        (b)     
+(unused)              0       0     0   5     FB13_8  110   I/O     
+(unused)              0       0     0   5     FB13_9        (b)     
+(unused)              0       0     0   5     FB13_10 111   I/O     
+(unused)              0       0     0   5     FB13_11 112   I/O     
+(unused)              0       0     0   5     FB13_12 113   I/O     
+(unused)              0       0     0   5     FB13_13       (b)     
+(unused)              0       0     0   5     FB13_14 114   I/O     
+(unused)              0       0     0   5     FB13_15 115   I/O     
+(unused)              0       0     0   5     FB13_16       (b)     
+(unused)              0       0     0   5     FB13_17 116   I/O     
+(unused)              0       0     0   5     FB13_18       (b)     
+*********************************** FB14 ***********************************
+Number of function block inputs used/remaining:               0/36
+Number of signals used by logic mapping into function block:  0
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB14_1        (b)     
+(unused)              0       0     0   5     FB14_2  144   I/O     
+(unused)              0       0     0   5     FB14_3  145   I/O     
+(unused)              0       0     0   5     FB14_4        (b)     
+(unused)              0       0     0   5     FB14_5  146   I/O     
+(unused)              0       0     0   5     FB14_6  147   I/O     
+(unused)              0       0     0   5     FB14_7        (b)     
+(unused)              0       0     0   5     FB14_8  148   I/O     
+(unused)              0       0     0   5     FB14_9        (b)     
+(unused)              0       0     0   5     FB14_10 149   I/O     
+(unused)              0       0     0   5     FB14_11 150   I/O     
+(unused)              0       0     0   5     FB14_12 151   I/O     
+(unused)              0       0     0   5     FB14_13       (b)     
+(unused)              0       0     0   5     FB14_14 152   I/O     
+(unused)              0       0     0   5     FB14_15 154   I/O     
+(unused)              0       0     0   5     FB14_16       (b)     
+(unused)              0       0     0   5     FB14_17 155   I/O     
+(unused)              0       0     0   5     FB14_18       (b)     
+*********************************** FB15 ***********************************
+Number of function block inputs used/remaining:               0/36
+Number of signals used by logic mapping into function block:  0
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB15_1        (b)     
+(unused)              0       0     0   5     FB15_2  117   I/O     
+(unused)              0       0     0   5     FB15_3  118   I/O     
+(unused)              0       0     0   5     FB15_4        (b)     
+(unused)              0       0     0   5     FB15_5  119   I/O     
+(unused)              0       0     0   5     FB15_6  120   I/O     
+(unused)              0       0     0   5     FB15_7        (b)     
+(unused)              0       0     0   5     FB15_8  121   I/O     
+(unused)              0       0     0   5     FB15_9        (b)     
+(unused)              0       0     0   5     FB15_10 122   I/O     
+(unused)              0       0     0   5     FB15_11 123   I/O     
+(unused)              0       0     0   5     FB15_12 125   I/O     
+(unused)              0       0     0   5     FB15_13       (b)     
+(unused)              0       0     0   5     FB15_14 126   I/O     
+(unused)              0       0     0   5     FB15_15 127   I/O     
+(unused)              0       0     0   5     FB15_16       (b)     
+(unused)              0       0     0   5     FB15_17 128   I/O     
+(unused)              0       0     0   5     FB15_18       (b)     
+*********************************** FB16 ***********************************
+Number of function block inputs used/remaining:               0/36
+Number of signals used by logic mapping into function block:  0
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB16_1        (b)     
+(unused)              0       0     0   5     FB16_2  131   I/O     
+(unused)              0       0     0   5     FB16_3  133   I/O     I
+(unused)              0       0     0   5     FB16_4        (b)     
+(unused)              0       0     0   5     FB16_5  134   I/O     
+(unused)              0       0     0   5     FB16_6  135   I/O     
+(unused)              0       0     0   5     FB16_7        (b)     
+(unused)              0       0     0   5     FB16_8  136   I/O     
+(unused)              0       0     0   5     FB16_9        (b)     
+(unused)              0       0     0   5     FB16_10 137   I/O     
+(unused)              0       0     0   5     FB16_11 138   I/O     
+(unused)              0       0     0   5     FB16_12 139   I/O     
+(unused)              0       0     0   5     FB16_13       (b)     
+(unused)              0       0     0   5     FB16_14 140   I/O     
+(unused)              0       0     0   5     FB16_15 142   I/O     
+(unused)              0       0     0   5     FB16_16       (b)     
+(unused)              0       0     0   5     FB16_17 143   I/O     
+(unused)              0       0     0   5     FB16_18       (b)     
+*******************************  Equations  ********************************
+
+********** Mapped Logic **********
+
+
+c <= (b AND a);
+
+Register Legend:
+ FDCPE (Q,D,C,CLR,PRE); 
+ FTCPE (Q,D,C,CLR,PRE); 
+ LDCP  (Q,D,G,CLR,PRE); 
+
+******************************  Device Pin Out *****************************
+
+Device : XC95288-10-HQ208
+
+
+Pin Signal                         Pin Signal                        
+No. Name                           No. Name                          
+  1 VCC                             105 VCC                           
+  2 GND                             106 TIE                           
+  3 TIE                             107 TIE                           
+  4 TIE                             108 GND                           
+  5 TIE                             109 TIE                           
+  6 TIE                             110 TIE                           
+  7 TIE                             111 TIE                           
+  8 TIE                             112 TIE                           
+  9 TIE                             113 TIE                           
+ 10 TIE                             114 TIE                           
+ 11 VCC                             115 TIE                           
+ 12 TIE                             116 TIE                           
+ 13 GND                             117 TIE                           
+ 14 TIE                             118 TIE                           
+ 15 TIE                             119 TIE                           
+ 16 TIE                             120 TIE                           
+ 17 TIE                             121 TIE                           
+ 18 TIE                             122 TIE                           
+ 19 TIE                             123 TIE                           
+ 20 TIE                             124 VCC                           
+ 21 TIE                             125 TIE                           
+ 22 TIE                             126 TIE                           
+ 23 TIE                             127 TIE                           
+ 24 GND                             128 TIE                           
+ 25 TIE                             129 GND                           
+ 26 VCC                             130 GND                           
+ 27 GND                             131 TIE                           
+ 28 TIE                             132 VCC                           
+ 29 TIE                             133 a                             
+ 30 TIE                             134 TIE                           
+ 31 TIE                             135 TIE                           
+ 32 TIE                             136 TIE                           
+ 33 TIE                             137 TIE                           
+ 34 TIE                             138 TIE                           
+ 35 TIE                             139 TIE                           
+ 36 TIE                             140 TIE                           
+ 37 TIE                             141 GND                           
+ 38 TIE                             142 TIE                           
+ 39 TIE                             143 TIE                           
+ 40 TIE                             144 TIE                           
+ 41 TIE                             145 TIE                           
+ 42 GND                             146 TIE                           
+ 43 TIE                             147 TIE                           
+ 44 TIE                             148 TIE                           
+ 45 TIE                             149 TIE                           
+ 46 TIE                             150 TIE                           
+ 47 TIE                             151 TIE                           
+ 48 TIE                             152 TIE                           
+ 49 TIE                             153 VCC                           
+ 50 TIE                             154 TIE                           
+ 51 TIE                             155 TIE                           
+ 52 GND                             156 GND                           
+ 53 VCC                             157 VCC                           
+ 54 TIE                             158 TIE                           
+ 55 TIE                             159 TIE                           
+ 56 TIE                             160 TIE                           
+ 57 TIE                             161 TIE                           
+ 58 TIE                             162 TIE                           
+ 59 VCC                             163 GND                           
+ 60 TIE                             164 TIE                           
+ 61 TIE                             165 TIE                           
+ 62 TIE                             166 TIE                           
+ 63 TIE                             167 TIE                           
+ 64 TIE                             168 TIE                           
+ 65 VCC                             169 TIE                           
+ 66 TIE                             170 TIE                           
+ 67 TIE                             171 TIE                           
+ 68 GND                             172 VCC                           
+ 69 TIE                             173 TIE                           
+ 70 TIE                             174 TIE                           
+ 71 TIE                             175 TIE                           
+ 72 TIE                             176 TDO                           
+ 73 TIE                             177 GND                           
+ 74 c                               178 TIE                           
+ 75 TIE                             179 TIE                           
+ 76 TIE                             180 TIE                           
+ 77 TIE                             181 VCC                           
+ 78 TIE                             182 TIE                           
+ 79 VCC                             183 TIE                           
+ 80 TIE                             184 VCC                           
+ 81 GND                             185 TIE                           
+ 82 TIE                             186 TIE                           
+ 83 TIE                             187 TIE                           
+ 84 TIE                             188 TIE                           
+ 85 TIE                             189 TIE                           
+ 86 TIE                             190 GND                           
+ 87 TIE                             191 TIE                           
+ 88 TIE                             192 TIE                           
+ 89 TIE                             193 TIE                           
+ 90 TIE                             194 TIE                           
+ 91 TIE                             195 TIE                           
+ 92 VCC                             196 TIE                           
+ 93 GND                             197 TIE                           
+ 94 TDI                             198 TIE                           
+ 95 TIE                             199 TIE                           
+ 96 TMS                             200 TIE                           
+ 97 TIE                             201 TIE                           
+ 98 TCK                             202 b                             
+ 99 TIE                             203 TIE                           
+100 TIE                             204 VCC                           
+101 TIE                             205 TIE                           
+102 TIE                             206 TIE                           
+103 TIE                             207 GND                           
+104 GND                             208 TIE                           
+
+
+Legend :  NC  = Not Connected, unbonded pin
+         PGND = Unused I/O configured as additional Ground pin
+         TIE  = Unused I/O floating -- must tie to VCC, GND or other signal
+         VCC  = Dedicated Power Pin
+         GND  = Dedicated Ground Pin
+         TDI  = Test Data In, JTAG pin
+         TDO  = Test Data Out, JTAG pin
+         TCK  = Test Clock, JTAG pin
+         TMS  = Test Mode Select, JTAG pin
+  PROHIBITED  = User reserved pin
+****************************  Compiler Options  ****************************
+
+Following is a list of all global compiler options used by the fitter run.
+
+Device(s) Specified                         : xc95288-10-HQ208
+Optimization Method                         : SPEED
+Multi-Level Logic Optimization              : ON
+Ignore Timing Specifications                : OFF
+Default Register Power Up Value             : LOW
+Keep User Location Constraints              : ON
+What-You-See-Is-What-You-Get                : OFF
+Exhaustive Fitting                          : OFF
+Keep Unused Inputs                          : OFF
+Slew Rate                                   : FAST
+Power Mode                                  : STD
+Ground on Unused IOs                        : OFF
+Global Clock Optimization                   : ON
+Global Set/Reset Optimization               : ON
+Global Ouput Enable Optimization            : ON
+FASTConnect/UIM optimzation                 : ON
+Local Feedback                              : ON
+Pin Feedback                                : ON
+Input Limit                                 : 36
+Pterm Limit                                 : 25

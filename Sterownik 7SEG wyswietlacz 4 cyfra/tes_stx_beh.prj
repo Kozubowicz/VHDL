@@ -1,0 +1,5 @@
+vhdl isim_temp "BINTO7SEG.vhd"
+vhdl isim_temp "ANN.vhd"
+vhdl isim_temp "../../CLK/Lab.vhd"
+vhdl isim_temp "Lab8_1.vhd"
+vhdl isim_temp "tes.vhd"

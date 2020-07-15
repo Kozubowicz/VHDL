@@ -1,0 +1,4 @@
+work	"../../CLK/Lab.vhd"
+work	"ANN.vhd"
+work	"BINTO7SEG.vhd"
+work	"Lab8_1.vhd"

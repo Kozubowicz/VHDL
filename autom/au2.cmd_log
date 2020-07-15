@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "E:/235816/Lab8/autom/au2.xst" -ofn "E:/235816/Lab8/autom/au2.syr" 

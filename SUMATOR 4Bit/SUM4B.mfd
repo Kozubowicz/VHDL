@@ -1,0 +1,160 @@
+MDF Database:  version 1.0
+MDF_INFO | SUM4B | XC95288-10-HQ208
+MACROCELL | 12 | 1 | COUT_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 3 | B<3>  | C<2>/C<2>_D2  | A<3>
+INPUTMC | 1 | 8 | 16
+INPUTP | 2 | 77 | 157
+EQ | 3 | 
+   COUT = B<3> & A<3>
+	# B<3> & C<2>/C<2>_D2
+	# A<3> & C<2>/C<2>_D2;
+
+MACROCELL | 10 | 1 | Y_0_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 3 | A<0>  | CIN  | B<0>
+INPUTP | 3 | 29 | 192 | 91
+EQ | 3 | 
+   !Y<0> = A<0>
+	$ CIN & B<0>
+	# !CIN & !B<0>;
+
+MACROCELL | 8 | 2 | Y_1_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 6 | A<1>  | B<0>  | B<1>  | A<0>  | CIN  | EXP1_.EXP
+INPUTMC | 1 | 8 | 3
+INPUTP | 5 | 168 | 91 | 257 | 29 | 192
+IMPORTS | 1 | 8 | 3
+EQ | 8 | 
+   !Y<1> = A<1>
+	$ CIN & B<1> & A<0>
+	# !CIN & !B<1> & !A<0>
+	# B<0> & B<1> & A<0>
+	# !B<0> & !B<1> & !A<0>
+;Imported pterms FB9_4
+	# CIN & B<0> & B<1>
+	# !CIN & !B<0> & !B<1>;
+
+MACROCELL | 11 | 1 | Y_2_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 3 | A<2>  | B<2>  | C<1>/C<1>_D2
+INPUTMC | 1 | 8 | 0
+INPUTP | 2 | 43 | 252
+EQ | 3 | 
+   !Y<2> = A<2>
+	$ B<2> & C<1>/C<1>_D2
+	# !B<2> & !C<1>/C<1>_D2;
+
+MACROCELL | 9 | 1 | Y_3_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 3 | A<3>  | B<3>  | C<2>/C<2>_D2
+INPUTMC | 1 | 8 | 16
+INPUTP | 2 | 157 | 77
+EQ | 3 | 
+   !Y<3> = A<3>
+	$ B<3> & C<2>/C<2>_D2
+	# !B<3> & !C<2>/C<2>_D2;
+
+MACROCELL | 8 | 16 | C<2>/C<2>_D2
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 2 | 12 | 1 | 9 | 1
+INPUTS | 8 | B<1>  | B<2>  | A<1>  | B<0>  | A<0>  | CIN  | EXP2_.EXP  | EXP3_.EXP
+INPUTMC | 2 | 8 | 15 | 8 | 17
+INPUTP | 6 | 257 | 252 | 168 | 91 | 29 | 192
+IMPORTS | 2 | 8 | 15 | 8 | 17
+EQ | 17 | 
+   C<2>/C<2>_D2 = B<1> & B<2> & A<1>
+	# CIN & B<0> & B<2> & A<1>
+	# CIN & B<2> & A<0> & A<1>
+	# B<0> & B<1> & B<2> & A<0>
+	# B<0> & B<2> & A<0> & A<1>
+;Imported pterms FB9_16
+	# B<1> & A<1> & A<2>
+	# CIN & B<0> & B<1> & B<2>
+	# CIN & B<1> & B<2> & A<0>
+	# CIN & A<0> & A<1> & A<2>
+	# B<0> & A<0> & A<1> & A<2>
+;Imported pterms FB9_18
+	# B<2> & A<2>
+	# CIN & B<0> & B<1> & A<2>
+	# CIN & B<0> & A<1> & A<2>
+	# CIN & B<1> & A<0> & A<2>
+	# B<0> & B<1> & A<0> & A<2>;
+
+MACROCELL | 8 | 0 | C<1>/C<1>_D2
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 1 | 11 | 1
+INPUTS | 6 | B<1>  | A<1>  | B<0>  | A<0>  | CIN  | EXP0_.EXP
+INPUTMC | 1 | 8 | 1
+INPUTP | 5 | 257 | 168 | 91 | 29 | 192
+IMPORTS | 1 | 8 | 1
+EQ | 8 | 
+   C<1>/C<1>_D2 = B<1> & A<1>
+	# CIN & B<0> & A<1>
+	# CIN & A<0> & A<1>
+	# B<0> & B<1> & A<0>
+	# B<0> & A<0> & A<1>
+;Imported pterms FB9_2
+	# CIN & B<0> & B<1>
+	# CIN & B<1> & A<0>;
+
+MACROCELL | 8 | 1 | EXP0_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 8 | 0
+INPUTS | 4 | CIN  | B<0>  | B<1>  | A<0>
+INPUTP | 4 | 192 | 91 | 257 | 29
+EXPORTS | 1 | 8 | 0
+EQ | 2 | 
+       EXP0_.EXP  =  CIN & B<0> & B<1>
+	# CIN & B<1> & A<0>
+
+MACROCELL | 8 | 3 | EXP1_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 8 | 2
+INPUTS | 3 | CIN  | B<0>  | B<1>
+INPUTP | 3 | 192 | 91 | 257
+EXPORTS | 1 | 8 | 2
+EQ | 2 | 
+       EXP1_.EXP  =  CIN & B<0> & B<1>
+	# !CIN & !B<0> & !B<1>
+
+MACROCELL | 8 | 15 | EXP2_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 8 | 16
+INPUTS | 7 | B<1>  | A<1>  | A<2>  | CIN  | B<0>  | B<2>  | A<0>
+INPUTP | 7 | 257 | 168 | 43 | 192 | 91 | 252 | 29
+EXPORTS | 1 | 8 | 16
+EQ | 5 | 
+       EXP2_.EXP  =  B<1> & A<1> & A<2>
+	# CIN & B<0> & B<1> & B<2>
+	# CIN & B<1> & B<2> & A<0>
+	# CIN & A<0> & A<1> & A<2>
+	# B<0> & A<0> & A<1> & A<2>
+
+MACROCELL | 8 | 17 | EXP3_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 8 | 16
+INPUTS | 7 | B<2>  | A<2>  | CIN  | B<0>  | B<1>  | A<1>  | A<0>
+INPUTP | 7 | 252 | 43 | 192 | 91 | 257 | 168 | 29
+EXPORTS | 1 | 8 | 16
+EQ | 5 | 
+       EXP3_.EXP  =  B<2> & A<2>
+	# CIN & B<0> & B<1> & A<2>
+	# CIN & B<0> & A<1> & A<2>
+	# CIN & B<1> & A<0> & A<2>
+	# B<0> & B<1> & A<0> & A<2>
+
+PIN | CIN | 64 | 0 | N/A | 192 | 8 | 10 | 1 | 8 | 2 | 8 | 16 | 8 | 0 | 8 | 1 | 8 | 3 | 8 | 15 | 8 | 17
+PIN | B<0> | 64 | 0 | N/A | 91 | 8 | 10 | 1 | 8 | 2 | 8 | 16 | 8 | 0 | 8 | 1 | 8 | 3 | 8 | 15 | 8 | 17
+PIN | B<1> | 64 | 0 | N/A | 257 | 7 | 8 | 2 | 8 | 16 | 8 | 0 | 8 | 1 | 8 | 3 | 8 | 15 | 8 | 17
+PIN | B<2> | 64 | 0 | N/A | 252 | 4 | 11 | 1 | 8 | 16 | 8 | 15 | 8 | 17
+PIN | B<3> | 64 | 0 | N/A | 77 | 2 | 12 | 1 | 9 | 1
+PIN | A<0> | 64 | 0 | N/A | 29 | 7 | 10 | 1 | 8 | 2 | 8 | 16 | 8 | 0 | 8 | 1 | 8 | 15 | 8 | 17
+PIN | A<1> | 64 | 0 | N/A | 168 | 5 | 8 | 2 | 8 | 16 | 8 | 0 | 8 | 15 | 8 | 17
+PIN | A<2> | 64 | 0 | N/A | 43 | 3 | 11 | 1 | 8 | 15 | 8 | 17
+PIN | A<3> | 64 | 0 | N/A | 157 | 2 | 12 | 1 | 9 | 1
+PIN | COUT | 536871040 | 0 | N/A | 132
+PIN | Y<0> | 536871040 | 0 | N/A | 113
+PIN | Y<1> | 536871040 | 0 | N/A | 98
+PIN | Y<2> | 536871040 | 0 | N/A | 198
+PIN | Y<3> | 536871040 | 0 | N/A | 215

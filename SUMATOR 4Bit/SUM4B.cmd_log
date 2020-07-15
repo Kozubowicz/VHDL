@@ -1,0 +1,23 @@
+xst -intstyle ise -ifn "D:/235816/UP/Lab6/SUM4B/SUM4B.xst" -ofn "D:/235816/UP/Lab6/SUM4B/SUM4B.syr" 
+xst -intstyle ise -ifn "D:/235816/UP/Lab6/SUM4B/SUM4B.xst" -ofn "D:/235816/UP/Lab6/SUM4B/SUM4B.syr" 
+xst -intstyle ise -ifn "D:/235816/UP/Lab6/SUM4B/SUM4B.xst" -ofn "D:/235816/UP/Lab6/SUM4B/SUM4B.syr" 
+xst -intstyle ise -ifn "D:/235816/UP/Lab6/SUM4B/SUM4B.xst" -ofn "D:/235816/UP/Lab6/SUM4B/SUM4B.syr" 
+xst -intstyle ise -ifn "D:/235816/UP/Lab6/SUM4B/SUM4B.xst" -ofn "D:/235816/UP/Lab6/SUM4B/SUM4B.syr" 
+xst -intstyle ise -ifn "D:/235816/UP/Lab6/SUM4B/SUM4B.xst" -ofn "D:/235816/UP/Lab6/SUM4B/SUM4B.syr" 
+xst -intstyle ise -ifn "D:/235816/UP/Lab6/SUM4B/SUM4B.xst" -ofn "D:/235816/UP/Lab6/SUM4B/SUM4B.syr" 
+xst -intstyle ise -ifn "D:/235816/UP/Lab6/SUM4B/SUM4B.xst" -ofn "D:/235816/UP/Lab6/SUM4B/SUM4B.syr" 
+xst -intstyle ise -ifn "D:/235816/UP/Lab6/SUM4B/SUM4B.xst" -ofn "D:/235816/UP/Lab6/SUM4B/SUM4B.syr" 
+xst -intstyle ise -ifn "D:/235816/UP/Lab6/SUM4B/SUM4B.xst" -ofn "D:/235816/UP/Lab6/SUM4B/SUM4B.syr" 
+xst -intstyle ise -ifn "D:/235816/UP/Lab6/SUM4B/SUM4B.xst" -ofn "D:/235816/UP/Lab6/SUM4B/SUM4B.syr" 
+xst -intstyle ise -ifn "D:/235816/UP/Lab6/SUM4B/SUM4B.xst" -ofn "D:/235816/UP/Lab6/SUM4B/SUM4B.syr" 
+xst -intstyle ise -ifn "D:/235816/UP/Lab6/SUM4B/SUM4B.xst" -ofn "D:/235816/UP/Lab6/SUM4B/SUM4B.syr" 
+xst -intstyle ise -ifn "D:/235816/UP/Lab6/SUM4B/SUM4B.xst" -ofn "D:/235816/UP/Lab6/SUM4B/SUM4B.syr" 
+xst -intstyle ise -ifn "D:/235816/UP/Lab6/SUM4B/SUM4B.xst" -ofn "D:/235816/UP/Lab6/SUM4B/SUM4B.syr" 
+xst -intstyle ise -ifn "D:/235816/UP/Lab6/SUM4B/SUM4B.xst" -ofn "D:/235816/UP/Lab6/SUM4B/SUM4B.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc95288-HQ208-10 SUM4B.ngc SUM4B.ngd  
+cpldfit -intstyle ise -p xc95288-10-HQ208 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk SUM4B.ngd 
+XSLTProcess SUM4B_build.xml 
+tsim -intstyle ise SUM4B SUM4B.nga 
+taengine -intstyle ise -f SUM4B -w --format html1 -l SUM4B_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -n SUM4B -i SUM4B 
+xst -intstyle ise -ifn "D:/235816/UP/Lab6/SUM4B/SUM4B.xst" -ofn "D:/235816/UP/Lab6/SUM4B/SUM4B.syr" 

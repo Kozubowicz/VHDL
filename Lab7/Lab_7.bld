@@ -1,0 +1,49 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: E:\xlinnn\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -i -p xc95288-HQ208-10 Lab_7.ngc Lab_7.ngd
+
+Reading NGO file "D:/235816/Lab8/Lab7/Lab_7.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Checking expanded design ...
+WARNING:NgdBuild:452 - logical net 'CO1<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'CO2<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'CO3<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'CO3<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'S27/A' has no driver
+WARNING:NgdBuild:452 - logical net 'S26/A' has no driver
+WARNING:NgdBuild:452 - logical net 'S21/B' has no driver
+WARNING:NgdBuild:452 - logical net 'S20/B' has no driver
+WARNING:NgdBuild:452 - logical net 'S20/CIN' has no driver
+WARNING:NgdBuild:452 - logical net 'S16/A' has no driver
+WARNING:NgdBuild:452 - logical net 'S12/B' has no driver
+WARNING:NgdBuild:452 - logical net 'S12/CIN' has no driver
+WARNING:NgdBuild:452 - logical net 'S4/A' has no driver
+WARNING:NgdBuild:452 - logical net 'S0/B' has no driver
+WARNING:NgdBuild:452 - logical net 'S0/CIN' has no driver
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:  15
+
+Total memory usage is 4405056 kilobytes
+
+Writing NGD file "Lab_7.ngd" ...
+Total REAL time to NGDBUILD completion:  6 sec
+Total CPU time to NGDBUILD completion:   3 sec
+
+Writing NGDBUILD log file "Lab_7.bld"...

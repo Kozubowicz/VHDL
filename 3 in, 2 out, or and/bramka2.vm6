@@ -1,0 +1,143 @@
+NDS Database:  version P.20131013
+
+NDS_INFO | xc9500 | 95288208 | XC95288-10-HQ208
+
+DEVICE | 95288 | 95288208 | 
+
+NETWORK | bramka2 | 0 | 0 | 201342983
+
+INPUT_INSTANCE | 0 | 0 | NULL | b_IBUF | bramka2_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | b | 49 | PI | 0 | 0 | bramka2_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | b_IBUF | 42 | ? | 0 | 0 | bramka2_COPY_0_COPY_0 | NULL | NULL | b_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | a_IBUF | bramka2_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | a | 50 | PI | 0 | 0 | bramka2_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | a_IBUF | 43 | ? | 0 | 0 | bramka2_COPY_0_COPY_0 | NULL | NULL | a_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | Inv+OptxMapped | d_OBUF | bramka2_COPY_0_COPY_0 | 2155872512 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | b_IBUF | 42 | ? | 0 | 0 | bramka2_COPY_0_COPY_0 | NULL | NULL | b_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | a_IBUF | 43 | ? | 0 | 0 | bramka2_COPY_0_COPY_0 | NULL | NULL | a_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | d_OBUF | 44 | ? | 0 | 0 | bramka2_COPY_0_COPY_0 | NULL | d_OBUF.Q | d_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | d_OBUF.UIM | 60 | ? | 0 | 0 | bramka2_COPY_0_COPY_0 | NULL | d_OBUF.Q | d_OBUF | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | d_OBUF.SI | d_OBUF | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | b_IBUF | 42 | ? | 0 | 0 | bramka2_COPY_0_COPY_0 | NULL | NULL | b_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | a_IBUF | 43 | ? | 0 | 0 | bramka2_COPY_0_COPY_0 | NULL | NULL | a_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | d_OBUF.D1 | 53 | ? | 0 | 4096 | d_OBUF | NULL | NULL | d_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | d_OBUF.D2 | 54 | ? | 0 | 4096 | d_OBUF | NULL | NULL | d_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | b_IBUF | IV_FALSE | a_IBUF
+
+SRFF_INSTANCE | d_OBUF.REG | d_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | d_OBUF.D | 52 | ? | 0 | 0 | d_OBUF | NULL | NULL | d_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | d_OBUF.Q | 55 | ? | 0 | 0 | d_OBUF | NULL | NULL | d_OBUF.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | c_IBUF | bramka2_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | c | 51 | PI | 0 | 0 | bramka2_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | c_IBUF | 45 | ? | 0 | 0 | bramka2_COPY_0_COPY_0 | NULL | NULL | c_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | OptxMapped | e_OBUF | bramka2_COPY_0_COPY_0 | 2155872256 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | a_IBUF | 43 | ? | 0 | 0 | bramka2_COPY_0_COPY_0 | NULL | NULL | a_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_IBUF | 45 | ? | 0 | 0 | bramka2_COPY_0_COPY_0 | NULL | NULL | c_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | e_OBUF | 46 | ? | 0 | 0 | bramka2_COPY_0_COPY_0 | NULL | e_OBUF.Q | e_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | e_OBUF.UIM | 61 | ? | 0 | 0 | bramka2_COPY_0_COPY_0 | NULL | e_OBUF.Q | e_OBUF | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | e_OBUF.SI | e_OBUF | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | a_IBUF | 43 | ? | 0 | 0 | bramka2_COPY_0_COPY_0 | NULL | NULL | a_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_IBUF | 45 | ? | 0 | 0 | bramka2_COPY_0_COPY_0 | NULL | NULL | c_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | e_OBUF.D1 | 57 | ? | 0 | 4096 | e_OBUF | NULL | NULL | e_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | e_OBUF.D2 | 58 | ? | 0 | 4096 | e_OBUF | NULL | NULL | e_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | a_IBUF | IV_TRUE | c_IBUF
+
+SRFF_INSTANCE | e_OBUF.REG | e_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | e_OBUF.D | 56 | ? | 0 | 0 | e_OBUF | NULL | NULL | e_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | e_OBUF.Q | 59 | ? | 0 | 0 | e_OBUF | NULL | NULL | e_OBUF.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | d | bramka2_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | d_OBUF | 44 | ? | 0 | 0 | bramka2_COPY_0_COPY_0 | NULL | d_OBUF.Q | d_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | d | 47 | PO | 0 | 0 | bramka2_COPY_0_COPY_0 | NULL | NULL | d | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | e | bramka2_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | e_OBUF | 46 | ? | 0 | 0 | bramka2_COPY_0_COPY_0 | NULL | e_OBUF.Q | e_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | e | 48 | PO | 0 | 0 | bramka2_COPY_0_COPY_0 | NULL | NULL | e | 0 | 6 | OI_OUT
+
+FB_INSTANCE | FOOBAR1_ | bramka2_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR2_ | bramka2_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR3_ | bramka2_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR4_ | bramka2_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR5_ | bramka2_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR6_ | bramka2_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 10 | NULL | 0 | a_IBUF | 1 | NULL | 0 | 202 | 49152
+
+FB_INSTANCE | FOOBAR7_ | bramka2_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 15 | NULL | 0 | b_IBUF | 1 | NULL | 0 | 72 | 49152
+
+FB_INSTANCE | FOOBAR8_ | bramka2_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR9_ | bramka2_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 2 | e_OBUF | 1 | NULL | 0 | e | 1 | 74 | 49152
+
+FB_INSTANCE | FOOBAR10_ | bramka2_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 2 | d_OBUF | 1 | NULL | 0 | d | 1 | 170 | 49152
+
+FB_INSTANCE | FOOBAR11_ | bramka2_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR12_ | bramka2_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR13_ | bramka2_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR14_ | bramka2_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR15_ | bramka2_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR16_ | bramka2_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 3 | NULL | 0 | c_IBUF | 1 | NULL | 0 | 133 | 49152
+
+FB_INSTANCE | INPUTPINS_FOOBAR17_ | bramka2_COPY_0_COPY_0 | 0 | 0 | 0
+
+
+FB_ORDER_OF_INPUTS | FOOBAR9_ | 19 | a | 202 | 20 | c | 133
+
+FB_IMUX_INDEX | FOOBAR9_ | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 289 | 290 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR10_ | 21 | b | 72 | 30 | a | 202
+
+FB_IMUX_INDEX | FOOBAR10_ | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 291 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 289 | -1 | -1 | -1 | -1 | -1
+

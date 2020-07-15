@@ -1,0 +1,240 @@
+<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>
+<h3 align='center'>Equations</h3>
+<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>
+<tr><td>
+</td></tr><tr><td>
+********** Mapped Logic **********
+</td></tr><tr><td>
+</td></tr><tr><td>
+C1(2)/C1(2)_D2 <= (x1(0) AND x0(2));
+</td></tr><tr><td>
+</td></tr><tr><td>
+C1(3)/C1(3)_D2 <= (x1(0) AND x0(3));
+</td></tr><tr><td>
+</td></tr><tr><td>
+C2(2)/C2(2)_D2 <= (x1(1) AND x0(1));
+</td></tr><tr><td>
+</td></tr><tr><td>
+C2(3)/C2(3)_D2 <= (x0(2) AND x1(1));
+</td></tr><tr><td>
+</td></tr><tr><td>
+C2(4)/C2(4)_D2 <= (x0(3) AND x1(1));
+</td></tr><tr><td>
+</td></tr><tr><td>
+CO1(1)/CO1(1)_D2 <= (x1(0) AND x1(1) AND x0(1) AND x0(0));
+</td></tr><tr><td>
+</td></tr><tr><td>
+CO1(4)/CO1(4)_D2 <= ((x1(0) AND x0(2) AND x0(3) AND x1(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x1(0) AND x0(3) AND x1(1) AND x0(1) AND x0(0)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+CO3(2)/CO3(2)_D2 <= ((x1(0) AND x0(2) AND x1(2) AND x0(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT x1(0) AND x1(1) AND x0(1) AND x1(2) AND x0(0)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+CO3(3)/CO3(3)_D2 <= ((EXP1_.EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x1(0) AND x0(2) AND x0(1) AND x1(2) AND NOT x1(3) AND x0(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x1(0) AND x0(2) AND NOT x0(1) AND x1(2) AND x1(3) AND x0(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x1(0) AND x0(3) AND NOT x1(1) AND x0(1) AND x1(2) AND NOT x1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x1(0) AND x0(3) AND NOT x1(1) AND NOT x1(2) AND x1(3) AND x0(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x0(2) AND NOT x0(3) AND x1(1) AND NOT x0(1) AND x1(3) AND x0(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x1(0) AND x0(3) AND x0(1) AND x1(2) AND NOT x0(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x1(0) AND x0(2) AND x0(3) AND NOT x1(1) AND x1(2) AND x0(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x1(0) AND NOT x0(2) AND x0(3) AND NOT x0(1) AND x1(3) AND x0(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT x1(0) AND x0(2) AND x1(1) AND x0(1) AND x1(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT x1(0) AND x0(2) AND x1(1) AND x1(3) AND x0(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x0(2) AND x0(3) AND x1(1) AND x0(1) AND x1(3) AND x0(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT x0(3) AND x1(1) AND x0(1) AND x1(2) AND NOT x1(3) AND x0(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x1(0) AND x0(2) AND NOT x0(3) AND x1(1) AND x1(2) AND NOT x1(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	x0(0)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+S24/Mxor_Y__xor0000/S24/Mxor_Y__xor0000_D <= ((CO1(4)/CO1(4)_D2.EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x0(2) AND NOT x0(3) AND NOT x0(1) AND x1(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x0(2) AND NOT x1(1) AND NOT x0(1) AND x1(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x0(2) AND NOT x1(1) AND x1(2) AND x0(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT x0(2) AND x0(3) AND x1(1) AND NOT x0(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x1(0) AND x0(2) AND x0(3) AND x1(2) AND x0(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CO3(2)/CO3(2)_D2.EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x0(2) AND NOT x1(1) AND x1(2) AND NOT x1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT x1(1) AND x0(1) AND NOT x1(2) AND x1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT x1(0) AND x0(3) AND x1(1) AND NOT x0(1) AND NOT x1(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT x0(2) AND NOT x0(3) AND x0(1) AND x1(3) AND NOT x0(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT x0(2) AND NOT x1(1) AND x0(1) AND x1(3) AND NOT x0(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x1(0) AND x0(2) AND NOT x0(1) AND x1(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x1(0) AND x0(2) AND x0(3) AND x1(2) AND NOT x1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT x1(0) AND x0(2) AND NOT x0(3) AND x1(2) AND x0(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x1(0) AND NOT x0(2) AND x0(1) AND NOT x1(2) AND x1(3) AND x0(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x1(0) AND x0(2) AND NOT x0(3) AND x1(1) AND x1(2) AND x1(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT x0(0)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D <= (x1(0) AND x0(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	 XOR 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D <= (x0(2) AND x1(1));
+</td></tr><tr><td>
+</td></tr><tr><td>
+Y2(3)/Y2(3)_D <= (x0(1) AND x1(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	 XOR 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Y2(3)/Y2(3)_D <= (x1(3) AND x0(0));
+</td></tr><tr><td>
+</td></tr><tr><td>
+Y2(4)/Y2(4)_D <= ((x0(2) AND NOT x0(1) AND x1(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x0(2) AND x1(2) AND NOT x1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x0(2) AND x1(2) AND x0(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x0(1) AND NOT x1(2) AND x1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT x0(2) AND x0(1) AND x1(3) AND NOT x0(0)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+Y2(5)/Y2(5)_D <= ((x0(2) AND x0(3) AND x0(1) AND x1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x0(2) AND NOT x0(3) AND NOT x0(1) AND x1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x0(2) AND NOT x1(2) AND x1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x0(3) AND x1(2) AND NOT x1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT x0(2) AND x0(3) AND NOT x0(1) AND x1(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT x0(2) AND x0(3) AND x1(2) AND NOT x0(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT x0(2) AND NOT x0(3) AND x0(1) AND x1(2) AND x1(3) AND x0(0)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+Y(0) <= (x1(0) AND x0(0));
+</td></tr><tr><td>
+</td></tr><tr><td>
+Y(1) <= (x1(0) AND x0(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	 XOR 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Y(1) <= (x1(1) AND x0(0));
+</td></tr><tr><td>
+</td></tr><tr><td>
+Y(2) <= (x1(2) AND x0(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	 XOR 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Y(2) <= ((NOT x0(2) AND x1(1) AND x0(1) AND NOT x0(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x1(0) AND x0(2) AND NOT x1(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x1(0) AND x0(2) AND NOT x0(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x1(0) AND x0(2) AND x0(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT x1(0) AND x1(1) AND x0(1)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+Y(3) <= ((EXP2_.EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CO1(1)/CO1(1)_D2 AND C2(4)/C2(4)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK AND CO3(2)/CO3(2)_D2.LFBK AND NOT Y2(3)/Y2(3)_D.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CO1(1)/CO1(1)_D2 AND C2(3)/C2(3)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK AND CO3(2)/CO3(2)_D2.LFBK AND NOT Y2(3)/Y2(3)_D.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CO1(1)/CO1(1)_D2 AND NOT C1(2)/C1(2)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK AND NOT CO3(2)/CO3(2)_D2.LFBK AND Y2(3)/Y2(3)_D.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CO1(1)/CO1(1)_D2 AND NOT C2(2)/C2(2)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK AND NOT CO3(2)/CO3(2)_D2.LFBK AND Y2(3)/Y2(3)_D.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (C1(3)/C1(3)_D2 AND C2(3)/C2(3)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK AND CO3(2)/CO3(2)_D2.LFBK AND NOT Y2(3)/Y2(3)_D.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (EXP5_.EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CO1(1)/CO1(1)_D2 AND NOT C1(2)/C1(2)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK AND CO3(2)/CO3(2)_D2.LFBK AND NOT Y2(3)/Y2(3)_D.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT CO1(1)/CO1(1)_D2 AND NOT C2(2)/C2(2)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK AND CO3(2)/CO3(2)_D2.LFBK AND NOT Y2(3)/Y2(3)_D.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (C1(2)/C1(2)_D2 AND C2(2)/C2(2)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK AND NOT CO3(2)/CO3(2)_D2.LFBK AND NOT Y2(3)/Y2(3)_D.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT C2(3)/C2(3)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK AND CO3(2)/CO3(2)_D2.LFBK AND Y2(3)/Y2(3)_D.LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT CO1(4)/CO1(4)_D2.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT C2(3)/C2(3)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK AND NOT CO3(2)/CO3(2)_D2.LFBK AND NOT Y2(3)/Y2(3)_D.LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT CO1(4)/CO1(4)_D2.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CO1(1)/CO1(1)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK AND CO3(2)/CO3(2)_D2.LFBK AND Y2(3)/Y2(3)_D.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CO1(1)/CO1(1)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK AND NOT CO3(2)/CO3(2)_D2.LFBK AND NOT Y2(3)/Y2(3)_D.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	CO3(2)/CO3(2)_D2.LFBK AND NOT Y2(3)/Y2(3)_D.LFBK AND CO1(4)/CO1(4)_D2.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CO1(1)/CO1(1)_D2 AND C2(3)/C2(3)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK AND NOT CO3(2)/CO3(2)_D2.LFBK AND Y2(3)/Y2(3)_D.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (C1(2)/C1(2)_D2 AND C2(2)/C2(2)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK AND CO3(2)/CO3(2)_D2.LFBK AND Y2(3)/Y2(3)_D.LFBK));
+</td></tr><tr><td>
+</td></tr><tr><td>
+Y(4) <= S24/Mxor_Y__xor0000/S24/Mxor_Y__xor0000_D
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	 XOR 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Y(4) <= CO3(3)/CO3(3)_D2;
+</td></tr><tr><td>
+</td></tr><tr><td>
+Y(5) <= NOT (CO1(4)/CO1(4)_D2
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	 XOR 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Y(5) <= NOT (((S24/Mxor_Y__xor0000/S24/Mxor_Y__xor0000_D AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	CO3(3)/CO3(3)_D2 AND Y2(5)/Y2(5)_D)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (S24/Mxor_Y__xor0000/S24/Mxor_Y__xor0000_D AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT CO3(3)/CO3(3)_D2 AND NOT Y2(5)/Y2(5)_D)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT S24/Mxor_Y__xor0000/S24/Mxor_Y__xor0000_D AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Y2(4)/Y2(4)_D AND Y2(5)/Y2(5)_D)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT S24/Mxor_Y__xor0000/S24/Mxor_Y__xor0000_D AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Y2(4)/Y2(4)_D AND NOT Y2(5)/Y2(5)_D)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+Y(6) <= ((EXP9_.EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT x1(0) AND x0(3) AND NOT x1(1) AND NOT x1(2) AND x1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x0(2) AND NOT x0(3) AND x0(1) AND x1(2) AND x1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT x0(2) AND x0(3) AND NOT x1(1) AND NOT x0(1) AND x1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x0(3) AND NOT x1(1) AND NOT x0(1) AND NOT x1(2) AND x1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x0(3) AND NOT x1(1) AND NOT x1(2) AND x1(3) AND NOT x0(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (EXP12_.EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x1(0) AND x0(2) AND x0(3) AND x0(1) AND x1(2) AND NOT x1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x1(0) AND x0(2) AND x0(3) AND x1(2) AND NOT x1(3) AND x0(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x1(0) AND x0(2) AND x1(1) AND x1(2) AND x1(3) AND x0(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x1(0) AND x0(2) AND x0(1) AND x1(2) AND x1(3) AND x0(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT x1(0) AND x0(3) AND NOT x0(1) AND NOT x1(2) AND x1(3) AND NOT x0(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT x0(2) AND x0(3) AND NOT x1(2) AND x1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT x1(0) AND NOT x0(2) AND x0(3) AND NOT x0(1) AND x1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x0(2) AND x0(3) AND x1(1) AND x1(2) AND NOT x1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x0(2) AND x1(1) AND x0(1) AND x1(2) AND x1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT x0(2) AND x0(3) AND NOT x0(1) AND x1(3) AND NOT x0(0)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+Y(7) <= ((x1(0) AND x0(2) AND x0(3) AND x1(1) AND x1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x0(3) AND x1(1) AND x0(1) AND x1(2) AND x1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x0(2) AND x0(3) AND x1(2) AND x1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x0(3) AND x0(1) AND x1(2) AND x1(3) AND x0(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x1(0) AND x0(3) AND x0(1) AND x1(2) AND x1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x0(2) AND x0(3) AND x1(1) AND x0(1) AND x1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x0(2) AND x0(3) AND x1(1) AND x1(3) AND x0(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x1(0) AND x0(2) AND x0(3) AND x0(1) AND x1(3) AND x0(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x1(0) AND x0(3) AND x1(1) AND x1(2) AND x1(3) AND x0(0)));
+</td></tr><tr><td>
+Register Legend:
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDCPE (Q,D,C,CLR,PRE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTCPE (Q,D,C,CLR,PRE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LDCP  (Q,D,G,CLR,PRE); 
+</td></tr><tr><td>
+</td></tr>
+</table>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

@@ -1,0 +1,21 @@
+MDF Database:  version 1.0
+MDF_INFO | bramka2 | XC95288-10-HQ208
+MACROCELL | 9 | 1 | d_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 2 | b  | a
+INPUTP | 2 | 91 | 257
+EQ | 1 | 
+   !d = !b & !a;
+
+MACROCELL | 8 | 1 | e_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 2 | a  | c
+INPUTP | 2 | 257 | 168
+EQ | 1 | 
+   e = a & c;
+
+PIN | b | 64 | 0 | N/A | 91 | 1 | 9 | 1
+PIN | a | 64 | 0 | N/A | 257 | 2 | 9 | 1 | 8 | 1
+PIN | c | 64 | 0 | N/A | 168 | 1 | 8 | 1
+PIN | d | 536871040 | 0 | N/A | 215
+PIN | e | 536871040 | 0 | N/A | 97

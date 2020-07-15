@@ -1,0 +1,27 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o F:/235816/Lab8/Lab8_1/tg_isim_beh.exe -prj F:/235816/Lab8/Lab8_1/tg_beh.prj work.tg 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "F:/235816/Lab8/Lab8_1/Lab.vhd" into library work
+Parsing VHDL file "F:/235816/Lab8/Lab8_1/BINTO7SEG.vhd" into library work
+Parsing VHDL file "F:/235816/Lab8/Lab8_1/ANN.vhd" into library work
+Parsing VHDL file "F:/235816/Lab8/Lab8_1/Lab8_1.vhd" into library work
+Parsing VHDL file "F:/235816/Lab8/Lab8_1/tg.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity ANN [ann_default]
+Compiling architecture behavioral of entity BINTO7SEG [binto7seg_default]
+Compiling architecture behavioral of entity CLOC [cloc_default]
+Compiling architecture behavioral of entity Lab8_1 [lab8_1_default]
+Compiling architecture behavior of entity tg
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 13 VHDL Units
+Built simulation executable F:/235816/Lab8/Lab8_1/tg_isim_beh.exe
+Fuse Memory Usage: 33544 KB
+Fuse CPU Usage: 561 ms

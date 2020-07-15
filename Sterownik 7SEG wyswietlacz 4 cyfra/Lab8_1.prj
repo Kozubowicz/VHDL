@@ -1,0 +1,4 @@
+vhdl work "Lab.vhd"
+vhdl work "BINTO7SEG.vhd"
+vhdl work "ANN.vhd"
+vhdl work "Lab8_1.vhd"

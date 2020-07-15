@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Peter/Downloads/VHDL/Zpendra/bramka1/test_isim_beh.exe" -prj "C:/Users/Peter/Downloads/VHDL/Zpendra/bramka1/test_beh.prj" "work.test" 

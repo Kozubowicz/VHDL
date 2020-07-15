@@ -1,0 +1,682 @@
+MDF Database:  version 1.0
+MDF_INFO | Lab_7 | XC95288-10-HQ208
+MACROCELL | 15 | 1 | C1<0>
+ATTRIBUTES | 396034 | 0
+INPUTS | 2 | x1<0>  | x0<0>
+INPUTP | 2 | 257 | 43
+EQ | 1 | 
+   Y<0> = x1<0> & x0<0>;
+
+MACROCELL | 13 | 1 | Y1<1>
+ATTRIBUTES | 396034 | 0
+INPUTS | 4 | x1<0>  | x0<1>  | x1<1>  | x0<0>
+INPUTP | 4 | 257 | 91 | 157 | 43
+EQ | 2 | 
+   Y<1> = x1<0> & x0<1>
+	$ x1<1> & x0<0>;
+
+MACROCELL | 11 | 2 | Y_2_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 7 | x1<2>  | x0<0>  | x1<0>  | x0<2>  | x0<1>  | x1<1>  | EXP15_.EXP
+INPUTMC | 1 | 11 | 1
+INPUTP | 6 | 29 | 43 | 257 | 168 | 91 | 157
+IMPORTS | 1 | 11 | 1
+EQ | 7 | 
+   Y<2> = x1<2> & x0<0>
+	$ x1<0> & x0<2> & !x1<1>
+	# x1<0> & x0<2> & !x0<1>
+	# x1<0> & x0<2> & x0<0>
+	# !x1<0> & x1<1> & x0<1>
+;Imported pterms FB12_2
+	# !x0<2> & x1<1> & x0<1> & !x0<0>;
+
+MACROCELL | 8 | 4 | Y_3_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 10 | CO1<1>/CO1<1>_D2  | CO3<2>/CO3<2>_D2.LFBK  | Y2<3>/Y2<3>_D.LFBK  | CO1<4>/CO1<4>_D2.LFBK  | C1<2>/C1<2>_D2  | C2<2>/C2<2>_D2  | C2<3>/C2<3>_D2  | EXP3_.EXP  | EXP4_.EXP  | S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK
+INPUTMC | 10 | 9 | 11 | 8 | 14 | 8 | 16 | 8 | 10 | 9 | 16 | 9 | 14 | 9 | 13 | 8 | 3 | 8 | 5 | 8 | 15
+IMPORTS | 2 | 8 | 3 | 8 | 5
+EQ | 63 | 
+   Y<3> = CO1<1>/CO1<1>_D2 & 
+	!S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & CO3<2>/CO3<2>_D2.LFBK & Y2<3>/Y2<3>_D.LFBK
+	# CO1<1>/CO1<1>_D2 & 
+	!S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & !CO3<2>/CO3<2>_D2.LFBK & !Y2<3>/Y2<3>_D.LFBK
+	# S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & 
+	CO3<2>/CO3<2>_D2.LFBK & !Y2<3>/Y2<3>_D.LFBK & CO1<4>/CO1<4>_D2.LFBK
+	# CO1<1>/CO1<1>_D2 & C2<3>/C2<3>_D2 & 
+	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & !CO3<2>/CO3<2>_D2.LFBK & Y2<3>/Y2<3>_D.LFBK
+	# C1<2>/C1<2>_D2 & C2<2>/C2<2>_D2 & 
+	!S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & CO3<2>/CO3<2>_D2.LFBK & Y2<3>/Y2<3>_D.LFBK
+;Imported pterms FB9_4
+	# CO1<1>/CO1<1>_D2 & C2<4>/C2<4>_D2 & 
+	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & CO3<2>/CO3<2>_D2.LFBK & !Y2<3>/Y2<3>_D.LFBK
+	# CO1<1>/CO1<1>_D2 & C2<3>/C2<3>_D2 & 
+	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & CO3<2>/CO3<2>_D2.LFBK & !Y2<3>/Y2<3>_D.LFBK
+	# !CO1<1>/CO1<1>_D2 & !C1<2>/C1<2>_D2 & 
+	!S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & !CO3<2>/CO3<2>_D2.LFBK & Y2<3>/Y2<3>_D.LFBK
+	# !CO1<1>/CO1<1>_D2 & !C2<2>/C2<2>_D2 & 
+	!S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & !CO3<2>/CO3<2>_D2.LFBK & Y2<3>/Y2<3>_D.LFBK
+	# C1<3>/C1<3>_D2 & C2<3>/C2<3>_D2 & 
+	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & CO3<2>/CO3<2>_D2.LFBK & !Y2<3>/Y2<3>_D.LFBK
+;Imported pterms FB9_3
+	# CO1<1>/CO1<1>_D2 & C2<4>/C2<4>_D2 & 
+	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & !CO3<2>/CO3<2>_D2.LFBK & Y2<3>/Y2<3>_D.LFBK & 
+	CO1<4>/CO1<4>_D2.LFBK
+	# C1<2>/C1<2>_D2 & C2<2>/C2<2>_D2 & C2<4>/C2<4>_D2 & 
+	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & CO3<2>/CO3<2>_D2.LFBK & !Y2<3>/Y2<3>_D.LFBK
+	# C1<2>/C1<2>_D2 & C2<2>/C2<2>_D2 & C2<3>/C2<3>_D2 & 
+	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & CO3<2>/CO3<2>_D2.LFBK & !Y2<3>/Y2<3>_D.LFBK
+	# C1<2>/C1<2>_D2 & C2<2>/C2<2>_D2 & C2<3>/C2<3>_D2 & 
+	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & !CO3<2>/CO3<2>_D2.LFBK & Y2<3>/Y2<3>_D.LFBK
+	# C1<3>/C1<3>_D2 & C2<3>/C2<3>_D2 & 
+	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & !CO3<2>/CO3<2>_D2.LFBK & Y2<3>/Y2<3>_D.LFBK & 
+	CO1<4>/CO1<4>_D2.LFBK
+;Imported pterms FB9_6
+	# !CO1<1>/CO1<1>_D2 & !C1<2>/C1<2>_D2 & 
+	!S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & CO3<2>/CO3<2>_D2.LFBK & !Y2<3>/Y2<3>_D.LFBK
+	# !CO1<1>/CO1<1>_D2 & !C2<2>/C2<2>_D2 & 
+	!S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & CO3<2>/CO3<2>_D2.LFBK & !Y2<3>/Y2<3>_D.LFBK
+	# C1<2>/C1<2>_D2 & C2<2>/C2<2>_D2 & 
+	!S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & !CO3<2>/CO3<2>_D2.LFBK & !Y2<3>/Y2<3>_D.LFBK
+	# !C2<3>/C2<3>_D2 & 
+	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & CO3<2>/CO3<2>_D2.LFBK & Y2<3>/Y2<3>_D.LFBK & 
+	!CO1<4>/CO1<4>_D2.LFBK
+	# !C2<3>/C2<3>_D2 & 
+	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & !CO3<2>/CO3<2>_D2.LFBK & !Y2<3>/Y2<3>_D.LFBK & 
+	!CO1<4>/CO1<4>_D2.LFBK
+;Imported pterms FB9_7
+	# !CO1<1>/CO1<1>_D2 & !C1<2>/C1<2>_D2 & 
+	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & CO3<2>/CO3<2>_D2.LFBK & Y2<3>/Y2<3>_D.LFBK & 
+	!CO1<4>/CO1<4>_D2.LFBK
+	# !CO1<1>/CO1<1>_D2 & !C1<2>/C1<2>_D2 & 
+	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & !CO3<2>/CO3<2>_D2.LFBK & !Y2<3>/Y2<3>_D.LFBK & 
+	!CO1<4>/CO1<4>_D2.LFBK
+	# !CO1<1>/CO1<1>_D2 & !C2<2>/C2<2>_D2 & 
+	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & CO3<2>/CO3<2>_D2.LFBK & Y2<3>/Y2<3>_D.LFBK & 
+	!CO1<4>/CO1<4>_D2.LFBK
+	# !CO1<1>/CO1<1>_D2 & !C2<2>/C2<2>_D2 & 
+	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & !CO3<2>/CO3<2>_D2.LFBK & !Y2<3>/Y2<3>_D.LFBK & 
+	!CO1<4>/CO1<4>_D2.LFBK
+	# C1<2>/C1<2>_D2 & C2<2>/C2<2>_D2 & C2<4>/C2<4>_D2 & 
+	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & !CO3<2>/CO3<2>_D2.LFBK & Y2<3>/Y2<3>_D.LFBK & 
+	CO1<4>/CO1<4>_D2.LFBK;
+
+MACROCELL | 14 | 1 | Y_4_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 2 | S24/Mxor_Y__xor0000/S24/Mxor_Y__xor0000_D  | CO3<3>/CO3<3>_D2
+INPUTMC | 2 | 8 | 12 | 8 | 17
+EQ | 2 | 
+   Y<4> = S24/Mxor_Y__xor0000/S24/Mxor_Y__xor0000_D
+	$ CO3<3>/CO3<3>_D2;
+
+MACROCELL | 12 | 2 | Y_5_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 5 | CO1<4>/CO1<4>_D2  | S24/Mxor_Y__xor0000/S24/Mxor_Y__xor0000_D  | CO3<3>/CO3<3>_D2  | Y2<5>/Y2<5>_D  | Y2<4>/Y2<4>_D
+INPUTMC | 5 | 8 | 10 | 8 | 12 | 8 | 17 | 8 | 9 | 9 | 17
+EQ | 9 | 
+   !Y<5> = CO1<4>/CO1<4>_D2
+	$ S24/Mxor_Y__xor0000/S24/Mxor_Y__xor0000_D & 
+	CO3<3>/CO3<3>_D2 & Y2<5>/Y2<5>_D
+	# S24/Mxor_Y__xor0000/S24/Mxor_Y__xor0000_D & 
+	!CO3<3>/CO3<3>_D2 & !Y2<5>/Y2<5>_D
+	# !S24/Mxor_Y__xor0000/S24/Mxor_Y__xor0000_D & 
+	Y2<4>/Y2<4>_D & Y2<5>/Y2<5>_D
+	# !S24/Mxor_Y__xor0000/S24/Mxor_Y__xor0000_D & 
+	!Y2<4>/Y2<4>_D & !Y2<5>/Y2<5>_D;
+
+MACROCELL | 9 | 4 | Y_6_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 10 | x0<2>  | x0<3>  | x1<2>  | x1<3>  | x1<1>  | x0<1>  | x0<0>  | x1<0>  | EXP10_.EXP  | EXP11_.EXP
+INPUTMC | 2 | 9 | 3 | 9 | 5
+INPUTP | 8 | 168 | 252 | 29 | 192 | 157 | 91 | 43 | 257
+IMPORTS | 2 | 9 | 3 | 9 | 5
+EQ | 26 | 
+   Y<6> = !x0<2> & x0<3> & !x1<2> & x1<3>
+	# !x1<0> & !x0<2> & x0<3> & !x0<1> & x1<3>
+	# x0<2> & x0<3> & x1<1> & x1<2> & !x1<3>
+	# x0<2> & x1<1> & x0<1> & x1<2> & x1<3>
+	# !x0<2> & x0<3> & !x0<1> & x1<3> & !x0<0>
+;Imported pterms FB10_4
+	# !x1<0> & x0<3> & !x1<1> & !x1<2> & x1<3>
+	# x0<2> & !x0<3> & x0<1> & x1<2> & x1<3>
+	# !x0<2> & x0<3> & !x1<1> & !x0<1> & x1<3>
+	# x0<3> & !x1<1> & !x0<1> & !x1<2> & x1<3>
+	# x0<3> & !x1<1> & !x1<2> & x1<3> & !x0<0>
+;Imported pterms FB10_3
+	# x1<0> & x0<2> & !x0<3> & x1<2> & x1<3> & x0<0>
+	# x1<0> & x0<3> & x1<1> & x0<1> & x1<2> & !x1<3>
+	# !x1<0> & !x0<2> & x0<3> & !x1<1> & x1<3> & !x0<0>
+	# x0<3> & x1<1> & x0<1> & x1<2> & !x1<3> & x0<0>
+;Imported pterms FB10_6
+	# x1<0> & x0<2> & x0<3> & x0<1> & x1<2> & !x1<3>
+	# x1<0> & x0<2> & x0<3> & x1<2> & !x1<3> & x0<0>
+	# x1<0> & x0<2> & x1<1> & x1<2> & x1<3> & x0<0>
+	# x1<0> & x0<2> & x0<1> & x1<2> & x1<3> & x0<0>
+	# !x1<0> & x0<3> & !x0<1> & !x1<2> & x1<3> & !x0<0>
+;Imported pterms FB10_7
+	# x1<0> & x0<2> & !x0<3> & x1<1> & x0<1> & x1<3>
+	# x0<2> & !x0<3> & x1<1> & x0<1> & x1<3> & x0<0>
+	# x0<2> & !x0<3> & x1<1> & x1<2> & x1<3> & x0<0>;
+
+MACROCELL | 10 | 2 | Y_7_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 10 | x1<0>  | x0<3>  | x0<1>  | x1<2>  | x1<3>  | x1<1>  | x0<0>  | x0<2>  | EXP13_.EXP  | EXP14_.EXP
+INPUTMC | 2 | 10 | 1 | 10 | 3
+INPUTP | 8 | 257 | 252 | 91 | 29 | 192 | 157 | 43 | 168
+IMPORTS | 2 | 10 | 1 | 10 | 3
+EQ | 11 | 
+   Y<7> = x1<0> & x0<3> & x0<1> & x1<2> & x1<3>
+	# x0<2> & x0<3> & x1<1> & x0<1> & x1<3>
+	# x0<2> & x0<3> & x1<1> & x1<3> & x0<0>
+	# x1<0> & x0<2> & x0<3> & x0<1> & x1<3> & x0<0>
+	# x1<0> & x0<3> & x1<1> & x1<2> & x1<3> & x0<0>
+;Imported pterms FB11_2
+	# x1<0> & x0<2> & x0<3> & x1<1> & x1<3>
+	# x0<3> & x1<1> & x0<1> & x1<2> & x1<3>
+;Imported pterms FB11_4
+	# x0<2> & x0<3> & x1<2> & x1<3>
+	# x0<3> & x0<1> & x1<2> & x1<3> & x0<0>;
+
+MACROCELL | 9 | 11 | CO1<1>/CO1<1>_D2
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 5 | 8 | 4 | 8 | 2 | 8 | 3 | 8 | 5 | 8 | 6
+INPUTS | 4 | x1<0>  | x1<1>  | x0<1>  | x0<0>
+INPUTP | 4 | 257 | 157 | 91 | 43
+EQ | 1 | 
+   CO1<1>/CO1<1>_D2 = x1<0> & x1<1> & x0<1> & x0<0>;
+
+MACROCELL | 9 | 16 | C1<2>/C1<2>_D2
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 5 | 8 | 4 | 8 | 2 | 8 | 3 | 8 | 5 | 8 | 6
+INPUTS | 2 | x1<0>  | x0<2>
+INPUTP | 2 | 257 | 168
+EQ | 1 | 
+   C1<2>/C1<2>_D2 = x1<0> & x0<2>;
+
+MACROCELL | 9 | 14 | C2<2>/C2<2>_D2
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 5 | 8 | 4 | 8 | 2 | 8 | 3 | 8 | 5 | 8 | 6
+INPUTS | 2 | x1<1>  | x0<1>
+INPUTP | 2 | 157 | 91
+EQ | 1 | 
+   C2<2>/C2<2>_D2 = x1<1> & x0<1>;
+
+MACROCELL | 9 | 12 | C2<4>/C2<4>_D2
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 3 | 8 | 3 | 8 | 2 | 8 | 6
+INPUTS | 2 | x0<3>  | x1<1>
+INPUTP | 2 | 252 | 157
+EQ | 1 | 
+   C2<4>/C2<4>_D2 = x0<3> & x1<1>;
+
+MACROCELL | 9 | 15 | C1<3>/C1<3>_D2
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 2 | 8 | 3 | 8 | 2
+INPUTS | 2 | x1<0>  | x0<3>
+INPUTP | 2 | 257 | 252
+EQ | 1 | 
+   C1<3>/C1<3>_D2 = x1<0> & x0<3>;
+
+MACROCELL | 9 | 13 | C2<3>/C2<3>_D2
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 4 | 8 | 4 | 8 | 2 | 8 | 3 | 8 | 5
+INPUTS | 2 | x0<2>  | x1<1>
+INPUTP | 2 | 168 | 157
+EQ | 1 | 
+   C2<3>/C2<3>_D2 = x0<2> & x1<1>;
+
+MACROCELL | 8 | 15 | S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D
+ATTRIBUTES | 199424 | 0
+OUTPUTMC | 6 | 8 | 14 | 8 | 4 | 8 | 2 | 8 | 3 | 8 | 5 | 8 | 6
+INPUTS | 7 | x1<0>  | x0<3>  | x0<2>  | x1<1>  | x1<2>  | x0<0>  | x0<1>
+INPUTP | 7 | 257 | 252 | 168 | 157 | 29 | 43 | 91
+EXPORTS | 1 | 8 | 14
+EQ | 4 | 
+   S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D = x1<0> & x0<3>
+	$ x0<2> & x1<1>;
+    S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.EXP  =  x1<0> & x0<2> & x1<2> & x0<0>
+	# !x1<0> & x1<1> & x0<1> & x1<2> & x0<0>
+
+MACROCELL | 8 | 14 | CO3<2>/CO3<2>_D2
+ATTRIBUTES | 199424 | 0
+OUTPUTMC | 6 | 8 | 13 | 8 | 4 | 8 | 2 | 8 | 3 | 8 | 5 | 8 | 6
+INPUTS | 9 | x1<0>  | x0<3>  | x1<1>  | x1<2>  | x1<3>  | x0<2>  | x0<1>  | x0<0>  | S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.EXP
+INPUTMC | 1 | 8 | 15
+INPUTP | 8 | 257 | 252 | 157 | 29 | 192 | 168 | 91 | 43
+EXPORTS | 1 | 8 | 13
+IMPORTS | 1 | 8 | 15
+EQ | 10 | 
+   CO3<2>/CO3<2>_D2 = ;Imported pterms FB9_16
+	  x1<0> & x0<2> & x1<2> & x0<0>
+	# !x1<0> & x1<1> & x0<1> & x1<2> & x0<0>;
+    CO3<2>/CO3<2>_D2.EXP  =  !x1<0> & x0<3> & x1<1> & !x1<2> & !x1<3>
+	# x1<0> & x0<2> & x0<3> & x0<1> & !x1<2> & x1<3>
+	# !x1<0> & !x0<2> & x0<3> & x1<1> & x1<2> & x0<0>
+	# x1<0> & x0<2> & !x0<3> & x1<1> & x0<1> & !x1<2> & 
+	!x1<3>
+	# !x1<0> & x0<2> & x0<3> & x1<1> & x0<1> & x1<2> & 
+	x1<3> & !x0<0>
+
+MACROCELL | 8 | 16 | Y2<3>/Y2<3>_D
+ATTRIBUTES | 199424 | 0
+OUTPUTMC | 6 | 8 | 17 | 8 | 4 | 8 | 2 | 8 | 3 | 8 | 5 | 8 | 6
+INPUTS | 8 | x0<1>  | x1<2>  | x1<3>  | x0<0>  | x1<0>  | x0<3>  | x0<2>  | x1<1>
+INPUTP | 8 | 91 | 29 | 192 | 43 | 257 | 252 | 168 | 157
+EXPORTS | 1 | 8 | 17
+EQ | 5 | 
+   Y2<3>/Y2<3>_D = x0<1> & x1<2>
+	$ x1<3> & x0<0>;
+    Y2<3>/Y2<3>_D.EXP  =  x1<0> & x0<3> & x0<1> & x1<2> & !x0<0>
+	# x1<0> & x0<2> & x0<3> & !x1<1> & x1<2> & x0<0>
+	# x1<0> & !x0<2> & x0<3> & !x0<1> & x1<3> & x0<0>
+
+MACROCELL | 8 | 10 | CO1<4>/CO1<4>_D2
+ATTRIBUTES | 199424 | 0
+OUTPUTMC | 6 | 12 | 2 | 8 | 11 | 8 | 4 | 8 | 2 | 8 | 5 | 8 | 6
+INPUTS | 8 | x1<0>  | x0<2>  | x0<3>  | x1<1>  | x0<1>  | x0<0>  | x1<2>  | x1<3>
+INPUTP | 8 | 257 | 168 | 252 | 157 | 91 | 43 | 29 | 192
+EXPORTS | 1 | 8 | 11
+EQ | 5 | 
+   CO1<4>/CO1<4>_D2 = x1<0> & x0<2> & x0<3> & x1<1>
+	# x1<0> & x0<3> & x1<1> & x0<1> & x0<0>;
+    CO1<4>/CO1<4>_D2.EXP  =  !x1<0> & x0<2> & !x0<3> & x1<2> & !x1<3>
+	# !x1<0> & !x0<3> & x0<1> & !x1<2> & x1<3>
+	# !x0<2> & x0<3> & x1<1> & !x1<3> & !x0<0>
+
+MACROCELL | 8 | 12 | S24/Mxor_Y__xor0000/S24/Mxor_Y__xor0000_D
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 2 | 14 | 1 | 12 | 2
+INPUTS | 10 | x1<0>  | x0<2>  | x0<1>  | x1<2>  | x1<3>  | x0<0>  | x0<3>  | x1<1>  | EXP7_.EXP  | EXP8_.EXP
+INPUTMC | 2 | 8 | 11 | 8 | 13
+INPUTP | 8 | 257 | 168 | 91 | 29 | 192 | 43 | 252 | 157
+IMPORTS | 2 | 8 | 11 | 8 | 13
+EQ | 30 | 
+   S24/Mxor_Y__xor0000/S24/Mxor_Y__xor0000_D = x1<0> & x0<2> & !x0<1> & x1<2>
+	# x1<0> & x0<2> & x0<3> & x1<2> & !x1<3>
+	# !x1<0> & x0<2> & !x0<3> & x1<2> & x0<0>
+	# x1<0> & !x0<2> & x0<1> & !x1<2> & x1<3> & x0<0>
+	# x1<0> & x0<2> & !x0<3> & x1<1> & x1<2> & x1<3> & 
+	!x0<0>
+;Imported pterms FB9_12
+	# x0<2> & !x0<3> & !x0<1> & x1<2>
+	# x0<2> & !x1<1> & !x0<1> & x1<2>
+	# x0<2> & !x1<1> & x1<2> & x0<0>
+	# !x0<2> & x0<3> & x1<1> & !x0<1>
+	# x1<0> & x0<2> & x0<3> & x1<2> & x0<0>
+;Imported pterms FB9_11
+	# !x1<0> & x0<2> & !x0<3> & x1<2> & !x1<3>
+	# !x1<0> & !x0<3> & x0<1> & !x1<2> & x1<3>
+	# !x0<2> & x0<3> & x1<1> & !x1<3> & !x0<0>
+;Imported pterms FB9_14
+	# x0<2> & !x1<1> & x1<2> & !x1<3>
+	# !x1<1> & x0<1> & !x1<2> & x1<3>
+	# !x1<0> & x0<3> & x1<1> & !x0<1> & !x1<2>
+	# !x0<2> & !x0<3> & x0<1> & x1<3> & !x0<0>
+	# !x0<2> & !x1<1> & x0<1> & x1<3> & !x0<0>
+;Imported pterms FB9_15
+	# !x1<0> & x0<3> & x1<1> & !x1<2> & !x1<3>
+	# x1<0> & x0<2> & x0<3> & x0<1> & !x1<2> & x1<3>
+	# !x1<0> & !x0<2> & x0<3> & x1<1> & x1<2> & x0<0>
+	# x1<0> & x0<2> & !x0<3> & x1<1> & x0<1> & !x1<2> & 
+	!x1<3>
+	# !x1<0> & x0<2> & x0<3> & x1<1> & x0<1> & x1<2> & 
+	x1<3> & !x0<0>;
+
+MACROCELL | 8 | 17 | CO3<3>/CO3<3>_D2
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 2 | 14 | 1 | 12 | 2
+INPUTS | 10 | x0<3>  | x1<1>  | x0<1>  | x1<2>  | x1<3>  | x0<0>  | x1<0>  | x0<2>  | EXP0_.EXP  | Y2<3>/Y2<3>_D.EXP
+INPUTMC | 2 | 8 | 0 | 8 | 16
+INPUTP | 8 | 252 | 157 | 91 | 29 | 192 | 43 | 257 | 168
+IMPORTS | 2 | 8 | 0 | 8 | 16
+EQ | 20 | 
+   CO3<3>/CO3<3>_D2 = !x1<0> & x0<2> & x1<1> & x0<1> & x1<2>
+	# !x1<0> & x0<2> & x1<1> & x1<3> & x0<0>
+	# x0<2> & x0<3> & x1<1> & x0<1> & x1<3> & x0<0>
+	# !x0<3> & x1<1> & x0<1> & x1<2> & !x1<3> & x0<0>
+	# x1<0> & x0<2> & !x0<3> & x1<1> & x1<2> & !x1<3> & 
+	x0<0>
+;Imported pterms FB9_1
+	# x1<0> & x0<2> & x0<1> & x1<2> & !x1<3> & x0<0>
+	# x1<0> & x0<2> & !x0<1> & x1<2> & x1<3> & x0<0>
+	# x1<0> & x0<3> & !x1<1> & x0<1> & x1<2> & !x1<3>
+	# x1<0> & x0<3> & !x1<1> & !x1<2> & x1<3> & x0<0>
+	# x0<2> & !x0<3> & x1<1> & !x0<1> & x1<3> & x0<0>
+;Imported pterms FB9_2
+	# !x1<0> & x1<1> & x0<1> & x1<2> & !x1<3> & x0<0>
+	# x1<0> & !x0<2> & !x0<3> & x1<1> & x0<1> & !x1<2> & 
+	x1<3> & x0<0>
+;Imported pterms FB9_17
+	# x1<0> & x0<3> & x0<1> & x1<2> & !x0<0>
+	# x1<0> & x0<2> & x0<3> & !x1<1> & x1<2> & x0<0>
+	# x1<0> & !x0<2> & x0<3> & !x0<1> & x1<3> & x0<0>;
+
+MACROCELL | 9 | 17 | Y2<4>/Y2<4>_D
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 1 | 12 | 2
+INPUTS | 5 | x0<1>  | x1<2>  | x1<3>  | x0<2>  | x0<0>
+INPUTP | 5 | 91 | 29 | 192 | 168 | 43
+EQ | 5 | 
+   Y2<4>/Y2<4>_D = x0<2> & !x0<1> & x1<2>
+	# x0<2> & x1<2> & !x1<3>
+	# x0<2> & x1<2> & x0<0>
+	# x0<1> & !x1<2> & x1<3>
+	# !x0<2> & x0<1> & x1<3> & !x0<0>;
+
+MACROCELL | 8 | 9 | Y2<5>/Y2<5>_D
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 1 | 12 | 2
+INPUTS | 7 | x0<2>  | x0<3>  | x0<1>  | x1<2>  | x1<3>  | x0<0>  | EXP6_.EXP
+INPUTMC | 1 | 8 | 8
+INPUTP | 6 | 168 | 252 | 91 | 29 | 192 | 43
+IMPORTS | 1 | 8 | 8
+EQ | 8 | 
+   Y2<5>/Y2<5>_D = x0<2> & !x1<2> & x1<3>
+	# x0<3> & x1<2> & !x1<3>
+	# !x0<2> & x0<3> & !x0<1> & x1<2>
+	# !x0<2> & x0<3> & x1<2> & !x0<0>
+	# !x0<2> & !x0<3> & x0<1> & x1<2> & x1<3> & x0<0>
+;Imported pterms FB9_9
+	# x0<2> & x0<3> & x0<1> & x1<3>
+	# x0<2> & !x0<3> & !x0<1> & x1<3>;
+
+MACROCELL | 8 | 0 | EXP0_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 8 | 17
+INPUTS | 9 | x1<0>  | x0<2>  | x0<1>  | x1<2>  | x1<3>  | x0<0>  | x0<3>  | x1<1>  | EXP1_.EXP
+INPUTMC | 1 | 8 | 1
+INPUTP | 8 | 257 | 168 | 91 | 29 | 192 | 43 | 252 | 157
+EXPORTS | 1 | 8 | 17
+IMPORTS | 1 | 8 | 1
+EQ | 9 | 
+       EXP0_.EXP  =  x1<0> & x0<2> & x0<1> & x1<2> & !x1<3> & x0<0>
+	# x1<0> & x0<2> & !x0<1> & x1<2> & x1<3> & x0<0>
+	# x1<0> & x0<3> & !x1<1> & x0<1> & x1<2> & !x1<3>
+	# x1<0> & x0<3> & !x1<1> & !x1<2> & x1<3> & x0<0>
+	# x0<2> & !x0<3> & x1<1> & !x0<1> & x1<3> & x0<0>
+;Imported pterms FB9_2
+	# !x1<0> & x1<1> & x0<1> & x1<2> & !x1<3> & x0<0>
+	# x1<0> & !x0<2> & !x0<3> & x1<1> & x0<1> & !x1<2> & 
+	x1<3> & x0<0>
+
+MACROCELL | 8 | 1 | EXP1_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 8 | 0
+INPUTS | 8 | x1<0>  | x1<1>  | x0<1>  | x1<2>  | x1<3>  | x0<0>  | x0<2>  | x0<3>
+INPUTP | 8 | 257 | 157 | 91 | 29 | 192 | 43 | 168 | 252
+EXPORTS | 1 | 8 | 0
+EQ | 3 | 
+       EXP1_.EXP  =  !x1<0> & x1<1> & x0<1> & x1<2> & !x1<3> & x0<0>
+	# x1<0> & !x0<2> & !x0<3> & x1<1> & x0<1> & !x1<2> & 
+	x1<3> & x0<0>
+
+MACROCELL | 8 | 2 | EXP2_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 8 | 3
+INPUTS | 10 | CO1<1>/CO1<1>_D2  | C2<4>/C2<4>_D2  | CO3<2>/CO3<2>_D2.LFBK  | Y2<3>/Y2<3>_D.LFBK  | CO1<4>/CO1<4>_D2.LFBK  | C1<2>/C1<2>_D2  | C2<2>/C2<2>_D2  | C2<3>/C2<3>_D2  | C1<3>/C1<3>_D2  | S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK
+INPUTMC | 10 | 9 | 11 | 9 | 12 | 8 | 14 | 8 | 16 | 8 | 10 | 9 | 16 | 9 | 14 | 9 | 13 | 9 | 15 | 8 | 15
+EXPORTS | 1 | 8 | 3
+EQ | 12 | 
+       EXP2_.EXP  =  CO1<1>/CO1<1>_D2 & C2<4>/C2<4>_D2 & 
+	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & !CO3<2>/CO3<2>_D2.LFBK & Y2<3>/Y2<3>_D.LFBK & 
+	CO1<4>/CO1<4>_D2.LFBK
+	# C1<2>/C1<2>_D2 & C2<2>/C2<2>_D2 & C2<4>/C2<4>_D2 & 
+	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & CO3<2>/CO3<2>_D2.LFBK & !Y2<3>/Y2<3>_D.LFBK
+	# C1<2>/C1<2>_D2 & C2<2>/C2<2>_D2 & C2<3>/C2<3>_D2 & 
+	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & CO3<2>/CO3<2>_D2.LFBK & !Y2<3>/Y2<3>_D.LFBK
+	# C1<2>/C1<2>_D2 & C2<2>/C2<2>_D2 & C2<3>/C2<3>_D2 & 
+	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & !CO3<2>/CO3<2>_D2.LFBK & Y2<3>/Y2<3>_D.LFBK
+	# C1<3>/C1<3>_D2 & C2<3>/C2<3>_D2 & 
+	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & !CO3<2>/CO3<2>_D2.LFBK & Y2<3>/Y2<3>_D.LFBK & 
+	CO1<4>/CO1<4>_D2.LFBK
+
+MACROCELL | 8 | 3 | EXP3_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 8 | 4
+INPUTS | 10 | CO1<1>/CO1<1>_D2  | C2<4>/C2<4>_D2  | CO3<2>/CO3<2>_D2.LFBK  | Y2<3>/Y2<3>_D.LFBK  | C2<3>/C2<3>_D2  | C1<2>/C1<2>_D2  | C2<2>/C2<2>_D2  | C1<3>/C1<3>_D2  | EXP2_.EXP  | S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK
+INPUTMC | 10 | 9 | 11 | 9 | 12 | 8 | 14 | 8 | 16 | 9 | 13 | 9 | 16 | 9 | 14 | 9 | 15 | 8 | 2 | 8 | 15
+EXPORTS | 1 | 8 | 4
+IMPORTS | 1 | 8 | 2
+EQ | 23 | 
+       EXP3_.EXP  =  CO1<1>/CO1<1>_D2 & C2<4>/C2<4>_D2 & 
+	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & CO3<2>/CO3<2>_D2.LFBK & !Y2<3>/Y2<3>_D.LFBK
+	# CO1<1>/CO1<1>_D2 & C2<3>/C2<3>_D2 & 
+	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & CO3<2>/CO3<2>_D2.LFBK & !Y2<3>/Y2<3>_D.LFBK
+	# !CO1<1>/CO1<1>_D2 & !C1<2>/C1<2>_D2 & 
+	!S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & !CO3<2>/CO3<2>_D2.LFBK & Y2<3>/Y2<3>_D.LFBK
+	# !CO1<1>/CO1<1>_D2 & !C2<2>/C2<2>_D2 & 
+	!S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & !CO3<2>/CO3<2>_D2.LFBK & Y2<3>/Y2<3>_D.LFBK
+	# C1<3>/C1<3>_D2 & C2<3>/C2<3>_D2 & 
+	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & CO3<2>/CO3<2>_D2.LFBK & !Y2<3>/Y2<3>_D.LFBK
+;Imported pterms FB9_3
+	# CO1<1>/CO1<1>_D2 & C2<4>/C2<4>_D2 & 
+	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & !CO3<2>/CO3<2>_D2.LFBK & Y2<3>/Y2<3>_D.LFBK & 
+	CO1<4>/CO1<4>_D2.LFBK
+	# C1<2>/C1<2>_D2 & C2<2>/C2<2>_D2 & C2<4>/C2<4>_D2 & 
+	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & CO3<2>/CO3<2>_D2.LFBK & !Y2<3>/Y2<3>_D.LFBK
+	# C1<2>/C1<2>_D2 & C2<2>/C2<2>_D2 & C2<3>/C2<3>_D2 & 
+	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & CO3<2>/CO3<2>_D2.LFBK & !Y2<3>/Y2<3>_D.LFBK
+	# C1<2>/C1<2>_D2 & C2<2>/C2<2>_D2 & C2<3>/C2<3>_D2 & 
+	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & !CO3<2>/CO3<2>_D2.LFBK & Y2<3>/Y2<3>_D.LFBK
+	# C1<3>/C1<3>_D2 & C2<3>/C2<3>_D2 & 
+	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & !CO3<2>/CO3<2>_D2.LFBK & Y2<3>/Y2<3>_D.LFBK & 
+	CO1<4>/CO1<4>_D2.LFBK
+
+MACROCELL | 8 | 5 | EXP4_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 8 | 4
+INPUTS | 9 | CO1<1>/CO1<1>_D2  | C1<2>/C1<2>_D2  | CO3<2>/CO3<2>_D2.LFBK  | Y2<3>/Y2<3>_D.LFBK  | CO1<4>/CO1<4>_D2.LFBK  | C2<2>/C2<2>_D2  | C2<3>/C2<3>_D2  | EXP5_.EXP  | S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK
+INPUTMC | 9 | 9 | 11 | 9 | 16 | 8 | 14 | 8 | 16 | 8 | 10 | 9 | 14 | 9 | 13 | 8 | 6 | 8 | 15
+EXPORTS | 1 | 8 | 4
+IMPORTS | 1 | 8 | 6
+EQ | 28 | 
+       EXP4_.EXP  =  !CO1<1>/CO1<1>_D2 & !C1<2>/C1<2>_D2 & 
+	!S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & CO3<2>/CO3<2>_D2.LFBK & !Y2<3>/Y2<3>_D.LFBK
+	# !CO1<1>/CO1<1>_D2 & !C2<2>/C2<2>_D2 & 
+	!S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & CO3<2>/CO3<2>_D2.LFBK & !Y2<3>/Y2<3>_D.LFBK
+	# C1<2>/C1<2>_D2 & C2<2>/C2<2>_D2 & 
+	!S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & !CO3<2>/CO3<2>_D2.LFBK & !Y2<3>/Y2<3>_D.LFBK
+	# !C2<3>/C2<3>_D2 & 
+	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & CO3<2>/CO3<2>_D2.LFBK & Y2<3>/Y2<3>_D.LFBK & 
+	!CO1<4>/CO1<4>_D2.LFBK
+	# !C2<3>/C2<3>_D2 & 
+	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & !CO3<2>/CO3<2>_D2.LFBK & !Y2<3>/Y2<3>_D.LFBK & 
+	!CO1<4>/CO1<4>_D2.LFBK
+;Imported pterms FB9_7
+	# !CO1<1>/CO1<1>_D2 & !C1<2>/C1<2>_D2 & 
+	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & CO3<2>/CO3<2>_D2.LFBK & Y2<3>/Y2<3>_D.LFBK & 
+	!CO1<4>/CO1<4>_D2.LFBK
+	# !CO1<1>/CO1<1>_D2 & !C1<2>/C1<2>_D2 & 
+	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & !CO3<2>/CO3<2>_D2.LFBK & !Y2<3>/Y2<3>_D.LFBK & 
+	!CO1<4>/CO1<4>_D2.LFBK
+	# !CO1<1>/CO1<1>_D2 & !C2<2>/C2<2>_D2 & 
+	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & CO3<2>/CO3<2>_D2.LFBK & Y2<3>/Y2<3>_D.LFBK & 
+	!CO1<4>/CO1<4>_D2.LFBK
+	# !CO1<1>/CO1<1>_D2 & !C2<2>/C2<2>_D2 & 
+	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & !CO3<2>/CO3<2>_D2.LFBK & !Y2<3>/Y2<3>_D.LFBK & 
+	!CO1<4>/CO1<4>_D2.LFBK
+	# C1<2>/C1<2>_D2 & C2<2>/C2<2>_D2 & C2<4>/C2<4>_D2 & 
+	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & !CO3<2>/CO3<2>_D2.LFBK & Y2<3>/Y2<3>_D.LFBK & 
+	CO1<4>/CO1<4>_D2.LFBK
+
+MACROCELL | 8 | 6 | EXP5_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 8 | 5
+INPUTS | 8 | CO1<1>/CO1<1>_D2  | C1<2>/C1<2>_D2  | CO3<2>/CO3<2>_D2.LFBK  | Y2<3>/Y2<3>_D.LFBK  | CO1<4>/CO1<4>_D2.LFBK  | C2<2>/C2<2>_D2  | C2<4>/C2<4>_D2  | S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK
+INPUTMC | 8 | 9 | 11 | 9 | 16 | 8 | 14 | 8 | 16 | 8 | 10 | 9 | 14 | 9 | 12 | 8 | 15
+EXPORTS | 1 | 8 | 5
+EQ | 15 | 
+       EXP5_.EXP  =  !CO1<1>/CO1<1>_D2 & !C1<2>/C1<2>_D2 & 
+	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & CO3<2>/CO3<2>_D2.LFBK & Y2<3>/Y2<3>_D.LFBK & 
+	!CO1<4>/CO1<4>_D2.LFBK
+	# !CO1<1>/CO1<1>_D2 & !C1<2>/C1<2>_D2 & 
+	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & !CO3<2>/CO3<2>_D2.LFBK & !Y2<3>/Y2<3>_D.LFBK & 
+	!CO1<4>/CO1<4>_D2.LFBK
+	# !CO1<1>/CO1<1>_D2 & !C2<2>/C2<2>_D2 & 
+	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & CO3<2>/CO3<2>_D2.LFBK & Y2<3>/Y2<3>_D.LFBK & 
+	!CO1<4>/CO1<4>_D2.LFBK
+	# !CO1<1>/CO1<1>_D2 & !C2<2>/C2<2>_D2 & 
+	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & !CO3<2>/CO3<2>_D2.LFBK & !Y2<3>/Y2<3>_D.LFBK & 
+	!CO1<4>/CO1<4>_D2.LFBK
+	# C1<2>/C1<2>_D2 & C2<2>/C2<2>_D2 & C2<4>/C2<4>_D2 & 
+	S3/Mxor_Y__xor0000/S3/Mxor_Y__xor0000_D.LFBK & !CO3<2>/CO3<2>_D2.LFBK & Y2<3>/Y2<3>_D.LFBK & 
+	CO1<4>/CO1<4>_D2.LFBK
+
+MACROCELL | 8 | 8 | EXP6_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 8 | 9
+INPUTS | 4 | x0<2>  | x0<3>  | x0<1>  | x1<3>
+INPUTP | 4 | 168 | 252 | 91 | 192
+EXPORTS | 1 | 8 | 9
+EQ | 2 | 
+       EXP6_.EXP  =  x0<2> & x0<3> & x0<1> & x1<3>
+	# x0<2> & !x0<3> & !x0<1> & x1<3>
+
+MACROCELL | 8 | 11 | EXP7_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 8 | 12
+INPUTS | 8 | x0<2>  | x0<3>  | x0<1>  | x1<2>  | x1<1>  | x0<0>  | x1<0>  | CO1<4>/CO1<4>_D2.EXP
+INPUTMC | 1 | 8 | 10
+INPUTP | 7 | 168 | 252 | 91 | 29 | 157 | 43 | 257
+EXPORTS | 1 | 8 | 12
+IMPORTS | 1 | 8 | 10
+EQ | 9 | 
+       EXP7_.EXP  =  x0<2> & !x0<3> & !x0<1> & x1<2>
+	# x0<2> & !x1<1> & !x0<1> & x1<2>
+	# x0<2> & !x1<1> & x1<2> & x0<0>
+	# !x0<2> & x0<3> & x1<1> & !x0<1>
+	# x1<0> & x0<2> & x0<3> & x1<2> & x0<0>
+;Imported pterms FB9_11
+	# !x1<0> & x0<2> & !x0<3> & x1<2> & !x1<3>
+	# !x1<0> & !x0<3> & x0<1> & !x1<2> & x1<3>
+	# !x0<2> & x0<3> & x1<1> & !x1<3> & !x0<0>
+
+MACROCELL | 8 | 13 | EXP8_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 8 | 12
+INPUTS | 9 | x0<2>  | x1<1>  | x1<2>  | x1<3>  | x0<1>  | x1<0>  | x0<3>  | x0<0>  | CO3<2>/CO3<2>_D2.EXP
+INPUTMC | 1 | 8 | 14
+INPUTP | 8 | 168 | 157 | 29 | 192 | 91 | 257 | 252 | 43
+EXPORTS | 1 | 8 | 12
+IMPORTS | 1 | 8 | 14
+EQ | 13 | 
+       EXP8_.EXP  =  x0<2> & !x1<1> & x1<2> & !x1<3>
+	# !x1<1> & x0<1> & !x1<2> & x1<3>
+	# !x1<0> & x0<3> & x1<1> & !x0<1> & !x1<2>
+	# !x0<2> & !x0<3> & x0<1> & x1<3> & !x0<0>
+	# !x0<2> & !x1<1> & x0<1> & x1<3> & !x0<0>
+;Imported pterms FB9_15
+	# !x1<0> & x0<3> & x1<1> & !x1<2> & !x1<3>
+	# x1<0> & x0<2> & x0<3> & x0<1> & !x1<2> & x1<3>
+	# !x1<0> & !x0<2> & x0<3> & x1<1> & x1<2> & x0<0>
+	# x1<0> & x0<2> & !x0<3> & x1<1> & x0<1> & !x1<2> & 
+	!x1<3>
+	# !x1<0> & x0<2> & x0<3> & x1<1> & x0<1> & x1<2> & 
+	x1<3> & !x0<0>
+
+MACROCELL | 9 | 2 | EXP9_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 9 | 3
+INPUTS | 8 | x1<0>  | x0<2>  | x0<3>  | x1<2>  | x1<3>  | x0<0>  | x1<1>  | x0<1>
+INPUTP | 8 | 257 | 168 | 252 | 29 | 192 | 43 | 157 | 91
+EXPORTS | 1 | 9 | 3
+EQ | 4 | 
+       EXP9_.EXP  =  x1<0> & x0<2> & !x0<3> & x1<2> & x1<3> & x0<0>
+	# x1<0> & x0<3> & x1<1> & x0<1> & x1<2> & !x1<3>
+	# !x1<0> & !x0<2> & x0<3> & !x1<1> & x1<3> & !x0<0>
+	# x0<3> & x1<1> & x0<1> & x1<2> & !x1<3> & x0<0>
+
+MACROCELL | 9 | 3 | EXP10_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 9 | 4
+INPUTS | 9 | x1<0>  | x0<3>  | x1<1>  | x1<2>  | x1<3>  | x0<2>  | x0<1>  | x0<0>  | EXP9_.EXP
+INPUTMC | 1 | 9 | 2
+INPUTP | 8 | 257 | 252 | 157 | 29 | 192 | 168 | 91 | 43
+EXPORTS | 1 | 9 | 4
+IMPORTS | 1 | 9 | 2
+EQ | 10 | 
+       EXP10_.EXP  =  !x1<0> & x0<3> & !x1<1> & !x1<2> & x1<3>
+	# x0<2> & !x0<3> & x0<1> & x1<2> & x1<3>
+	# !x0<2> & x0<3> & !x1<1> & !x0<1> & x1<3>
+	# x0<3> & !x1<1> & !x0<1> & !x1<2> & x1<3>
+	# x0<3> & !x1<1> & !x1<2> & x1<3> & !x0<0>
+;Imported pterms FB10_3
+	# x1<0> & x0<2> & !x0<3> & x1<2> & x1<3> & x0<0>
+	# x1<0> & x0<3> & x1<1> & x0<1> & x1<2> & !x1<3>
+	# !x1<0> & !x0<2> & x0<3> & !x1<1> & x1<3> & !x0<0>
+	# x0<3> & x1<1> & x0<1> & x1<2> & !x1<3> & x0<0>
+
+MACROCELL | 9 | 5 | EXP11_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 9 | 4
+INPUTS | 9 | x1<0>  | x0<2>  | x0<3>  | x0<1>  | x1<2>  | x1<3>  | x0<0>  | x1<1>  | EXP12_.EXP
+INPUTMC | 1 | 9 | 6
+INPUTP | 8 | 257 | 168 | 252 | 91 | 29 | 192 | 43 | 157
+EXPORTS | 1 | 9 | 4
+IMPORTS | 1 | 9 | 6
+EQ | 9 | 
+       EXP11_.EXP  =  x1<0> & x0<2> & x0<3> & x0<1> & x1<2> & !x1<3>
+	# x1<0> & x0<2> & x0<3> & x1<2> & !x1<3> & x0<0>
+	# x1<0> & x0<2> & x1<1> & x1<2> & x1<3> & x0<0>
+	# x1<0> & x0<2> & x0<1> & x1<2> & x1<3> & x0<0>
+	# !x1<0> & x0<3> & !x0<1> & !x1<2> & x1<3> & !x0<0>
+;Imported pterms FB10_7
+	# x1<0> & x0<2> & !x0<3> & x1<1> & x0<1> & x1<3>
+	# x0<2> & !x0<3> & x1<1> & x0<1> & x1<3> & x0<0>
+	# x0<2> & !x0<3> & x1<1> & x1<2> & x1<3> & x0<0>
+
+MACROCELL | 9 | 6 | EXP12_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 9 | 5
+INPUTS | 8 | x1<0>  | x0<2>  | x0<3>  | x1<1>  | x0<1>  | x1<3>  | x0<0>  | x1<2>
+INPUTP | 8 | 257 | 168 | 252 | 157 | 91 | 192 | 43 | 29
+EXPORTS | 1 | 9 | 5
+EQ | 3 | 
+       EXP12_.EXP  =  x1<0> & x0<2> & !x0<3> & x1<1> & x0<1> & x1<3>
+	# x0<2> & !x0<3> & x1<1> & x0<1> & x1<3> & x0<0>
+	# x0<2> & !x0<3> & x1<1> & x1<2> & x1<3> & x0<0>
+
+MACROCELL | 10 | 1 | EXP13_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 10 | 2
+INPUTS | 7 | x1<0>  | x0<2>  | x0<3>  | x1<1>  | x1<3>  | x0<1>  | x1<2>
+INPUTP | 7 | 257 | 168 | 252 | 157 | 192 | 91 | 29
+EXPORTS | 1 | 10 | 2
+EQ | 2 | 
+       EXP13_.EXP  =  x1<0> & x0<2> & x0<3> & x1<1> & x1<3>
+	# x0<3> & x1<1> & x0<1> & x1<2> & x1<3>
+
+MACROCELL | 10 | 3 | EXP14_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 10 | 2
+INPUTS | 6 | x0<2>  | x0<3>  | x1<2>  | x1<3>  | x0<1>  | x0<0>
+INPUTP | 6 | 168 | 252 | 29 | 192 | 91 | 43
+EXPORTS | 1 | 10 | 2
+EQ | 2 | 
+       EXP14_.EXP  =  x0<2> & x0<3> & x1<2> & x1<3>
+	# x0<3> & x0<1> & x1<2> & x1<3> & x0<0>
+
+MACROCELL | 11 | 1 | EXP15_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 11 | 2
+INPUTS | 4 | x0<2>  | x1<1>  | x0<1>  | x0<0>
+INPUTP | 4 | 168 | 157 | 91 | 43
+EXPORTS | 1 | 11 | 2
+EQ | 1 | 
+       EXP15_.EXP  =  !x0<2> & x1<1> & x0<1> & !x0<0>
+
+PIN | x1<0> | 64 | 0 | N/A | 257 | 23 | 15 | 1 | 13 | 1 | 11 | 2 | 9 | 4 | 10 | 2 | 9 | 11 | 9 | 16 | 9 | 15 | 8 | 15 | 8 | 13 | 8 | 10 | 8 | 12 | 8 | 17 | 8 | 0 | 8 | 1 | 8 | 11 | 8 | 14 | 8 | 16 | 9 | 2 | 9 | 3 | 9 | 5 | 9 | 6 | 10 | 1
+PIN | x0<2> | 64 | 0 | N/A | 168 | 25 | 11 | 2 | 9 | 4 | 10 | 2 | 9 | 16 | 9 | 13 | 8 | 15 | 8 | 13 | 8 | 10 | 8 | 12 | 8 | 17 | 9 | 17 | 8 | 9 | 8 | 0 | 8 | 1 | 8 | 8 | 8 | 11 | 8 | 14 | 8 | 16 | 9 | 2 | 9 | 3 | 9 | 5 | 9 | 6 | 10 | 1 | 10 | 3 | 11 | 1
+PIN | x0<3> | 64 | 0 | N/A | 252 | 22 | 9 | 4 | 10 | 2 | 9 | 12 | 9 | 15 | 8 | 15 | 8 | 10 | 8 | 12 | 8 | 17 | 8 | 9 | 8 | 0 | 8 | 1 | 8 | 8 | 8 | 11 | 8 | 13 | 8 | 14 | 8 | 16 | 9 | 2 | 9 | 3 | 9 | 5 | 9 | 6 | 10 | 1 | 10 | 3
+PIN | x1<1> | 64 | 0 | N/A | 157 | 24 | 13 | 1 | 11 | 2 | 9 | 4 | 10 | 2 | 9 | 11 | 9 | 14 | 9 | 12 | 9 | 13 | 8 | 15 | 8 | 13 | 8 | 10 | 8 | 12 | 8 | 17 | 8 | 0 | 8 | 1 | 8 | 11 | 8 | 14 | 8 | 16 | 9 | 2 | 9 | 3 | 9 | 5 | 9 | 6 | 10 | 1 | 11 | 1
+PIN | x0<1> | 64 | 0 | N/A | 91 | 26 | 13 | 1 | 11 | 2 | 9 | 4 | 10 | 2 | 9 | 11 | 9 | 14 | 8 | 13 | 8 | 16 | 8 | 10 | 8 | 12 | 8 | 17 | 9 | 17 | 8 | 9 | 8 | 0 | 8 | 1 | 8 | 8 | 8 | 11 | 8 | 14 | 8 | 15 | 9 | 2 | 9 | 3 | 9 | 5 | 9 | 6 | 10 | 1 | 10 | 3 | 11 | 1
+PIN | x1<2> | 64 | 0 | N/A | 29 | 21 | 11 | 2 | 9 | 4 | 10 | 2 | 8 | 13 | 8 | 16 | 8 | 12 | 8 | 17 | 9 | 17 | 8 | 9 | 8 | 0 | 8 | 1 | 8 | 10 | 8 | 11 | 8 | 14 | 8 | 15 | 9 | 2 | 9 | 3 | 9 | 5 | 9 | 6 | 10 | 1 | 10 | 3
+PIN | x1<3> | 64 | 0 | N/A | 192 | 19 | 9 | 4 | 10 | 2 | 8 | 16 | 8 | 12 | 8 | 17 | 9 | 17 | 8 | 9 | 8 | 0 | 8 | 1 | 8 | 8 | 8 | 10 | 8 | 13 | 8 | 14 | 9 | 2 | 9 | 3 | 9 | 5 | 9 | 6 | 10 | 1 | 10 | 3
+PIN | x0<0> | 64 | 0 | N/A | 43 | 24 | 15 | 1 | 13 | 1 | 11 | 2 | 9 | 4 | 10 | 2 | 9 | 11 | 8 | 13 | 8 | 16 | 8 | 10 | 8 | 12 | 8 | 17 | 9 | 17 | 8 | 9 | 8 | 0 | 8 | 1 | 8 | 11 | 8 | 14 | 8 | 15 | 9 | 2 | 9 | 3 | 9 | 5 | 9 | 6 | 10 | 3 | 11 | 1
+PIN | Y<0> | 536871040 | 0 | N/A | 166
+PIN | Y<1> | 536871040 | 0 | N/A | 180
+PIN | Y<2> | 536871040 | 0 | N/A | 200
+PIN | Y<3> | 536871040 | 0 | N/A | 99
+PIN | Y<4> | 536871040 | 0 | N/A | 151
+PIN | Y<5> | 536871040 | 0 | N/A | 135
+PIN | Y<6> | 536871040 | 0 | N/A | 218
+PIN | Y<7> | 536871040 | 0 | N/A | 114

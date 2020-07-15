@@ -1,0 +1,944 @@
+MDF Database:  version 1.0
+MDF_INFO | Lab8_1 | XC95288-10-HQ208
+MACROCELL | 8 | 17 | CL/CL_FSM_FFd1
+ATTRIBUTES | 8626944 | 0
+OUTPUTMC | 39 | 14 | 5 | 14 | 3 | 0 | 1 | 1 | 1 | 3 | 2 | 11 | 4 | 12 | 4 | 14 | 4 | 13 | 4 | 14 | 2 | 9 | 4 | 10 | 4 | 6 | 1 | 15 | 2 | 13 | 6 | 13 | 5 | 13 | 3 | 9 | 2 | 9 | 3 | 9 | 5 | 9 | 6 | 10 | 2 | 10 | 3 | 10 | 5 | 11 | 2 | 11 | 3 | 11 | 5 | 11 | 6 | 12 | 2 | 12 | 3 | 12 | 5 | 12 | 6 | 13 | 2 | 8 | 17 | 8 | 14 | 8 | 4 | 8 | 2 | 8 | 3 | 8 | 5
+INPUTS | 3 | CL/CL_FSM_FFd2.LFBK  | EN  | CL/CL_FSM_FFd1.LFBK
+INPUTMC | 2 | 8 | 16 | 8 | 17
+INPUTP | 1 | 114
+EQ | 4 | 
+   CL/CL_FSM_FFd1.D = EN & CL/CL_FSM_FFd2.LFBK
+	# !EN & CL/CL_FSM_FFd1.LFBK;
+   CL/CL_FSM_FFd1.CLK = CLK;	// GCK
+   CL/CL_FSM_FFd1.AR = RESET;	// GSR
+GLOBALS | 2 | 2 | CLK | 4 | RESET
+
+MACROCELL | 8 | 16 | CL/CL_FSM_FFd2
+ATTRIBUTES | 8626944 | 0
+OUTPUTMC | 38 | 14 | 5 | 14 | 3 | 0 | 1 | 1 | 1 | 3 | 2 | 11 | 3 | 12 | 4 | 14 | 4 | 13 | 4 | 14 | 2 | 9 | 4 | 10 | 4 | 6 | 1 | 15 | 2 | 13 | 6 | 13 | 5 | 13 | 3 | 9 | 2 | 9 | 3 | 9 | 5 | 9 | 6 | 10 | 2 | 10 | 3 | 10 | 5 | 11 | 2 | 11 | 5 | 11 | 6 | 12 | 2 | 12 | 3 | 12 | 5 | 12 | 6 | 13 | 2 | 8 | 17 | 8 | 16 | 8 | 4 | 8 | 2 | 8 | 3 | 8 | 5
+INPUTS | 3 | CL/CL_FSM_FFd3.LFBK  | EN  | CL/CL_FSM_FFd2.LFBK
+INPUTMC | 2 | 8 | 15 | 8 | 16
+INPUTP | 1 | 114
+EQ | 4 | 
+   CL/CL_FSM_FFd2.D = EN & CL/CL_FSM_FFd3.LFBK
+	# !EN & CL/CL_FSM_FFd2.LFBK;
+   CL/CL_FSM_FFd2.CLK = CLK;	// GCK
+   CL/CL_FSM_FFd2.AR = RESET;	// GSR
+GLOBALS | 2 | 2 | CLK | 4 | RESET
+
+MACROCELL | 8 | 15 | CL/CL_FSM_FFd3
+ATTRIBUTES | 8626944 | 0
+OUTPUTMC | 38 | 14 | 5 | 14 | 3 | 0 | 1 | 1 | 1 | 3 | 2 | 11 | 3 | 12 | 4 | 14 | 4 | 13 | 4 | 14 | 2 | 9 | 4 | 10 | 4 | 6 | 1 | 15 | 2 | 13 | 6 | 13 | 5 | 13 | 3 | 9 | 2 | 9 | 3 | 9 | 5 | 9 | 6 | 10 | 2 | 10 | 3 | 10 | 5 | 11 | 2 | 11 | 5 | 11 | 6 | 12 | 2 | 12 | 3 | 12 | 5 | 12 | 6 | 13 | 2 | 8 | 16 | 8 | 15 | 8 | 4 | 8 | 2 | 8 | 3 | 8 | 5
+INPUTS | 3 | CL/CL_FSM_FFd4.LFBK  | EN  | CL/CL_FSM_FFd3.LFBK
+INPUTMC | 2 | 8 | 14 | 8 | 15
+INPUTP | 1 | 114
+EQ | 4 | 
+   CL/CL_FSM_FFd3.D = EN & CL/CL_FSM_FFd4.LFBK
+	# !EN & CL/CL_FSM_FFd3.LFBK;
+   CL/CL_FSM_FFd3.CLK = CLK;	// GCK
+   CL/CL_FSM_FFd3.AR = RESET;	// GSR
+GLOBALS | 2 | 2 | CLK | 4 | RESET
+
+MACROCELL | 8 | 14 | CL/CL_FSM_FFd4
+ATTRIBUTES | 8622848 | 0
+OUTPUTMC | 2 | 8 | 15 | 8 | 14
+INPUTS | 3 | CL/CL_FSM_FFd1.LFBK  | EN  | CL/CL_FSM_FFd4.LFBK
+INPUTMC | 2 | 8 | 17 | 8 | 14
+INPUTP | 1 | 114
+EQ | 4 | 
+   CL/CL_FSM_FFd4.D = EN & CL/CL_FSM_FFd1.LFBK
+	# !EN & CL/CL_FSM_FFd4.LFBK;
+   CL/CL_FSM_FFd4.CLK = CLK;	// GCK
+   CL/CL_FSM_FFd4.AP = RESET;	// GSR
+GLOBALS | 2 | 2 | CLK | 1 | RESET
+
+MACROCELL | 0 | 1 | AN_1_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 4 | CL/CL_FSM_FFd1  | CL/CL_FSM_FFd2  | CL/CL_FSM_FFd3  | EN
+INPUTMC | 3 | 8 | 17 | 8 | 16 | 8 | 15
+INPUTP | 1 | 114
+EQ | 2 | 
+   !AN<1> = !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	EN;
+
+MACROCELL | 1 | 1 | AN_2_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 4 | CL/CL_FSM_FFd1  | CL/CL_FSM_FFd2  | CL/CL_FSM_FFd3  | EN
+INPUTMC | 3 | 8 | 17 | 8 | 16 | 8 | 15
+INPUTP | 1 | 114
+EQ | 2 | 
+   !AN<2> = !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	EN;
+
+MACROCELL | 3 | 2 | AN_3_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 4 | CL/CL_FSM_FFd1  | EN  | CL/CL_FSM_FFd2  | CL/CL_FSM_FFd3
+INPUTMC | 3 | 8 | 17 | 8 | 16 | 8 | 15
+INPUTP | 1 | 114
+EQ | 2 | 
+   !AN<3> = CL/CL_FSM_FFd1 & EN
+	# CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & EN;
+
+MACROCELL | 11 | 4 | SEG_0_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 8 | EN  | CL/CL_FSM_FFd1  | x3<0>  | x3<1>  | x3<2>  | x3<3>  | EXP11_.EXP  | EXP12_.EXP
+INPUTMC | 3 | 8 | 17 | 11 | 3 | 11 | 5
+INPUTP | 5 | 114 | 175 | 37 | 233 | 139
+IMPORTS | 2 | 11 | 3 | 11 | 5
+EQ | 41 | 
+   SEG<0> = !EN
+	# CL/CL_FSM_FFd1 & x3<0> & x3<1> & !x3<2> & x3<3>
+	# CL/CL_FSM_FFd1 & x3<0> & !x3<1> & x3<2> & x3<3>
+	# CL/CL_FSM_FFd1 & x3<0> & !x3<1> & !x3<2> & !x3<3>
+	# CL/CL_FSM_FFd1 & !x3<0> & !x3<1> & x3<2> & !x3<3>
+;Imported pterms FB12_4
+	# CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & x3<0> & x3<1> & 
+	!x3<2> & x3<3>
+	# CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & x3<0> & !x3<1> & 
+	x3<2> & x3<3>
+	# CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & x3<0> & !x3<1> & 
+	!x3<2> & !x3<3>
+	# CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & !x3<0> & !x3<1> & 
+	x3<2> & !x3<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	x1<0> & !x1<1> & x1<2> & x1<3>
+;Imported pterms FB12_3
+	# !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x2<0> & x2<1> & !x2<2> & x2<3>
+	# !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x2<0> & !x2<1> & !x2<2> & !x2<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x0<0> & !x0<1> & x0<2> & x0<3>
+;Imported pterms FB12_6
+	# !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x2<0> & !x2<1> & x2<2> & x2<3>
+	# !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x2<0> & !x2<1> & x2<2> & !x2<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	x1<0> & x1<1> & !x1<2> & x1<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	x1<0> & !x1<1> & !x1<2> & !x1<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	!x1<0> & !x1<1> & x1<2> & !x1<3>
+;Imported pterms FB12_7
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x0<0> & x0<1> & !x0<2> & x0<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x0<0> & !x0<1> & !x0<2> & !x0<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x0<0> & !x0<1> & x0<2> & !x0<3>;
+
+MACROCELL | 12 | 4 | SEG_1_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 10 | EN  | CL/CL_FSM_FFd1  | x3<0>  | x3<1>  | x3<3>  | x3<2>  | CL/CL_FSM_FFd2  | CL/CL_FSM_FFd3  | EXP15_.EXP  | EXP16_.EXP
+INPUTMC | 5 | 8 | 17 | 8 | 16 | 8 | 15 | 12 | 3 | 12 | 5
+INPUTP | 5 | 114 | 175 | 37 | 139 | 233
+IMPORTS | 2 | 12 | 3 | 12 | 5
+EQ | 41 | 
+   SEG<1> = !EN
+	# CL/CL_FSM_FFd1 & x3<0> & x3<1> & x3<3>
+	# CL/CL_FSM_FFd1 & !x3<0> & x3<1> & x3<2>
+	# CL/CL_FSM_FFd1 & !x3<0> & x3<2> & x3<3>
+	# CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & x3<0> & x3<1> & 
+	x3<3>
+;Imported pterms FB13_4
+	# CL/CL_FSM_FFd1 & x3<0> & !x3<1> & x3<2> & !x3<3>
+	# CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & !x3<0> & x3<1> & 
+	x3<2>
+	# CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & !x3<0> & x3<2> & 
+	x3<3>
+	# !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x2<0> & x2<1> & x2<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x0<0> & x0<1> & x0<3>
+;Imported pterms FB13_3
+	# !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x2<0> & x2<1> & x2<2>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x0<0> & x0<1> & x0<2>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x0<0> & x0<2> & x0<3>
+;Imported pterms FB13_6
+	# !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x2<0> & x2<2> & x2<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	x1<0> & x1<1> & x1<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	!x1<0> & x1<1> & x1<2>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	!x1<0> & x1<2> & x1<3>
+	# CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & x3<0> & !x3<1> & 
+	x3<2> & !x3<3>
+;Imported pterms FB13_7
+	# !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x2<0> & !x2<1> & x2<2> & !x2<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	x1<0> & !x1<1> & x1<2> & !x1<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x0<0> & !x0<1> & x0<2> & !x0<3>;
+
+MACROCELL | 14 | 4 | SEG_2_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 10 | EN  | CL/CL_FSM_FFd1  | x3<0>  | x3<2>  | x3<3>  | x3<1>  | CL/CL_FSM_FFd2  | CL/CL_FSM_FFd3  | EXP23_.EXP  | EXP24_.EXP
+INPUTMC | 5 | 8 | 17 | 8 | 16 | 8 | 15 | 14 | 3 | 14 | 5
+INPUTP | 5 | 114 | 175 | 233 | 139 | 37
+IMPORTS | 2 | 14 | 3 | 14 | 5
+EQ | 31 | 
+   SEG<2> = !EN
+	# CL/CL_FSM_FFd1 & !x3<0> & x3<2> & x3<3>
+	# CL/CL_FSM_FFd1 & x3<1> & x3<2> & x3<3>
+	# CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & !x3<0> & x3<2> & 
+	x3<3>
+	# CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & x3<1> & x3<2> & 
+	x3<3>
+;Imported pterms FB15_4
+	# CL/CL_FSM_FFd1 & !x3<0> & x3<1> & !x3<2> & !x3<3>
+	# !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x2<0> & x2<2> & x2<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	!x1<0> & x1<2> & x1<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	x1<1> & x1<2> & x1<3>
+	# CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & !x3<0> & x3<1> & 
+	!x3<2> & !x3<3>
+;Imported pterms FB15_3
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x0<0> & x0<1> & !x0<2> & !x0<3>
+;Imported pterms FB15_6
+	# !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x2<1> & x2<2> & x2<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x0<0> & x0<2> & x0<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x0<1> & x0<2> & x0<3>
+	# !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x2<0> & x2<1> & !x2<2> & !x2<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	!x1<0> & x1<1> & !x1<2> & !x1<3>;
+
+MACROCELL | 13 | 4 | SEG_3_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 10 | EN  | CL/CL_FSM_FFd1  | x3<0>  | x3<1>  | x3<2>  | CL/CL_FSM_FFd2  | CL/CL_FSM_FFd3  | x3<3>  | EXP19_.EXP  | EXP20_.EXP
+INPUTMC | 5 | 8 | 17 | 8 | 16 | 8 | 15 | 13 | 3 | 13 | 5
+INPUTP | 5 | 114 | 175 | 37 | 233 | 139
+IMPORTS | 2 | 13 | 3 | 13 | 5
+EQ | 41 | 
+   SEG<3> = !EN
+	# CL/CL_FSM_FFd1 & x3<0> & x3<1> & x3<2>
+	# CL/CL_FSM_FFd1 & !x3<0> & x3<1> & !x3<2> & x3<3>
+	# CL/CL_FSM_FFd1 & !x3<0> & !x3<1> & x3<2> & !x3<3>
+	# CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & x3<0> & x3<1> & 
+	x3<2>
+;Imported pterms FB14_4
+	# CL/CL_FSM_FFd1 & x3<0> & !x3<1> & !x3<2> & !x3<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	x1<0> & x1<1> & x1<2>
+	# CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & x3<0> & !x3<1> & 
+	!x3<2> & !x3<3>
+	# CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & !x3<0> & x3<1> & 
+	!x3<2> & x3<3>
+	# CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & !x3<0> & !x3<1> & 
+	x3<2> & !x3<3>
+;Imported pterms FB14_3
+	# !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x2<0> & !x2<1> & !x2<2> & !x2<3>
+	# !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x2<0> & x2<1> & !x2<2> & x2<3>
+	# !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x2<0> & !x2<1> & x2<2> & !x2<3>
+;Imported pterms FB14_6
+	# !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x2<0> & x2<1> & x2<2>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x0<0> & x0<1> & x0<2>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	x1<0> & !x1<1> & !x1<2> & !x1<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	!x1<0> & x1<1> & !x1<2> & x1<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	!x1<0> & !x1<1> & x1<2> & !x1<3>
+;Imported pterms FB14_7
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x0<0> & !x0<1> & !x0<2> & !x0<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x0<0> & x0<1> & !x0<2> & x0<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x0<0> & !x0<1> & x0<2> & !x0<3>;
+
+MACROCELL | 8 | 4 | SEG_4_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 10 | EN  | CL/CL_FSM_FFd2.LFBK  | x3<0>  | x3<3>  | x3<1>  | x3<2>  | CL/CL_FSM_FFd3.LFBK  | EXP1_.EXP  | EXP2_.EXP  | CL/CL_FSM_FFd1.LFBK
+INPUTMC | 5 | 8 | 16 | 8 | 15 | 8 | 3 | 8 | 5 | 8 | 17
+INPUTP | 5 | 114 | 175 | 139 | 37 | 233
+IMPORTS | 2 | 8 | 3 | 8 | 5
+EQ | 31 | 
+   SEG<4> = !EN
+	# x3<0> & !x3<3> & CL/CL_FSM_FFd1.LFBK
+	# x3<0> & !x3<1> & !x3<2> & CL/CL_FSM_FFd1.LFBK
+	# x3<0> & !x3<3> & CL/CL_FSM_FFd2.LFBK & 
+	CL/CL_FSM_FFd3.LFBK
+	# !x3<1> & x3<2> & !x3<3> & CL/CL_FSM_FFd1.LFBK
+;Imported pterms FB9_4
+	# x3<0> & !x3<1> & !x3<2> & CL/CL_FSM_FFd2.LFBK & 
+	CL/CL_FSM_FFd3.LFBK
+	# x2<0> & !x2<3> & !CL/CL_FSM_FFd1.LFBK & 
+	CL/CL_FSM_FFd2.LFBK & !CL/CL_FSM_FFd3.LFBK
+	# x1<0> & !x1<3> & !CL/CL_FSM_FFd1.LFBK & 
+	!CL/CL_FSM_FFd2.LFBK & CL/CL_FSM_FFd3.LFBK
+	# x0<0> & !x0<3> & !CL/CL_FSM_FFd1.LFBK & 
+	!CL/CL_FSM_FFd2.LFBK & !CL/CL_FSM_FFd3.LFBK
+	# !x3<1> & x3<2> & !x3<3> & CL/CL_FSM_FFd2.LFBK & 
+	CL/CL_FSM_FFd3.LFBK
+;Imported pterms FB9_3
+	# x1<0> & !x1<1> & !x1<2> & !CL/CL_FSM_FFd1.LFBK & 
+	!CL/CL_FSM_FFd2.LFBK & CL/CL_FSM_FFd3.LFBK
+;Imported pterms FB9_6
+	# x2<0> & !x2<1> & !x2<2> & !CL/CL_FSM_FFd1.LFBK & 
+	CL/CL_FSM_FFd2.LFBK & !CL/CL_FSM_FFd3.LFBK
+	# x0<0> & !x0<1> & !x0<2> & !CL/CL_FSM_FFd1.LFBK & 
+	!CL/CL_FSM_FFd2.LFBK & !CL/CL_FSM_FFd3.LFBK
+	# !x2<1> & x2<2> & !x2<3> & !CL/CL_FSM_FFd1.LFBK & 
+	CL/CL_FSM_FFd2.LFBK & !CL/CL_FSM_FFd3.LFBK
+	# !x1<1> & x1<2> & !x1<3> & !CL/CL_FSM_FFd1.LFBK & 
+	!CL/CL_FSM_FFd2.LFBK & CL/CL_FSM_FFd3.LFBK
+	# !x0<1> & x0<2> & !x0<3> & !CL/CL_FSM_FFd1.LFBK & 
+	!CL/CL_FSM_FFd2.LFBK & !CL/CL_FSM_FFd3.LFBK;
+
+MACROCELL | 9 | 4 | SEG_5_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 10 | EN  | CL/CL_FSM_FFd1  | x3<0>  | x3<1>  | x3<3>  | x3<2>  | CL/CL_FSM_FFd2  | CL/CL_FSM_FFd3  | EXP4_.EXP  | EXP5_.EXP
+INPUTMC | 5 | 8 | 17 | 8 | 16 | 8 | 15 | 9 | 3 | 9 | 5
+INPUTP | 5 | 114 | 175 | 37 | 139 | 233
+IMPORTS | 2 | 9 | 3 | 9 | 5
+EQ | 41 | 
+   SEG<5> = !EN
+	# CL/CL_FSM_FFd1 & x3<0> & x3<1> & !x3<3>
+	# CL/CL_FSM_FFd1 & x3<0> & !x3<2> & !x3<3>
+	# CL/CL_FSM_FFd1 & x3<1> & !x3<2> & !x3<3>
+	# CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & x3<0> & x3<1> & 
+	!x3<3>
+;Imported pterms FB10_4
+	# CL/CL_FSM_FFd1 & x3<0> & !x3<1> & x3<2> & x3<3>
+	# CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & x3<0> & !x3<2> & 
+	!x3<3>
+	# CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & x3<1> & !x3<2> & 
+	!x3<3>
+	# !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x2<0> & x2<1> & !x2<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x0<0> & x0<1> & !x0<3>
+;Imported pterms FB10_3
+	# !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x2<1> & !x2<2> & !x2<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x0<0> & !x0<2> & !x0<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x0<1> & !x0<2> & !x0<3>
+;Imported pterms FB10_6
+	# !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x2<0> & !x2<2> & !x2<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	x1<0> & x1<1> & !x1<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	x1<0> & !x1<2> & !x1<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	x1<1> & !x1<2> & !x1<3>
+	# CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & x3<0> & !x3<1> & 
+	x3<2> & x3<3>
+;Imported pterms FB10_7
+	# !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x2<0> & !x2<1> & x2<2> & x2<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	x1<0> & !x1<1> & x1<2> & x1<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x0<0> & !x0<1> & x0<2> & x0<3>;
+
+MACROCELL | 10 | 4 | SEG_6_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 10 | EN  | CL/CL_FSM_FFd1  | x3<1>  | x3<2>  | x3<3>  | x3<0>  | CL/CL_FSM_FFd2  | CL/CL_FSM_FFd3  | EXP8_.EXP  | EXP9_.EXP
+INPUTMC | 5 | 8 | 17 | 8 | 16 | 8 | 15 | 10 | 3 | 10 | 5
+INPUTP | 5 | 114 | 37 | 233 | 139 | 175
+IMPORTS | 2 | 10 | 3 | 10 | 5
+EQ | 31 | 
+   SEG<6> = !EN
+	# CL/CL_FSM_FFd1 & !x3<1> & !x3<2> & !x3<3>
+	# CL/CL_FSM_FFd1 & x3<0> & x3<1> & x3<2> & !x3<3>
+	# CL/CL_FSM_FFd1 & !x3<0> & !x3<1> & x3<2> & x3<3>
+	# CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & !x3<1> & !x3<2> & 
+	!x3<3>
+;Imported pterms FB11_4
+	# !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x2<1> & !x2<2> & !x2<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	!x1<1> & !x1<2> & !x1<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x0<1> & !x0<2> & !x0<3>
+	# CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & x3<0> & x3<1> & 
+	x3<2> & !x3<3>
+	# CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & !x3<0> & !x3<1> & 
+	x3<2> & x3<3>
+;Imported pterms FB11_3
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x0<0> & !x0<1> & x0<2> & x0<3>
+;Imported pterms FB11_6
+	# !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x2<0> & x2<1> & x2<2> & !x2<3>
+	# !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x2<0> & !x2<1> & x2<2> & x2<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	x1<0> & x1<1> & x1<2> & !x1<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	!x1<0> & !x1<1> & x1<2> & x1<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x0<0> & x0<1> & x0<2> & !x0<3>;
+
+MACROCELL | 6 | 1 | AN_0_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 4 | CL/CL_FSM_FFd1  | CL/CL_FSM_FFd2  | CL/CL_FSM_FFd3  | EN
+INPUTMC | 3 | 8 | 17 | 8 | 16 | 8 | 15
+INPUTP | 1 | 114
+EQ | 2 | 
+   !AN<0> = !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	EN;
+
+MACROCELL | 15 | 2 | SEG_7_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 8 | CL/CL_FSM_FFd1  | EN  | DP<3>  | CL/CL_FSM_FFd2  | CL/CL_FSM_FFd3  | DP<1>  | DP<0>  | DP<2>
+INPUTMC | 3 | 8 | 17 | 8 | 16 | 8 | 15
+INPUTP | 5 | 114 | 73 | 30 | 254 | 160
+EQ | 8 | 
+   !SEG<7> = CL/CL_FSM_FFd1 & EN & DP<3>
+	# CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & EN & DP<3>
+	# !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	EN & DP<2>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	EN & DP<1>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	EN & DP<0>;
+
+MACROCELL | 8 | 2 | EXP0_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 8 | 3
+INPUTS | 6 | CL/CL_FSM_FFd2.LFBK  | CL/CL_FSM_FFd3.LFBK  | x1<0>  | x1<1>  | x1<2>  | CL/CL_FSM_FFd1.LFBK
+INPUTMC | 3 | 8 | 16 | 8 | 15 | 8 | 17
+INPUTP | 3 | 257 | 91 | 29
+EXPORTS | 1 | 8 | 3
+EQ | 2 | 
+       EXP0_.EXP  =  x1<0> & !x1<1> & !x1<2> & !CL/CL_FSM_FFd1.LFBK & 
+	!CL/CL_FSM_FFd2.LFBK & CL/CL_FSM_FFd3.LFBK
+
+MACROCELL | 8 | 3 | EXP1_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 8 | 4
+INPUTS | 14 | CL/CL_FSM_FFd2.LFBK  | CL/CL_FSM_FFd3.LFBK  | x2<0>  | x2<3>  | x1<0>  | x1<3>  | x0<0>  | x0<3>  | x3<0>  | x3<1>  | x3<2>  | x3<3>  | EXP0_.EXP  | CL/CL_FSM_FFd1.LFBK
+INPUTMC | 4 | 8 | 16 | 8 | 15 | 8 | 2 | 8 | 17
+INPUTP | 10 | 192 | 43 | 257 | 252 | 157 | 77 | 175 | 37 | 233 | 139
+EXPORTS | 1 | 8 | 4
+IMPORTS | 1 | 8 | 2
+EQ | 13 | 
+       EXP1_.EXP  =  x3<0> & !x3<1> & !x3<2> & CL/CL_FSM_FFd2.LFBK & 
+	CL/CL_FSM_FFd3.LFBK
+	# x2<0> & !x2<3> & !CL/CL_FSM_FFd1.LFBK & 
+	CL/CL_FSM_FFd2.LFBK & !CL/CL_FSM_FFd3.LFBK
+	# x1<0> & !x1<3> & !CL/CL_FSM_FFd1.LFBK & 
+	!CL/CL_FSM_FFd2.LFBK & CL/CL_FSM_FFd3.LFBK
+	# x0<0> & !x0<3> & !CL/CL_FSM_FFd1.LFBK & 
+	!CL/CL_FSM_FFd2.LFBK & !CL/CL_FSM_FFd3.LFBK
+	# !x3<1> & x3<2> & !x3<3> & CL/CL_FSM_FFd2.LFBK & 
+	CL/CL_FSM_FFd3.LFBK
+;Imported pterms FB9_3
+	# x1<0> & !x1<1> & !x1<2> & !CL/CL_FSM_FFd1.LFBK & 
+	!CL/CL_FSM_FFd2.LFBK & CL/CL_FSM_FFd3.LFBK
+
+MACROCELL | 8 | 5 | EXP2_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 8 | 4
+INPUTS | 14 | CL/CL_FSM_FFd2.LFBK  | CL/CL_FSM_FFd3.LFBK  | x2<0>  | x2<1>  | x2<2>  | x2<3>  | x1<1>  | x1<2>  | x1<3>  | x0<0>  | x0<1>  | x0<2>  | x0<3>  | CL/CL_FSM_FFd1.LFBK
+INPUTMC | 3 | 8 | 16 | 8 | 15 | 8 | 17
+INPUTP | 11 | 192 | 32 | 230 | 43 | 91 | 29 | 252 | 157 | 173 | 203 | 77
+EXPORTS | 1 | 8 | 4
+EQ | 10 | 
+       EXP2_.EXP  =  x2<0> & !x2<1> & !x2<2> & !CL/CL_FSM_FFd1.LFBK & 
+	CL/CL_FSM_FFd2.LFBK & !CL/CL_FSM_FFd3.LFBK
+	# x0<0> & !x0<1> & !x0<2> & !CL/CL_FSM_FFd1.LFBK & 
+	!CL/CL_FSM_FFd2.LFBK & !CL/CL_FSM_FFd3.LFBK
+	# !x2<1> & x2<2> & !x2<3> & !CL/CL_FSM_FFd1.LFBK & 
+	CL/CL_FSM_FFd2.LFBK & !CL/CL_FSM_FFd3.LFBK
+	# !x1<1> & x1<2> & !x1<3> & !CL/CL_FSM_FFd1.LFBK & 
+	!CL/CL_FSM_FFd2.LFBK & CL/CL_FSM_FFd3.LFBK
+	# !x0<1> & x0<2> & !x0<3> & !CL/CL_FSM_FFd1.LFBK & 
+	!CL/CL_FSM_FFd2.LFBK & !CL/CL_FSM_FFd3.LFBK
+
+MACROCELL | 9 | 2 | EXP3_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 9 | 3
+INPUTS | 10 | CL/CL_FSM_FFd1  | CL/CL_FSM_FFd2  | CL/CL_FSM_FFd3  | x2<1>  | x2<2>  | x2<3>  | x0<0>  | x0<2>  | x0<3>  | x0<1>
+INPUTMC | 3 | 8 | 17 | 8 | 16 | 8 | 15
+INPUTP | 7 | 32 | 230 | 43 | 157 | 203 | 77 | 173
+EXPORTS | 1 | 9 | 3
+EQ | 6 | 
+       EXP3_.EXP  =  !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x2<1> & !x2<2> & !x2<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x0<0> & !x0<2> & !x0<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x0<1> & !x0<2> & !x0<3>
+
+MACROCELL | 9 | 3 | EXP4_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 9 | 4
+INPUTS | 14 | CL/CL_FSM_FFd1  | x3<0>  | x3<1>  | x3<2>  | x3<3>  | CL/CL_FSM_FFd2  | CL/CL_FSM_FFd3  | x2<0>  | x2<1>  | x2<3>  | x0<0>  | x0<1>  | x0<3>  | EXP3_.EXP
+INPUTMC | 4 | 8 | 17 | 8 | 16 | 8 | 15 | 9 | 2
+INPUTP | 10 | 175 | 37 | 233 | 139 | 192 | 32 | 43 | 157 | 173 | 77
+EXPORTS | 1 | 9 | 4
+IMPORTS | 1 | 9 | 2
+EQ | 16 | 
+       EXP4_.EXP  =  CL/CL_FSM_FFd1 & x3<0> & !x3<1> & x3<2> & x3<3>
+	# CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & x3<0> & !x3<2> & 
+	!x3<3>
+	# CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & x3<1> & !x3<2> & 
+	!x3<3>
+	# !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x2<0> & x2<1> & !x2<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x0<0> & x0<1> & !x0<3>
+;Imported pterms FB10_3
+	# !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x2<1> & !x2<2> & !x2<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x0<0> & !x0<2> & !x0<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x0<1> & !x0<2> & !x0<3>
+
+MACROCELL | 9 | 5 | EXP5_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 9 | 4
+INPUTS | 15 | CL/CL_FSM_FFd1  | CL/CL_FSM_FFd2  | CL/CL_FSM_FFd3  | x2<0>  | x2<2>  | x2<3>  | x1<0>  | x1<1>  | x1<3>  | x1<2>  | x3<0>  | x3<1>  | x3<2>  | x3<3>  | EXP6_.EXP
+INPUTMC | 4 | 8 | 17 | 8 | 16 | 8 | 15 | 9 | 6
+INPUTP | 11 | 192 | 230 | 43 | 257 | 91 | 252 | 29 | 175 | 37 | 233 | 139
+EXPORTS | 1 | 9 | 4
+IMPORTS | 1 | 9 | 6
+EQ | 17 | 
+       EXP5_.EXP  =  !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x2<0> & !x2<2> & !x2<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	x1<0> & x1<1> & !x1<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	x1<0> & !x1<2> & !x1<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	x1<1> & !x1<2> & !x1<3>
+	# CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & x3<0> & !x3<1> & 
+	x3<2> & x3<3>
+;Imported pterms FB10_7
+	# !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x2<0> & !x2<1> & x2<2> & x2<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	x1<0> & !x1<1> & x1<2> & x1<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x0<0> & !x0<1> & x0<2> & x0<3>
+
+MACROCELL | 9 | 6 | EXP6_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 9 | 5
+INPUTS | 15 | CL/CL_FSM_FFd1  | CL/CL_FSM_FFd2  | CL/CL_FSM_FFd3  | x2<0>  | x2<1>  | x2<2>  | x2<3>  | x1<0>  | x1<1>  | x1<2>  | x1<3>  | x0<0>  | x0<1>  | x0<2>  | x0<3>
+INPUTMC | 3 | 8 | 17 | 8 | 16 | 8 | 15
+INPUTP | 12 | 192 | 32 | 230 | 43 | 257 | 91 | 29 | 252 | 157 | 173 | 203 | 77
+EXPORTS | 1 | 9 | 5
+EQ | 6 | 
+       EXP6_.EXP  =  !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x2<0> & !x2<1> & x2<2> & x2<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	x1<0> & !x1<1> & x1<2> & x1<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x0<0> & !x0<1> & x0<2> & x0<3>
+
+MACROCELL | 10 | 2 | EXP7_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 10 | 3
+INPUTS | 7 | CL/CL_FSM_FFd1  | CL/CL_FSM_FFd2  | CL/CL_FSM_FFd3  | x0<0>  | x0<1>  | x0<2>  | x0<3>
+INPUTMC | 3 | 8 | 17 | 8 | 16 | 8 | 15
+INPUTP | 4 | 157 | 173 | 203 | 77
+EXPORTS | 1 | 10 | 3
+EQ | 2 | 
+       EXP7_.EXP  =  !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x0<0> & !x0<1> & x0<2> & x0<3>
+
+MACROCELL | 10 | 3 | EXP8_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 10 | 4
+INPUTS | 17 | CL/CL_FSM_FFd1  | CL/CL_FSM_FFd2  | CL/CL_FSM_FFd3  | x2<1>  | x2<2>  | x2<3>  | x1<1>  | x1<2>  | x1<3>  | x0<1>  | x0<2>  | x0<3>  | x3<0>  | x3<1>  | x3<2>  | x3<3>  | EXP7_.EXP
+INPUTMC | 4 | 8 | 17 | 8 | 16 | 8 | 15 | 10 | 2
+INPUTP | 13 | 32 | 230 | 43 | 91 | 29 | 252 | 173 | 203 | 77 | 175 | 37 | 233 | 139
+EXPORTS | 1 | 10 | 4
+IMPORTS | 1 | 10 | 2
+EQ | 13 | 
+       EXP8_.EXP  =  !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x2<1> & !x2<2> & !x2<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	!x1<1> & !x1<2> & !x1<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x0<1> & !x0<2> & !x0<3>
+	# CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & x3<0> & x3<1> & 
+	x3<2> & !x3<3>
+	# CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & !x3<0> & !x3<1> & 
+	x3<2> & x3<3>
+;Imported pterms FB11_3
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x0<0> & !x0<1> & x0<2> & x0<3>
+
+MACROCELL | 10 | 5 | EXP9_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 10 | 4
+INPUTS | 15 | CL/CL_FSM_FFd1  | CL/CL_FSM_FFd2  | CL/CL_FSM_FFd3  | x2<0>  | x2<1>  | x2<2>  | x2<3>  | x1<0>  | x1<1>  | x1<2>  | x1<3>  | x0<0>  | x0<1>  | x0<2>  | x0<3>
+INPUTMC | 3 | 8 | 17 | 8 | 16 | 8 | 15
+INPUTP | 12 | 192 | 32 | 230 | 43 | 257 | 91 | 29 | 252 | 157 | 173 | 203 | 77
+EXPORTS | 1 | 10 | 4
+EQ | 10 | 
+       EXP9_.EXP  =  !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x2<0> & x2<1> & x2<2> & !x2<3>
+	# !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x2<0> & !x2<1> & x2<2> & x2<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	x1<0> & x1<1> & x1<2> & !x1<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	!x1<0> & !x1<1> & x1<2> & x1<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x0<0> & x0<1> & x0<2> & !x0<3>
+
+MACROCELL | 11 | 2 | EXP10_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 11 | 3
+INPUTS | 11 | CL/CL_FSM_FFd1  | CL/CL_FSM_FFd2  | CL/CL_FSM_FFd3  | x2<0>  | x2<1>  | x2<2>  | x2<3>  | x0<0>  | x0<1>  | x0<2>  | x0<3>
+INPUTMC | 3 | 8 | 17 | 8 | 16 | 8 | 15
+INPUTP | 8 | 192 | 32 | 230 | 43 | 157 | 173 | 203 | 77
+EXPORTS | 1 | 11 | 3
+EQ | 6 | 
+       EXP10_.EXP  =  !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x2<0> & x2<1> & !x2<2> & x2<3>
+	# !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x2<0> & !x2<1> & !x2<2> & !x2<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x0<0> & !x0<1> & x0<2> & x0<3>
+
+MACROCELL | 11 | 3 | EXP11_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 11 | 4
+INPUTS | 12 | CL/CL_FSM_FFd2  | CL/CL_FSM_FFd3  | x3<0>  | x3<1>  | x3<2>  | x3<3>  | CL/CL_FSM_FFd1  | x1<0>  | x1<1>  | x1<2>  | x1<3>  | EXP10_.EXP
+INPUTMC | 4 | 8 | 16 | 8 | 15 | 8 | 17 | 11 | 2
+INPUTP | 8 | 175 | 37 | 233 | 139 | 257 | 91 | 29 | 252
+EXPORTS | 1 | 11 | 4
+IMPORTS | 1 | 11 | 2
+EQ | 17 | 
+       EXP11_.EXP  =  CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & x3<0> & x3<1> & 
+	!x3<2> & x3<3>
+	# CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & x3<0> & !x3<1> & 
+	x3<2> & x3<3>
+	# CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & x3<0> & !x3<1> & 
+	!x3<2> & !x3<3>
+	# CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & !x3<0> & !x3<1> & 
+	x3<2> & !x3<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	x1<0> & !x1<1> & x1<2> & x1<3>
+;Imported pterms FB12_3
+	# !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x2<0> & x2<1> & !x2<2> & x2<3>
+	# !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x2<0> & !x2<1> & !x2<2> & !x2<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x0<0> & !x0<1> & x0<2> & x0<3>
+
+MACROCELL | 11 | 5 | EXP12_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 11 | 4
+INPUTS | 12 | CL/CL_FSM_FFd1  | CL/CL_FSM_FFd2  | CL/CL_FSM_FFd3  | x2<0>  | x2<1>  | x2<2>  | x2<3>  | x1<0>  | x1<1>  | x1<2>  | x1<3>  | EXP13_.EXP
+INPUTMC | 4 | 8 | 17 | 8 | 16 | 8 | 15 | 11 | 6
+INPUTP | 8 | 192 | 32 | 230 | 43 | 257 | 91 | 29 | 252
+EXPORTS | 1 | 11 | 4
+IMPORTS | 1 | 11 | 6
+EQ | 17 | 
+       EXP12_.EXP  =  !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x2<0> & !x2<1> & x2<2> & x2<3>
+	# !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x2<0> & !x2<1> & x2<2> & !x2<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	x1<0> & x1<1> & !x1<2> & x1<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	x1<0> & !x1<1> & !x1<2> & !x1<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	!x1<0> & !x1<1> & x1<2> & !x1<3>
+;Imported pterms FB12_7
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x0<0> & x0<1> & !x0<2> & x0<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x0<0> & !x0<1> & !x0<2> & !x0<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x0<0> & !x0<1> & x0<2> & !x0<3>
+
+MACROCELL | 11 | 6 | EXP13_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 11 | 5
+INPUTS | 7 | CL/CL_FSM_FFd1  | CL/CL_FSM_FFd2  | CL/CL_FSM_FFd3  | x0<0>  | x0<1>  | x0<2>  | x0<3>
+INPUTMC | 3 | 8 | 17 | 8 | 16 | 8 | 15
+INPUTP | 4 | 157 | 173 | 203 | 77
+EXPORTS | 1 | 11 | 5
+EQ | 6 | 
+       EXP13_.EXP  =  !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x0<0> & x0<1> & !x0<2> & x0<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x0<0> & !x0<1> & !x0<2> & !x0<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x0<0> & !x0<1> & x0<2> & !x0<3>
+
+MACROCELL | 12 | 2 | EXP14_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 12 | 3
+INPUTS | 10 | CL/CL_FSM_FFd1  | CL/CL_FSM_FFd2  | CL/CL_FSM_FFd3  | x2<0>  | x2<1>  | x2<2>  | x0<0>  | x0<1>  | x0<2>  | x0<3>
+INPUTMC | 3 | 8 | 17 | 8 | 16 | 8 | 15
+INPUTP | 7 | 192 | 32 | 230 | 157 | 173 | 203 | 77
+EXPORTS | 1 | 12 | 3
+EQ | 6 | 
+       EXP14_.EXP  =  !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x2<0> & x2<1> & x2<2>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x0<0> & x0<1> & x0<2>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x0<0> & x0<2> & x0<3>
+
+MACROCELL | 12 | 3 | EXP15_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 12 | 4
+INPUTS | 14 | CL/CL_FSM_FFd1  | x3<0>  | x3<1>  | x3<2>  | x3<3>  | CL/CL_FSM_FFd2  | CL/CL_FSM_FFd3  | x2<0>  | x2<1>  | x2<3>  | x0<0>  | x0<1>  | x0<3>  | EXP14_.EXP
+INPUTMC | 4 | 8 | 17 | 8 | 16 | 8 | 15 | 12 | 2
+INPUTP | 10 | 175 | 37 | 233 | 139 | 192 | 32 | 43 | 157 | 173 | 77
+EXPORTS | 1 | 12 | 4
+IMPORTS | 1 | 12 | 2
+EQ | 16 | 
+       EXP15_.EXP  =  CL/CL_FSM_FFd1 & x3<0> & !x3<1> & x3<2> & !x3<3>
+	# CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & !x3<0> & x3<1> & 
+	x3<2>
+	# CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & !x3<0> & x3<2> & 
+	x3<3>
+	# !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x2<0> & x2<1> & x2<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x0<0> & x0<1> & x0<3>
+;Imported pterms FB13_3
+	# !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x2<0> & x2<1> & x2<2>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x0<0> & x0<1> & x0<2>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x0<0> & x0<2> & x0<3>
+
+MACROCELL | 12 | 5 | EXP16_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 12 | 4
+INPUTS | 15 | CL/CL_FSM_FFd1  | CL/CL_FSM_FFd2  | CL/CL_FSM_FFd3  | x2<0>  | x2<2>  | x2<3>  | x1<0>  | x1<1>  | x1<3>  | x1<2>  | x3<0>  | x3<1>  | x3<2>  | x3<3>  | EXP17_.EXP
+INPUTMC | 4 | 8 | 17 | 8 | 16 | 8 | 15 | 12 | 6
+INPUTP | 11 | 192 | 230 | 43 | 257 | 91 | 252 | 29 | 175 | 37 | 233 | 139
+EXPORTS | 1 | 12 | 4
+IMPORTS | 1 | 12 | 6
+EQ | 17 | 
+       EXP16_.EXP  =  !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x2<0> & x2<2> & x2<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	x1<0> & x1<1> & x1<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	!x1<0> & x1<1> & x1<2>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	!x1<0> & x1<2> & x1<3>
+	# CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & x3<0> & !x3<1> & 
+	x3<2> & !x3<3>
+;Imported pterms FB13_7
+	# !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x2<0> & !x2<1> & x2<2> & !x2<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	x1<0> & !x1<1> & x1<2> & !x1<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x0<0> & !x0<1> & x0<2> & !x0<3>
+
+MACROCELL | 12 | 6 | EXP17_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 12 | 5
+INPUTS | 15 | CL/CL_FSM_FFd1  | CL/CL_FSM_FFd2  | CL/CL_FSM_FFd3  | x2<0>  | x2<1>  | x2<2>  | x2<3>  | x1<0>  | x1<1>  | x1<2>  | x1<3>  | x0<0>  | x0<1>  | x0<2>  | x0<3>
+INPUTMC | 3 | 8 | 17 | 8 | 16 | 8 | 15
+INPUTP | 12 | 192 | 32 | 230 | 43 | 257 | 91 | 29 | 252 | 157 | 173 | 203 | 77
+EXPORTS | 1 | 12 | 5
+EQ | 6 | 
+       EXP17_.EXP  =  !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x2<0> & !x2<1> & x2<2> & !x2<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	x1<0> & !x1<1> & x1<2> & !x1<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x0<0> & !x0<1> & x0<2> & !x0<3>
+
+MACROCELL | 13 | 2 | EXP18_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 13 | 3
+INPUTS | 7 | CL/CL_FSM_FFd1  | CL/CL_FSM_FFd2  | CL/CL_FSM_FFd3  | x2<0>  | x2<1>  | x2<2>  | x2<3>
+INPUTMC | 3 | 8 | 17 | 8 | 16 | 8 | 15
+INPUTP | 4 | 192 | 32 | 230 | 43
+EXPORTS | 1 | 13 | 3
+EQ | 6 | 
+       EXP18_.EXP  =  !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x2<0> & !x2<1> & !x2<2> & !x2<3>
+	# !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x2<0> & x2<1> & !x2<2> & x2<3>
+	# !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x2<0> & !x2<1> & x2<2> & !x2<3>
+
+MACROCELL | 13 | 3 | EXP19_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 13 | 4
+INPUTS | 11 | CL/CL_FSM_FFd1  | x3<0>  | x3<1>  | x3<2>  | x3<3>  | CL/CL_FSM_FFd2  | CL/CL_FSM_FFd3  | x1<0>  | x1<1>  | x1<2>  | EXP18_.EXP
+INPUTMC | 4 | 8 | 17 | 8 | 16 | 8 | 15 | 13 | 2
+INPUTP | 7 | 175 | 37 | 233 | 139 | 257 | 91 | 29
+EXPORTS | 1 | 13 | 4
+IMPORTS | 1 | 13 | 2
+EQ | 16 | 
+       EXP19_.EXP  =  CL/CL_FSM_FFd1 & x3<0> & !x3<1> & !x3<2> & !x3<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	x1<0> & x1<1> & x1<2>
+	# CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & x3<0> & !x3<1> & 
+	!x3<2> & !x3<3>
+	# CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & !x3<0> & x3<1> & 
+	!x3<2> & x3<3>
+	# CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & !x3<0> & !x3<1> & 
+	x3<2> & !x3<3>
+;Imported pterms FB14_3
+	# !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x2<0> & !x2<1> & !x2<2> & !x2<3>
+	# !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x2<0> & x2<1> & !x2<2> & x2<3>
+	# !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x2<0> & !x2<1> & x2<2> & !x2<3>
+
+MACROCELL | 13 | 5 | EXP20_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 13 | 4
+INPUTS | 14 | CL/CL_FSM_FFd1  | CL/CL_FSM_FFd2  | CL/CL_FSM_FFd3  | x2<0>  | x2<1>  | x2<2>  | x0<0>  | x0<1>  | x0<2>  | x1<0>  | x1<1>  | x1<2>  | x1<3>  | EXP21_.EXP
+INPUTMC | 4 | 8 | 17 | 8 | 16 | 8 | 15 | 13 | 6
+INPUTP | 10 | 192 | 32 | 230 | 157 | 173 | 203 | 257 | 91 | 29 | 252
+EXPORTS | 1 | 13 | 4
+IMPORTS | 1 | 13 | 6
+EQ | 17 | 
+       EXP20_.EXP  =  !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x2<0> & x2<1> & x2<2>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x0<0> & x0<1> & x0<2>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	x1<0> & !x1<1> & !x1<2> & !x1<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	!x1<0> & x1<1> & !x1<2> & x1<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	!x1<0> & !x1<1> & x1<2> & !x1<3>
+;Imported pterms FB14_7
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x0<0> & !x0<1> & !x0<2> & !x0<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x0<0> & x0<1> & !x0<2> & x0<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x0<0> & !x0<1> & x0<2> & !x0<3>
+
+MACROCELL | 13 | 6 | EXP21_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 13 | 5
+INPUTS | 7 | CL/CL_FSM_FFd1  | CL/CL_FSM_FFd2  | CL/CL_FSM_FFd3  | x0<0>  | x0<1>  | x0<2>  | x0<3>
+INPUTMC | 3 | 8 | 17 | 8 | 16 | 8 | 15
+INPUTP | 4 | 157 | 173 | 203 | 77
+EXPORTS | 1 | 13 | 5
+EQ | 6 | 
+       EXP21_.EXP  =  !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x0<0> & !x0<1> & !x0<2> & !x0<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x0<0> & x0<1> & !x0<2> & x0<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x0<0> & !x0<1> & x0<2> & !x0<3>
+
+MACROCELL | 14 | 2 | EXP22_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 14 | 3
+INPUTS | 7 | CL/CL_FSM_FFd1  | CL/CL_FSM_FFd2  | CL/CL_FSM_FFd3  | x0<0>  | x0<1>  | x0<2>  | x0<3>
+INPUTMC | 3 | 8 | 17 | 8 | 16 | 8 | 15
+INPUTP | 4 | 157 | 173 | 203 | 77
+EXPORTS | 1 | 14 | 3
+EQ | 2 | 
+       EXP22_.EXP  =  !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x0<0> & x0<1> & !x0<2> & !x0<3>
+
+MACROCELL | 14 | 3 | EXP23_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 14 | 4
+INPUTS | 15 | CL/CL_FSM_FFd1  | x3<0>  | x3<1>  | x3<2>  | x3<3>  | CL/CL_FSM_FFd2  | CL/CL_FSM_FFd3  | x2<0>  | x2<2>  | x2<3>  | x1<0>  | x1<2>  | x1<3>  | x1<1>  | EXP22_.EXP
+INPUTMC | 4 | 8 | 17 | 8 | 16 | 8 | 15 | 14 | 2
+INPUTP | 11 | 175 | 37 | 233 | 139 | 192 | 230 | 43 | 257 | 29 | 252 | 91
+EXPORTS | 1 | 14 | 4
+IMPORTS | 1 | 14 | 2
+EQ | 12 | 
+       EXP23_.EXP  =  CL/CL_FSM_FFd1 & !x3<0> & x3<1> & !x3<2> & !x3<3>
+	# !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x2<0> & x2<2> & x2<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	!x1<0> & x1<2> & x1<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	x1<1> & x1<2> & x1<3>
+	# CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & !x3<0> & x3<1> & 
+	!x3<2> & !x3<3>
+;Imported pterms FB15_3
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x0<0> & x0<1> & !x0<2> & !x0<3>
+
+MACROCELL | 14 | 5 | EXP24_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 14 | 4
+INPUTS | 15 | CL/CL_FSM_FFd1  | CL/CL_FSM_FFd2  | CL/CL_FSM_FFd3  | x2<1>  | x2<2>  | x2<3>  | x0<0>  | x0<2>  | x0<3>  | x0<1>  | x2<0>  | x1<0>  | x1<1>  | x1<2>  | x1<3>
+INPUTMC | 3 | 8 | 17 | 8 | 16 | 8 | 15
+INPUTP | 12 | 32 | 230 | 43 | 157 | 203 | 77 | 173 | 192 | 257 | 91 | 29 | 252
+EXPORTS | 1 | 14 | 4
+EQ | 10 | 
+       EXP24_.EXP  =  !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x2<1> & x2<2> & x2<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x0<0> & x0<2> & x0<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	x0<1> & x0<2> & x0<3>
+	# !CL/CL_FSM_FFd1 & CL/CL_FSM_FFd2 & !CL/CL_FSM_FFd3 & 
+	!x2<0> & x2<1> & !x2<2> & !x2<3>
+	# !CL/CL_FSM_FFd1 & !CL/CL_FSM_FFd2 & CL/CL_FSM_FFd3 & 
+	!x1<0> & x1<1> & !x1<2> & !x1<3>
+
+PIN | CLK | 4096 | 0 | N/A | 57 | 4 | 8 | 17 | 8 | 16 | 8 | 15 | 8 | 14
+PIN | RESET | 65536 | 0 | N/A | 262 | 4 | 8 | 17 | 8 | 16 | 8 | 15 | 8 | 14
+PIN | EN | 64 | 0 | N/A | 114 | 16 | 8 | 17 | 8 | 16 | 8 | 15 | 8 | 14 | 0 | 1 | 1 | 1 | 3 | 2 | 11 | 4 | 12 | 4 | 14 | 4 | 13 | 4 | 8 | 4 | 9 | 4 | 10 | 4 | 6 | 1 | 15 | 2
+PIN | x3<0> | 64 | 0 | N/A | 175 | 16 | 11 | 4 | 12 | 4 | 14 | 4 | 13 | 4 | 8 | 4 | 9 | 4 | 10 | 4 | 8 | 3 | 9 | 3 | 9 | 5 | 10 | 3 | 11 | 3 | 12 | 3 | 12 | 5 | 13 | 3 | 14 | 3
+PIN | x3<1> | 64 | 0 | N/A | 37 | 16 | 11 | 4 | 12 | 4 | 14 | 4 | 13 | 4 | 8 | 4 | 9 | 4 | 10 | 4 | 8 | 3 | 9 | 3 | 9 | 5 | 10 | 3 | 11 | 3 | 12 | 3 | 12 | 5 | 13 | 3 | 14 | 3
+PIN | x3<2> | 64 | 0 | N/A | 233 | 16 | 11 | 4 | 12 | 4 | 14 | 4 | 13 | 4 | 8 | 4 | 9 | 4 | 10 | 4 | 8 | 3 | 9 | 3 | 9 | 5 | 10 | 3 | 11 | 3 | 12 | 3 | 12 | 5 | 13 | 3 | 14 | 3
+PIN | x3<3> | 64 | 0 | N/A | 139 | 16 | 11 | 4 | 12 | 4 | 14 | 4 | 13 | 4 | 8 | 4 | 9 | 4 | 10 | 4 | 8 | 3 | 9 | 3 | 9 | 5 | 10 | 3 | 11 | 3 | 12 | 3 | 12 | 5 | 13 | 3 | 14 | 3
+PIN | x1<0> | 64 | 0 | N/A | 257 | 13 | 11 | 3 | 11 | 5 | 14 | 3 | 13 | 3 | 8 | 3 | 8 | 2 | 9 | 6 | 9 | 5 | 10 | 5 | 12 | 5 | 12 | 6 | 13 | 5 | 14 | 5
+PIN | x1<1> | 64 | 0 | N/A | 91 | 14 | 11 | 3 | 11 | 5 | 14 | 3 | 13 | 3 | 8 | 2 | 8 | 5 | 10 | 3 | 9 | 5 | 9 | 6 | 10 | 5 | 12 | 5 | 12 | 6 | 13 | 5 | 14 | 5
+PIN | x1<2> | 64 | 0 | N/A | 29 | 14 | 11 | 3 | 11 | 5 | 14 | 3 | 13 | 3 | 8 | 2 | 8 | 5 | 10 | 3 | 9 | 5 | 9 | 6 | 10 | 5 | 12 | 5 | 12 | 6 | 13 | 5 | 14 | 5
+PIN | x1<3> | 64 | 0 | N/A | 252 | 13 | 11 | 3 | 11 | 5 | 14 | 3 | 12 | 6 | 8 | 3 | 8 | 5 | 10 | 3 | 9 | 5 | 9 | 6 | 10 | 5 | 12 | 5 | 13 | 5 | 14 | 5
+PIN | x2<0> | 64 | 0 | N/A | 192 | 16 | 11 | 2 | 12 | 3 | 14 | 3 | 13 | 2 | 8 | 3 | 9 | 3 | 9 | 6 | 8 | 5 | 9 | 5 | 10 | 5 | 11 | 5 | 12 | 2 | 12 | 5 | 12 | 6 | 13 | 5 | 14 | 5
+PIN | x2<1> | 64 | 0 | N/A | 32 | 14 | 11 | 2 | 12 | 3 | 13 | 5 | 13 | 2 | 10 | 3 | 9 | 3 | 8 | 5 | 9 | 2 | 9 | 6 | 10 | 5 | 11 | 5 | 12 | 2 | 12 | 6 | 14 | 5
+PIN | x2<2> | 64 | 0 | N/A | 230 | 15 | 11 | 2 | 12 | 2 | 14 | 3 | 13 | 2 | 10 | 3 | 9 | 2 | 8 | 5 | 9 | 5 | 9 | 6 | 10 | 5 | 11 | 5 | 12 | 5 | 12 | 6 | 13 | 5 | 14 | 5
+PIN | x2<3> | 64 | 0 | N/A | 43 | 16 | 11 | 2 | 12 | 3 | 14 | 3 | 13 | 2 | 8 | 3 | 9 | 3 | 10 | 3 | 8 | 5 | 9 | 2 | 9 | 5 | 9 | 6 | 10 | 5 | 11 | 5 | 12 | 5 | 12 | 6 | 14 | 5
+PIN | x0<0> | 64 | 0 | N/A | 157 | 16 | 11 | 2 | 12 | 3 | 14 | 2 | 12 | 6 | 8 | 3 | 9 | 3 | 10 | 2 | 8 | 5 | 9 | 2 | 9 | 6 | 10 | 5 | 11 | 6 | 12 | 2 | 13 | 5 | 13 | 6 | 14 | 5
+PIN | x0<1> | 64 | 0 | N/A | 173 | 16 | 11 | 2 | 12 | 3 | 14 | 2 | 12 | 6 | 10 | 3 | 9 | 3 | 8 | 5 | 9 | 2 | 9 | 6 | 10 | 2 | 10 | 5 | 11 | 6 | 12 | 2 | 13 | 5 | 13 | 6 | 14 | 5
+PIN | x0<2> | 64 | 0 | N/A | 203 | 14 | 11 | 2 | 12 | 2 | 14 | 2 | 12 | 6 | 10 | 3 | 9 | 2 | 8 | 5 | 9 | 6 | 10 | 2 | 10 | 5 | 11 | 6 | 13 | 5 | 13 | 6 | 14 | 5
+PIN | x0<3> | 64 | 0 | N/A | 77 | 16 | 11 | 2 | 12 | 3 | 14 | 2 | 12 | 6 | 8 | 3 | 9 | 3 | 10 | 3 | 8 | 5 | 9 | 2 | 9 | 6 | 10 | 2 | 10 | 5 | 11 | 6 | 12 | 2 | 13 | 6 | 14 | 5
+PIN | DP<3> | 64 | 0 | N/A | 73 | 1 | 15 | 2
+PIN | DP<2> | 64 | 0 | N/A | 160 | 1 | 15 | 2
+PIN | DP<1> | 64 | 0 | N/A | 30 | 1 | 15 | 2
+PIN | DP<0> | 64 | 0 | N/A | 254 | 1 | 15 | 2
+PIN | AN<1> | 536871040 | 0 | N/A | 35
+PIN | AN<2> | 536871040 | 0 | N/A | 20
+PIN | AN<3> | 536871040 | 0 | N/A | 5
+PIN | SEG<0> | 536871040 | 0 | N/A | 201
+PIN | SEG<1> | 536871040 | 0 | N/A | 136
+PIN | SEG<2> | 536871040 | 0 | N/A | 153
+PIN | SEG<3> | 536871040 | 0 | N/A | 185
+PIN | SEG<4> | 536871040 | 0 | N/A | 99
+PIN | SEG<5> | 536871040 | 0 | N/A | 218
+PIN | SEG<6> | 536871040 | 0 | N/A | 115
+PIN | AN<0> | 536871040 | 0 | N/A | 79
+PIN | SEG<7> | 536871040 | 0 | N/A | 168

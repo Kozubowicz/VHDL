@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "D:/235816/UP/bramka2/bramka2.xst" -ofn "D:/235816/UP/bramka2/bramka2.syr" 
+xst -intstyle ise -ifn "D:/235816/UP/bramka2/bramka2.xst" -ofn "D:/235816/UP/bramka2/bramka2.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc95288-HQ208-10 bramka2.ngc bramka2.ngd  
+cpldfit -intstyle ise -p xc95288-10-HQ208 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk bramka2.ngd 
+XSLTProcess bramka2_build.xml 
+tsim -intstyle ise bramka2 bramka2.nga 
+taengine -intstyle ise -f bramka2 -w --format html1 -l bramka2_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -n bramka2 -i bramka2 
+xst -intstyle ise -ifn "D:/235816/UP/bramka2/bramka2.xst" -ofn "D:/235816/UP/bramka2/bramka2.syr" 

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "F:/235816/Lab8/Lab8_1/tg_isim_beh.exe" -prj "F:/235816/Lab8/Lab8_1/tg_beh.prj" "work.tg" 

@@ -1,0 +1,7 @@
+V3 4
+FL D:/235816/UP/Lab5/Lab5_1/Lab5_1/Lab5_1.vhd 2019/03/18.14:41:46 P.20131013
+FL F:/Lab5/Lab5_1/Lab5_1/Lab5_1.vhd 2019/03/25.22:46:48 P.20131013
+EN work/Lab5_1 1553550413 FL F:/Lab5/Lab5_1/Lab5_1/Lab5_1.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/Lab5_1/Behavioral 1553550414 \
+      FL F:/Lab5/Lab5_1/Lab5_1/Lab5_1.vhd EN work/Lab5_1 1553550413
